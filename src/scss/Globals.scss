@@ -1,18 +1,26 @@
-@use "../components/Navbar/Navbar";
-@use "../components/Button/Button";
-@use "../components/CustomLink/customlink";
-@use "../components/Hero/hero";
+@import "./variables" ;
+@import "../components/Navbar/Navbar";
+@import "../components/Button/Button";
+@import "../components/CustomLink/customlink";
+@import "../components/Hero/hero";
+@import "../components/ContentLayout/contentlayout";
+@import "../components/ParagraphText/paragraphtext";
+@import "../components/Footer/footer";
+@import "../components/ContentSection/contentsection";
+
 *{
     box-sizing: border-box;
 }
 body{
+    padding: 0;
     margin: 0 auto;
 }
 img{
     width: 100%;
 }
+
 .container{
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
-    max-width: 68.75em;
+    max-width: 80.75em;
 }

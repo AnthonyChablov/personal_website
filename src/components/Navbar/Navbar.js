@@ -1,40 +1,69 @@
-import CustomLink from "../CustomLink/CustomLink"
-const Navbar = () => {
-    return (
-        <div className='navbar'>
-            <div className="navbar__content container">
-                <div className="navbar__primary">
-                    <CustomLink
-                        addClassName = 'navbar__link--primary'
-                        linkTo='/'
-                        content='Anthony Chablov'
-                    ></CustomLink>
-                </div>
-                <div className="navbar__secondary">
-                    <CustomLink
-                        addClassName = 'navbar__link--secondary'
-                        linkTo='/projects'
-                        content='Projects'
-                    ></CustomLink>
-                    <CustomLink
-                        addClassName = 'navbar__link--secondary'
-                        linkTo='/about'
-                        content='About'
-                    ></CustomLink>
-                    <CustomLink
-                        addClassName = 'navbar__link--secondary'
-                        linkTo='/contact'
-                        content='contact'
-                    ></CustomLink>
-                    <CustomLink
-                        addClassName = 'navbar__link--secondary'
-                        linkTo='/skills'
-                        content='skills'
-                    ></CustomLink>
-                </div>
-            </div>
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { FaTimes , FaBars} from "react-icons/fa";
+function NavBar() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  return (
+    <>
+      <nav className="navbar">
+        <div className="navbar__container">
+          <NavLink exact to="/" className="nav__logo">
+            Anthony Chablov
+          </NavLink>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/blog"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Skills
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Contact Me
+              </NavLink>
+            </li>
+          </ul>
+          <div className="navbar__icon-wrapper" onClick={handleClick}>
+            {click ? <FaTimes className="icon"/> : <FaBars className="icon"/>}
+          </div>
         </div>
-    )
+      </nav>
+    </>
+  );
 }
 
-export default Navbar
+export default NavBar;

@@ -1,13 +1,3 @@
-.navbar .navbar__content {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-.navbar .navbar__content .navbar__secondary {
-  display: flex;
-  align-content: space-around;
-}
-
 @font-face {
   font-family: "Resgak-Semi-Bold";
   src: url("../assets/fonts/Resgak/Resgak-SemiBold.otf") format("opentype");
@@ -20,12 +10,142 @@
   font-family: "Neaue-Singular-Bold";
   src: url("../assets/fonts/NeueSingular/Fontspring-DEMO-neuesingular-h-bold.otf") format("truetype");
 }
-.navbar__link--primary {
-  text-transform: lowercase;
-  color: black;
+@font-face {
+  font-family: "Neaue-Singular-regular";
+  src: url("../assets/fonts/NeueSingular/Fontspring-DEMO-neuesingular-d-regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Neaue-Singular-light";
+  src: url("../assets/fonts/NeueSingular/Fontspring-DEMO-neuesingular-v-light.otf") format("truetype");
+}
+.navbar {
+  margin-top: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Neaue-Singular-regular", sans-serif;
+  font-size: 1.4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.nav__logo {
+  color: #d7f6f9;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
   text-decoration: none;
+  font-size: 1.4rem;
+  flex-grow: 1;
   font-size: 2rem;
-  font-weight: 900;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #d7f6f9;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #d7f6f9;
+}
+
+.nav-item .active {
+  color: #d7f6f9;
+  border: 1px solid #d7f6f9;
+}
+
+.navbar__icon-wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .nav-menu.active {
+    background: transparent;
+    filter: opacity(120%);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #d7f6f9;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+  .navbar__icon-wrapper {
+    padding: 2px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    color: #d7f6f9;
+  }
+  .navbar__icon-wrapper .icon {
+    cursor: pointer;
+  }
+}
+.navbar__link--primary {
+  font-family: "Neaue-Singular-light", sans-serif;
+  color: #d7f6f9;
+  text-decoration: none;
+  font-size: 1.6rem;
+  word-spacing: 0.22em;
+  transition: width 0.7s ease, background-color 0.5s ease;
 }
 
 .navbar__link--primary:hover {
@@ -33,16 +153,55 @@
 }
 
 .navbar__link--secondary {
-  color: grey;
-  text-transform: uppercase;
-  font-size: 0.64rem;
-  font-weight: 500;
+  color: #d7f6f9;
+  font-family: "Neaue-Singular-light", sans-serif;
+  text-transform: capitalize;
+  font-size: 1rem;
   text-decoration: none;
-  letter-spacing: 1px;
 }
 
 .navbar__link--secondary:hover {
   text-decoration: underline;
+}
+
+.hero {
+  background-image: url(../assets/images/hero_background_gradient.png);
+  height: 65em;
+  background-position: bottom;
+  color: #d7f6f9;
+}
+.hero .hero__content h1 {
+  padding-top: 280px;
+  margin: 0;
+  font-family: "Felice-Bold-Italics", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  font-size: 3.6rem;
+}
+.hero .hero__subtitle {
+  font-size: 3rem;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+
+.paragraph-text {
+  font-size: 1.3rem;
+}
+
+.content-section {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.content-section--white {
+  background-color: white;
+  padding: 5em 0 5em 0;
+  width: 80%;
+  margin: auto;
+}
+
+.content-section--grey {
+  margin: auto;
+  background-color: #f8f8f8;
 }
 
 * {
@@ -50,6 +209,7 @@
 }
 
 body {
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -58,7 +218,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
-  max-width: 68.75em;
+  max-width: 80.75em;
 }
