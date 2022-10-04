@@ -1,0 +1,64 @@
+.navbar .navbar__content {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.navbar .navbar__content .navbar__secondary {
+  display: flex;
+  align-content: space-around;
+}
+
+@font-face {
+  font-family: "Resgak-Semi-Bold";
+  src: url("../assets/fonts/Resgak/Resgak-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Felice-Bold-Italics";
+  src: url("../assets/fonts/Felice-Bold/Felice-W01-Bold-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Neaue-Singular-Bold";
+  src: url("../assets/fonts/NeueSingular/Fontspring-DEMO-neuesingular-h-bold.otf") format("truetype");
+}
+.navbar__link--primary {
+  text-transform: lowercase;
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.navbar__link--primary:hover {
+  text-decoration: underline;
+}
+
+.navbar__link--secondary {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 0.64rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbar__link--secondary:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 68.75em;
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Resgak-Semi-Bold';
+    src: url("../assets/fonts/Resgak/Resgak-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Felice-Bold-Italics';
+    src: url("../assets/fonts/Felice-Bold/Felice-W01-Bold-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Neaue-Singular-Bold';
+    src: url("../assets/fonts/NeueSingular/Fontspring-DEMO-neuesingular-h-bold.otf") format("truetype");
+}
+
+$font-resgak-semi-bold: 'Resgak-Semi-Bold', sans-serif;
+$font-felice-bold-italics :'Felice-Bold-Italics', sans-serif;
+$font-neaue-singular-bold : 'Neaue-Singular-Bold', sans-serif;
+
+$white : white;

@@ -1,0 +1,18 @@
+@use "../components/Navbar/Navbar";
+@use "../components/Button/Button";
+@use "../components/CustomLink/customlink";
+@use "../components/Hero/hero";
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 68.75em;
+}

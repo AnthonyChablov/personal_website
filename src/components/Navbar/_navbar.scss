@@ -1,0 +1,11 @@
+.navbar{
+    .navbar__content{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        .navbar__secondary{
+            display: flex;
+            align-content: space-around;
+        }
+    }
+}
