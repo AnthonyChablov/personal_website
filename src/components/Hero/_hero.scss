@@ -1,8 +1,8 @@
 .hero{
-    background-image: url(../assets/images/hero_background_gradient.png);
+    background-image: url(../assets/images/1216881.png);
     height: 65em; //1040px;
-    background-position: bottom; 
-    color: $white;
+    background-position: 70.4% 27.5%; 
+    color: $dark-grey;
 
     .hero__content h1{
         padding-top: 280px;
@@ -11,10 +11,14 @@
         font-weight: 300;
         letter-spacing: 0.7px;
         font-size: 3.6rem;
+        
     }
     .hero__subtitle{
         font-size: 3rem;
         font-family: 'Trebuchet MS', sans-serif;
-        font-weight: 500;
+        font-weight: 600;
+        font-weight: bold;
+        letter-spacing: 1px;
+
     } 
 }
