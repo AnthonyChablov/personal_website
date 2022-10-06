@@ -5,6 +5,7 @@ const ContentLayout = () => {
         <ContentSection bgColorClass={'content-section--white'} insertClass={'content-section'}/>
         <ContentSection bgColorClass={'content-section--grey'} insertClass={'content-section'}/>
         <ContentSection bgColorClass={'content-section--grey'} insertClass={'content-section'}/>
+        <ContentSection bgColorClass={'content-section--grey'} insertClass={'content-section'}/>
     </div>
   )
 }
