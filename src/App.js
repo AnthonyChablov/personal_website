@@ -3,7 +3,9 @@ import {
     BrowserRouter as Router
 } from 'react-router-dom';
 import AnimatedRoutes from './components/AnimatedRoutes/AnimatedRoutes';
+
 import NavBar from './components/Navbar/Navbar';
+
 function App() {
     return (
         <Router>   

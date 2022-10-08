@@ -91,7 +91,7 @@
     }
 
     .nav-menu.active {
-        background: transparent;
+        background: $tan;
         filter: opacity(120%);
         left: 0px;
         opacity: 1;
@@ -99,13 +99,14 @@
         z-index: 1;
     }
     .nav-item .active {
-        color: $white;
+        color: $dark-grey;
         border: none;
     }
     .nav-links {
         padding: 1.5rem;
         width: 100%;
         display: table;
+        color:  $dark-grey;
     }
 
     .navbar__icon-wrapper{
@@ -117,7 +118,7 @@
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        color: $white;
+        color: $dark-grey;
 
         .icon{
             cursor: pointer;

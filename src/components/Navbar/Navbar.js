@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaTimes , FaBars} from "react-icons/fa";
+
+
 function NavBar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -8,7 +10,11 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="navbar__container">
-          <NavLink exact to="/" className="nav__logo">
+          <NavLink 
+            exact to="/" 
+            className="nav__logo"
+            
+          >
             Anthony Chablov
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
