@@ -45,9 +45,8 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.4rem;
   flex-grow: 1;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .nav-menu {
@@ -63,6 +62,7 @@
   padding: 0.5rem 1rem;
   height: 100%;
   border-bottom: 3px solid transparent;
+  font-size: 1.1rem;
 }
 
 .fa-code {
@@ -165,7 +165,7 @@
 }
 
 .hero {
-  background-image: url(../assets/images/1216881.png);
+  background-image: url(../assets/images/mountain-nature-bg.png);
   height: 65em;
   background-position: 70.4% 27.5%;
   color: #2e3047;
@@ -204,6 +204,11 @@
 .content-section--grey {
   margin: auto;
   background-color: #f8f8f8;
+}
+
+.layout {
+  background-color: #eadbcd;
+  height: 100vh;
 }
 
 * {
