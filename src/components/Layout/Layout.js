@@ -6,17 +6,24 @@ const Layout = () => {
     return (
         <div className="layout">
             <div className="layout__content">
-            <Link to={`/home`}>
-                <div className="layout__img">
-                    <motion.img 
-                        src={img} 
-                        alt="nature-background"
-                        whileHover={{ scale: 1.1 }}
-                        transition={transition}
-                    />
-                </div>
-                
-            </Link>
+                <Link to={`/home`}>
+                    <div className="layout__img">
+                        <motion.img 
+                            className="layout__img--formatting"
+                            src={img} 
+                            alt="nature-background"
+                            whileHover={{ scale: 1.1 }}
+                            transition={transition}
+                        />
+                    </div>
+                </Link>
+                <motion.div
+                    className="layout__text"
+                    exit={{ opacity: 0 }}
+                    transition={transition}
+                >
+                    Anthony Chablov
+                </motion.div>
             </div>
         </div>
     )

@@ -12,12 +12,9 @@ import {
 import {AnimatePresence} from 'framer-motion';
 const AnimatedRoutes = () => {
     const location = useLocation();
-    const imageDetails = {
-        width : 600, 
-        height : 300,
-    }
+
     return (
-        <AnimatePresence initial={false} exitBeforeEnter>
+        <AnimatePresence initial={false} wait>
             <Routes>
                 <Route 
                     path='/' 

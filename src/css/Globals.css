@@ -46,7 +46,7 @@
   cursor: pointer;
   text-decoration: none;
   flex-grow: 1;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .nav-menu {
@@ -62,7 +62,7 @@
   padding: 0.5rem 1rem;
   height: 100%;
   border-bottom: 3px solid transparent;
-  font-size: 1.1rem;
+  font-size: 0.98rem;
 }
 
 .fa-code {
@@ -166,7 +166,6 @@
 }
 
 .hero {
-  background-image: url(../assets/images/mountain-nature-bg.png);
   height: 65em;
   background-position: 70.4% 27.5%;
   color: #2e3047;
@@ -209,16 +208,24 @@
 
 .layout {
   background-color: #eadbcd;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.layout .layout__img {
-  width: 375px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.layout .layout__content {
+  position: relative;
 }
-.layout .layout__text {
+.layout .layout__content .layout__img {
+  width: 30em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.layout .layout__content .layout__img .layout__img--formatting {
+  display: block;
+}
+.layout .layout__content .layout__text {
   font-family: "Neaue-Singular-light", sans-serif;
   font-size: 0.9em;
   color: #2e3047;
