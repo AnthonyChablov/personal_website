@@ -2,7 +2,9 @@
     //background-image: url(../assets/images/mountain-nature-bg.png);
     height: 65em; //1040px;
     background-position: 70.4% 27.5%; 
+    background-color: $tan;
     color: $dark-grey;
+    scale: scale;
 
     .hero__content h1{
         padding-top: 280px;
@@ -11,7 +13,15 @@
         font-weight: 300;
         letter-spacing: 0.7px;
         font-size: 3.6rem;
+        
     }
+
+    .hero__content{
+        .hero__img{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+
     .hero__subtitle{
         font-size: 3rem;
         font-family: 'Trebuchet MS', sans-serif;
@@ -20,3 +30,4 @@
         letter-spacing: 1px;
     } 
 }
+

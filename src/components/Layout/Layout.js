@@ -22,7 +22,7 @@ const Layout = () => {
                     exit={{ opacity: 0 }}
                     transition={transition}
                 >
-                    Anthony Chablov
+                    @@@@@@@
                 </motion.div>
             </div>
         </div>

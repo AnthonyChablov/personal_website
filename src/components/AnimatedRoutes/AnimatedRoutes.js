@@ -14,7 +14,7 @@ const AnimatedRoutes = () => {
     const location = useLocation();
 
     return (
-        <AnimatePresence initial={false} wait>
+        <AnimatePresence initial={true} wait>
             <Routes>
                 <Route 
                     path='/' 

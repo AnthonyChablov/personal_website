@@ -28,6 +28,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar__container {
@@ -168,7 +169,9 @@
 .hero {
   height: 65em;
   background-position: 70.4% 27.5%;
+  background-color: #eadbcd;
   color: #2e3047;
+  scale: scale;
 }
 .hero .hero__content h1 {
   padding-top: 280px;
@@ -177,6 +180,9 @@
   font-weight: 300;
   letter-spacing: 0.7px;
   font-size: 3.6rem;
+}
+.hero .hero__content .hero__img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .hero .hero__subtitle {
   font-size: 3rem;
@@ -217,10 +223,12 @@
   position: relative;
 }
 .layout .layout__content .layout__img {
-  width: 30em;
+  width: 90vw;
+  max-width: 30em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
   position: relative;
+  border-radius: 26px;
 }
 .layout .layout__content .layout__img .layout__img--formatting {
   display: block;
@@ -231,6 +239,7 @@
   color: #2e3047;
   padding-top: 0.2em;
   text-decoration: none;
+  text-align: center;
 }
 
 * {
