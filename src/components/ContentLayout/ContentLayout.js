@@ -9,4 +9,4 @@ const ContentLayout = () => {
     </div>
   )
 }
-export default ContentLayout
+export default ContentLayout;

@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
   
 .navbar__container {
@@ -25,9 +26,8 @@
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.4rem;
     flex-grow: 1;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .nav-menu {
@@ -43,6 +43,7 @@
     padding: 0.5rem 1rem;
     height: 100%;
     border-bottom: 3px solid transparent;
+    font-size: 0.98rem;
 }
 .fa-code {
     margin-left: 1rem;
@@ -88,10 +89,11 @@
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
+        
     }
 
     .nav-menu.active {
-        background: transparent;
+        background: $tan;
         filter: opacity(120%);
         left: 0px;
         opacity: 1;
@@ -99,13 +101,14 @@
         z-index: 1;
     }
     .nav-item .active {
-        color: $white;
+        color: $dark-grey;
         border: none;
     }
     .nav-links {
         padding: 1.5rem;
         width: 100%;
         display: table;
+        color:  $dark-grey;
     }
 
     .navbar__icon-wrapper{
@@ -117,7 +120,7 @@
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        color: $white;
+        color: $dark-grey;
 
         .icon{
             cursor: pointer;

@@ -1,0 +1,33 @@
+.layout{
+    background-color: $tan;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .layout__content{
+        position: relative; 
+        
+        .layout__img{
+            width: 90vw;
+            max-width: 30em;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 26px;
+            
+            .layout__img--formatting{
+                display: block;
+            }
+        }
+        .layout__text{
+            font-family: $font-neaue-light;
+            font-size: 0.9em;
+            color: $dark-grey;
+            padding-top: 0.2em;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}
+

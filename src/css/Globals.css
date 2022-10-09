@@ -28,6 +28,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar__container {
@@ -45,9 +46,8 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.4rem;
   flex-grow: 1;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .nav-menu {
@@ -63,6 +63,7 @@
   padding: 0.5rem 1rem;
   height: 100%;
   border-bottom: 3px solid transparent;
+  font-size: 0.98rem;
 }
 
 .fa-code {
@@ -109,7 +110,7 @@
     transition: all 0.5s ease;
   }
   .nav-menu.active {
-    background: transparent;
+    background: #eadbcd;
     filter: opacity(120%);
     left: 0px;
     opacity: 1;
@@ -117,13 +118,14 @@
     z-index: 1;
   }
   .nav-item .active {
-    color: #d7f6f9;
+    color: #2e3047;
     border: none;
   }
   .nav-links {
     padding: 1.5rem;
     width: 100%;
     display: table;
+    color: #2e3047;
   }
   .navbar__icon-wrapper {
     padding: 2px;
@@ -133,7 +135,7 @@
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    color: #d7f6f9;
+    color: #2e3047;
   }
   .navbar__icon-wrapper .icon {
     cursor: pointer;
@@ -165,10 +167,11 @@
 }
 
 .hero {
-  background-image: url(../assets/images/1216881.png);
   height: 65em;
   background-position: 70.4% 27.5%;
+  background-color: #eadbcd;
   color: #2e3047;
+  scale: scale;
 }
 .hero .hero__content h1 {
   padding-top: 280px;
@@ -177,6 +180,9 @@
   font-weight: 300;
   letter-spacing: 0.7px;
   font-size: 3.6rem;
+}
+.hero .hero__content .hero__img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .hero .hero__subtitle {
   font-size: 3rem;
@@ -204,6 +210,36 @@
 .content-section--grey {
   margin: auto;
   background-color: #f8f8f8;
+}
+
+.layout {
+  background-color: #eadbcd;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layout .layout__content {
+  position: relative;
+}
+.layout .layout__content .layout__img {
+  width: 90vw;
+  max-width: 30em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 26px;
+}
+.layout .layout__content .layout__img .layout__img--formatting {
+  display: block;
+}
+.layout .layout__content .layout__text {
+  font-family: "Neaue-Singular-light", sans-serif;
+  font-size: 0.9em;
+  color: #2e3047;
+  padding-top: 0.2em;
+  text-decoration: none;
+  text-align: center;
 }
 
 * {

@@ -1,36 +1,18 @@
 import './App.css';
-import Home from  "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Skills from './pages/Skills';
 import {
-  BrowserRouter ,
-  Routes,
-  Route
-} from "react-router-dom";
+    BrowserRouter as Router
+} from 'react-router-dom';
+import AnimatedRoutes from './components/AnimatedRoutes/AnimatedRoutes';
+
+import NavBar from './components/Navbar/Navbar';
+
 function App() {
-  return (
-    <BrowserRouter>
-        <Routes >
-            <Route path='/' element={
-                <Home/>
-            }/>
-            <Route path='/about' element={
-                <About/>
-            }/>
-            <Route path='/contact' element={
-                <Contact/>
-            }/>
-            <Route path='/projects' element={
-                <Projects/>
-            }/>
-            <Route path='/skills' element={
-                <Skills/>
-            }/>
-        </Routes>
-    </BrowserRouter>
-  );
+    return (
+        <Router>   
+            <NavBar/>
+            <AnimatedRoutes/>
+        </Router>
+    );
 }
 
 export default App;
