@@ -5,7 +5,15 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 const Layout = () => {
     return (
         <div className="layout">
-            <div className="layout__content">
+            <motion.div className="layout__content"
+                initial={{
+                    filter:'opacity(0%)'
+                }}
+                animate={{
+                    filter:'opacity(100%)',
+                    transition :{delay : 0.25, ...transition}
+                }}
+            >
                 <Link to={`/home`}>
                     <div className="layout__img">
                         <motion.img 
@@ -14,6 +22,7 @@ const Layout = () => {
                             alt="nature-background"
                             whileHover={{ scale: 1.1 }}
                             transition={transition}
+                            
                         />
                     </div>
                 </Link>
@@ -24,7 +33,7 @@ const Layout = () => {
                 >
                     @@@@@@@
                 </motion.div>
-            </div>
+            </motion.div>
         </div>
     )
 }

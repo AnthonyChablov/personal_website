@@ -1,10 +1,10 @@
 
-import Layout from "../components/Layout/Layout"
+import IntroLayout from "../components/IntroLayout/IntroLayout"
 const Intro = () => {
     return (
         <>
             
-            <Layout/>
+            <IntroLayout/>
             
         </>
     )

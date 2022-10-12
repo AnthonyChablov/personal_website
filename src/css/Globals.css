@@ -20,24 +20,27 @@
 }
 .navbar {
   margin-top: 0.3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-family: "Neaue-Singular-regular", sans-serif;
   font-size: 1.2rem;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .navbar__container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 95%;
+  justify-content: space-between;
+  width: 90%;
   height: 80px;
-  max-width: 1500px;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .nav__logo {
@@ -48,6 +51,7 @@
   text-decoration: none;
   flex-grow: 1;
   font-size: 1.2rem;
+  width: 20%;
 }
 
 .nav-menu {
@@ -55,6 +59,8 @@
   list-style: none;
   text-align: center;
   margin-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-links {
@@ -64,6 +70,7 @@
   height: 100%;
   border-bottom: 3px solid transparent;
   font-size: 0.98rem;
+  align-self: center;
 }
 
 .fa-code {
@@ -91,7 +98,7 @@
 
 .nav-item .active {
   color: #2e3047;
-  border: 1px solid #2e3047;
+  border: 0.8px solid #2e3047;
 }
 
 .navbar__icon-wrapper {
@@ -126,6 +133,7 @@
     width: 100%;
     display: table;
     color: #2e3047;
+    margin: 0;
   }
   .navbar__icon-wrapper {
     padding: 2px;
@@ -143,7 +151,7 @@
 }
 .navbar__link--primary {
   font-family: "Neaue-Singular-light", sans-serif;
-  color: #d7f6f9;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.6rem;
   word-spacing: 0.22em;
@@ -155,7 +163,7 @@
 }
 
 .navbar__link--secondary {
-  color: #d7f6f9;
+  color: #ffffff;
   font-family: "Neaue-Singular-light", sans-serif;
   text-transform: capitalize;
   font-size: 1rem;
@@ -167,24 +175,24 @@
 }
 
 .hero {
-  height: 65em;
-  background-position: 70.4% 27.5%;
   background-color: #eadbcd;
-  color: #2e3047;
-  scale: scale;
 }
-.hero .hero__content h1 {
-  padding-top: 280px;
+.hero .hero__wrapper {
+  background: url(../assets/images/mountain-nature-bg.png);
+  height: 100vh;
+  color: #2e3047;
+  width: 100%;
+  z-index: 1;
+  background-position: 0px 0px;
+}
+.hero .hero__wrapper .hero__content h1 {
+  padding-top: 165px;
   margin: 0;
   font-family: "Felice-Bold-Italics", sans-serif;
   font-weight: 300;
-  letter-spacing: 0.7px;
   font-size: 3.6rem;
 }
-.hero .hero__content .hero__img {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.hero .hero__subtitle {
+.hero .hero__wrapper .hero__subtitle {
   font-size: 3rem;
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -192,6 +200,121 @@
   letter-spacing: 1px;
 }
 
+/* 
+.container-hero {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  width: auto;
+  height: 100%;
+  &.fluid {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1216px) {
+    max-width: 1152px;
+  }
+  @media (min-width: 1408px) {
+    max-width: 1560px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.center {
+      justify-content: center;
+    }
+  }
+}
+
+.single {
+    .container {
+      .top-row {
+        height: 50vh;
+        width: 100%;
+        align-items: flex-end;
+        .top {
+          padding-bottom: 40px;
+          .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .location {
+              span:nth-child(2) {
+                margin-left: 16px;
+              }
+            }
+            .mua {
+              text-transform: uppercase;
+            }
+          }
+          .model {
+            overflow: hidden;
+            .first {
+              margin-right: 72px;
+            }
+            span {
+              display: inline-block;
+              position: relative;
+              font-weight: 400;
+              font-size: 224px;
+              font-family: "Maragsa";
+              @media (max-width: 1440px) {
+                font-size: 128px;
+              }
+            }
+          }
+        }
+      }
+      .bottom-row {
+        height: 50vh;
+        position: relative;
+        .bottom {
+          height: 100%;
+          width: 100%;
+          .thumbnail-single {
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            .frame-single {
+              img {
+                position: absolute;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .scroll-for-more {
+          position: absolute;
+          bottom: 200px;
+          left: 200px;
+          z-index: 20;
+          .icon {
+            svg {
+              height: auto;
+              width: 28px;
+            }
+          }
+          .text {
+            margin-top: 8px;
+            color: $white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  } */
 .paragraph-text {
   font-size: 1.3rem;
 }
@@ -242,6 +365,116 @@
   text-align: center;
 }
 
+.header .header__wrapper {
+  height: 29vh;
+  background: url(../assets/images/mountain-nature-bg.png);
+  z-index: 1;
+  color: #2e3047;
+}
+.header .header__wrapper .header__content .header__title {
+  padding-top: 130px;
+  padding-bottom: 2px;
+  margin: 0;
+  font-family: "Felice-Bold-Italics", sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  border-bottom: 1.2px solid #2e3047;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 471px) {
+  .header__wrapper .header__content .header__title {
+    padding-top: 130px;
+    padding-bottom: 2px;
+    margin: 0;
+    font-size: 3.6rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.info {
+  padding-top: 1.2em;
+  width: 100%;
+}
+.form {
+  background-color: #f8f8f8;
+  height: 66vh;
+  display: flex;
+}
+.form .form__wrapper {
+  margin-top: 4em;
+  display: flex;
+}
+.form .form__wrapper .form__params {
+  width: 100%;
+  background-color: #ffffff;
+}
+.form .form__wrapper .form__params .form__content {
+  padding: 40px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.25rem;
+}
+
+/* form */
+.contact-form {
+  padding-top: 0.1px;
+}
+.contact-form .contact-form__field {
+  position: relative;
+  margin: 30px 0;
+}
+.contact-form .contact-form__field--align {
+  text-align: center;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  bottom: 11px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  margin-top: 0.7em;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 * {
   box-sizing: border-box;
 }

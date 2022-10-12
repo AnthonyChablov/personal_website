@@ -1,4 +1,4 @@
-@import "./variables" ;
+@import "./variables";
 @import "../components/Navbar/Navbar";
 @import "../components/Button/Button";
 @import "../components/CustomLink/customlink";
@@ -7,14 +7,20 @@
 @import "../components/ParagraphText/paragraphtext";
 @import "../components/Footer/footer";
 @import "../components/ContentSection/contentsection";
-@import "../components/Layout/layout";
-
+@import "../components/IntroLayout/introlayout";
+@import  "../components/Header/header";
+@import  "../components/Card/card";
+@import  "../components/InfoSidebar/infosidebar";
+@import  "../components/Form/form";
+html{ overflow-y:scroll; }
 *{
     box-sizing: border-box;
+    height: 101%;
 }
 body{
     padding: 0;
     margin: 0 auto;
+    overscroll-behavior-y: none;
 }
 img{
     width: 100%;
