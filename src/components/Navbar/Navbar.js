@@ -8,15 +8,16 @@ function NavBar() {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar__container">
-          <NavLink 
-            exact to="/" 
-            className="nav__logo"
-            
-          >
-            Anthony Chablov
-          </NavLink>
+      <nav className="navbar ">
+        <div className="navbar__container ">
+            <span>
+              <NavLink 
+                exact to="/" 
+                className="nav__logo"
+              >Anthony Chablov
+              </NavLink>
+            </span>
+          
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink

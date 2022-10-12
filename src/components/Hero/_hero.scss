@@ -1,33 +1,145 @@
+
 .hero{
-    //background-image: url(../assets/images/mountain-nature-bg.png);
-    height: 65em; //1040px;
-    background-position: 70.4% 27.5%; 
     background-color: $tan;
-    color: $dark-grey;
-    scale: scale;
 
-    .hero__content h1{
-        padding-top: 280px;
-        margin: 0;
-        font-family: $font-felice-bold-italics;
-        font-weight: 300;
-        letter-spacing: 0.7px;
-        font-size: 3.6rem;
+    .hero__wrapper{
+        background: url(../assets/images/mountain-nature-bg.png);
+        height: 100vh; //1040px;
+        color: $dark-grey;
+        width: 100%;
+        z-index: 1;
+        background-position: 0px -0px;
         
-    }
-
-    .hero__content{
-        .hero__img{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .hero__content h1{
+            padding-top: 165px;
+            margin: 0;
+            font-family: $font-felice-bold-italics;
+            font-weight: 300;
+            font-size: 3.6rem;
         }
+        
+        .hero__subtitle{
+            font-size: 3rem;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            font-weight: bold;
+            letter-spacing: 1px;
+        } 
     }
-
-    .hero__subtitle{
-        font-size: 3rem;
-        font-family: 'Trebuchet MS', sans-serif;
-        font-weight: 600;
-        font-weight: bold;
-        letter-spacing: 1px;
-    } 
 }
 
+/* 
+.container-hero {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  width: auto;
+  height: 100%;
+  &.fluid {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1216px) {
+    max-width: 1152px;
+  }
+  @media (min-width: 1408px) {
+    max-width: 1560px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.center {
+      justify-content: center;
+    }
+  }
+}
+
+.single {
+    .container {
+      .top-row {
+        height: 50vh;
+        width: 100%;
+        align-items: flex-end;
+        .top {
+          padding-bottom: 40px;
+          .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .location {
+              span:nth-child(2) {
+                margin-left: 16px;
+              }
+            }
+            .mua {
+              text-transform: uppercase;
+            }
+          }
+          .model {
+            overflow: hidden;
+            .first {
+              margin-right: 72px;
+            }
+            span {
+              display: inline-block;
+              position: relative;
+              font-weight: 400;
+              font-size: 224px;
+              font-family: "Maragsa";
+              @media (max-width: 1440px) {
+                font-size: 128px;
+              }
+            }
+          }
+        }
+      }
+      .bottom-row {
+        height: 50vh;
+        position: relative;
+        .bottom {
+          height: 100%;
+          width: 100%;
+          .thumbnail-single {
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            .frame-single {
+              img {
+                position: absolute;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .scroll-for-more {
+          position: absolute;
+          bottom: 200px;
+          left: 200px;
+          z-index: 20;
+          .icon {
+            svg {
+              height: auto;
+              width: 28px;
+            }
+          }
+          .text {
+            margin-top: 8px;
+            color: $white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  } */

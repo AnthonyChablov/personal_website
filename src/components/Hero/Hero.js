@@ -3,10 +3,6 @@ import { useState, useEffect } from "react";
 import img from "../../assets/images/mountain-nature-bg.png";
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-const imageDetails = {
-        width : 600, 
-        height : 300,
-}
 
 const Hero = () => {
     const { scrollYProgress } = useScroll();
@@ -21,81 +17,48 @@ const Hero = () => {
       }, [canScroll]);
     
     return (
-        <motion.div 
-            className="hero"
-        >
-            <motion.div 
-                className="hero__content"
+        <div className="hero">
+            <motion.div className="hero__wrapper"
                 initial={{
-                    width: '90vw', 
-                    maxWidth: "30em",
-                    y:'104.5%',
-                    x:'60.9%',
-                    borderRadius:'26px',
-                    boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
-                    position:'static',
-                    overflow:'hidden',
-                    zIndex:0,
-                    
+                    filter:'opacity(0%)'
                 }}
                 animate={{
-                    position:"absolute",
-                    borderRadius:0,
-                    transition:{delay: .2, ...transition},
-                    //height:window.innerWidth > 1440 ? 800: 400, /* always much better to use a resize hook to determine when a browser has resized */
-                    width: '100vw', 
-                    y:0,
-                    x:0,
-                    
+                    filter:'opacity(100%)',
+                    transition :{delay : 0.25, ...transition}
+                }}
+                whileHover={{ 
+                    scale: 1,
+                    transition: { duration: 1 },
                 }}
             >
-                <motion.div 
-                    className="hero__img"
-                    initial={{
-                        
-                        
-                    }}
-                >
-                    <motion.img 
-                        src={img} 
-                        alt="nature-background" 
+                <motion.div className="hero__content container">
+                    <motion.h1 className="hero__header"
                         initial={{
-                            display:'block',
-                            scale:1.1
+                            filter:'opacity(0%)'
                         }}
                         animate={{
-                            transition:{delay: .2, ...transition}
+                            filter:'opacity(100%)',
+                            transition :{delay : 0.5, ...transition}
                         }}
-                    />
+                    >
+                        Hey, I'm Anthony<br/>
+                    </motion.h1>
+                    <motion.span className="hero__subtitle"
+                        initial={{
+                            filter:'opacity(0%)'
+                        }}
+                        animate={{
+                            filter:'opacity(100%)',
+                            transition :{delay : 1.2, ...transition}
+                        }}
+                    >
+                        I'm a web-<br/> developer based<br/> 
+                        in Toronto.
+                    </motion.span>
                 </motion.div>
             </motion.div>
-            
-        </motion.div>
+        </div>
     )
 }
 
 export default Hero
-
-
-
-
-{/* <motion.div className="hero" 
-            onAnimationComplete={() => setCanScroll(true)}
-            initial='initial'
-            animate='animate'
-            exit='exit'
-        >
-            <div className="hero__content container">
-                <h1 className="hero__header">
-                        Hey, I'm Anthony<br/>
-                </h1>
-                <span className="hero__subtitle">
-                    I'm a web-<br/> developer based<br/> 
-                    in Toronto.
-                </span>
-            </div>
-
-            <div className="hero__button">
-                
-            </div>
-        </motion.div> */}
