@@ -8,4 +8,4 @@ const InfoContent = ({header, subContent}) => {
     )
 }
 
-export default InfoContent
+export default InfoContent;

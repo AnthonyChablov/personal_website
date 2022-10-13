@@ -1,7 +1,7 @@
 .header{
 
     .header__wrapper{
-        height: 29vh;
+        height: 15.98em;
         background: url(../assets/images/mountain-nature-bg.png);
         z-index: 1;
         color: $dark-grey;
@@ -9,12 +9,12 @@
         .header__content{
 
             .header__title{    
-                padding-top: 130px;
-                padding-bottom: 2px;
+                padding-top: 125px;
+                padding-bottom: 0.5em;
                 margin: 0;
-                font-family: $font-felice-bold-italics;
+                font-family: $Fraunces;
                 font-weight: 300;
-                font-size: 2.3rem;
+                font-size: 1.875rem;
                 border-bottom: 1.2px solid $dark-grey;
             }
         }
@@ -24,23 +24,33 @@
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 471px) {
-    .header__wrapper{
-        .header__content{
-            .header__title{
-                
-                padding-top: 130px;
-                padding-bottom: 2px;
-                margin: 0;
-                font-size: 3.6rem;
-                
+@media only screen and (min-width: 475px) {
+    .header{
+        .header__wrapper{
+            .header__content{
+                .header__title{
+                    
+                    font-size: 2.1rem;
+                    border-bottom: 1.2px solid $dark-grey;
+                }
             }
         }
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+/* Medium devices (landscape tablets, 766px and up) */
+@media only screen and (min-width: 766px) {
+    .header{
+        .header__wrapper{
+            .header__content{
+                .header__title{
+                    padding-bottom: 0.2em;
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}

@@ -31,24 +31,17 @@
   width: 100%;
   z-index: 1;
   margin: 0 auto;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .navbar__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  height: 80px;
-  max-width: 1800px;
-  margin: 0 auto;
+  height: 88px;
 }
 
 .nav__logo {
   color: #2e3047;
-  align-items: center;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   flex-grow: 1;
@@ -60,9 +53,9 @@
   display: flex;
   list-style: none;
   text-align: center;
-  margin-right: 2rem;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0;
 }
 
 .nav-links {
@@ -107,7 +100,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 766px) {
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -372,31 +365,35 @@
 }
 
 .header .header__wrapper {
-  height: 29vh;
+  height: 15.98em;
   background: url(../assets/images/mountain-nature-bg.png);
   z-index: 1;
   color: #2e3047;
 }
 .header .header__wrapper .header__content .header__title {
-  padding-top: 130px;
-  padding-bottom: 2px;
+  padding-top: 125px;
+  padding-bottom: 0.5em;
   margin: 0;
-  font-family: "Felice-Bold-Italics", sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-weight: 300;
-  font-size: 2.3rem;
+  font-size: 1.875rem;
   border-bottom: 1.2px solid #2e3047;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 471px) {
-  .header__wrapper .header__content .header__title {
-    padding-top: 130px;
-    padding-bottom: 2px;
-    margin: 0;
-    font-size: 3.6rem;
+@media only screen and (min-width: 475px) {
+  .header .header__wrapper .header__content .header__title {
+    font-size: 2.1rem;
+    border-bottom: 1.2px solid #2e3047;
   }
 }
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 766px and up) */
+@media only screen and (min-width: 766px) {
+  .header .header__wrapper .header__content .header__title {
+    padding-bottom: 0.2em;
+    font-size: 3.5rem;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .info {
@@ -431,21 +428,29 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .form {
   background-color: #f8f8f8;
-  height: 100%;
+  padding-bottom: 5em;
   display: flex;
+  z-index: 1;
 }
 .form .form__wrapper {
   margin-top: 4em;
+  height: 100%;
 }
 .form .form__wrapper .form__params {
   width: 100%;
   background-color: #ffffff;
 }
 .form .form__wrapper .form__params .form__content {
-  padding: 40px;
+  padding: 38px;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 1.25rem;
   margin: 0;
+}
+.form .form__wrapper .form__params .form__content .form__text {
+  font-size: 1.15rem;
+  font-weight: 100;
+  color: #2e3047;
+  letter-spacing: 0.25px;
 }
 
 /* form */
@@ -457,9 +462,8 @@
   display: block;
   width: 100%;
   height: 36px;
-  border-width: 0 0 2px 0;
-  border-color: #000;
-  font-family: "Trebuchet MS", sans-serif;
+  border-width: 0 0 1.7px 0;
+  border-color: black;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -473,9 +477,9 @@
 .contact-form .label {
   position: absolute;
   bottom: 11px;
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  line-height: 18px;
   font-weight: 400;
   color: #888;
   cursor: text;
@@ -494,7 +498,6 @@
   padding: 8px 16px;
   border: none;
   cursor: pointer;
-  width: 35%;
 }
 .contact-form .submit-btn:hover {
   background-color: #8a8b8f;
@@ -504,20 +507,24 @@
 @media only screen and (min-width: 480px) {
   .contact-form__wrapper {
     display: flex;
+    justify-content: space-between;
   }
   .contact-form__wrapper .contact-form__name {
-    margin-right: 1.8em;
+    width: 46.5%;
+  }
+  .contact-form__wrapper .contact-form__email {
+    width: 46.5%;
   }
 }
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
-  .form__wrapper {
+  .form .form__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .form__wrapper .form__params {
-    width: 53%;
+  .form .form__wrapper .form__params {
+    width: 59%;
     max-width: 40em;
   }
 }
@@ -527,10 +534,12 @@
   padding-top: 1.8em;
 }
 .info__content .info__header {
+  font-family: "Fraunces", sans-serif;
   text-transform: uppercase;
   font-size: 0.85rem;
   color: #8a8b8f;
   letter-spacing: 1.2px;
+  font-weight: 200;
 }
 .info__content .info__subcontent {
   font-size: 1.1rem;
@@ -558,7 +567,7 @@ img {
 }
 
 .container {
-  width: 88%;
+  width: 98%;
   margin: 0 auto;
   max-width: 80.75em;
-}
+}/*# sourceMappingURL=Globals.css.map */

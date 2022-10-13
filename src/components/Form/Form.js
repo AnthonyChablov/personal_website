@@ -5,8 +5,8 @@ const Form = () => {
             <div className="form__wrapper container">
                 <div className="form__params">
                     <div className="form__content ">
-                        <p >
-                                      I'm currently avaliable to take on new projects, 
+                        <p className="form__text">
+                                      I'm currently available to take on new projects, 
                             so feel free to send me a message about anything that 
                             you want to run past me.
                         </p>
@@ -17,7 +17,7 @@ const Form = () => {
                                     <input id="name" className="input-text js-input" type="text" required/>
                                     <label className="label" htmlFor="name">Name*</label>
                                 </div>
-                                <div className="contact-form__field">
+                                <div className="contact-form__field contact-form__email">
                                     <input id="email" className="input-text js-input" type="email" required/>
                                     <label className="label" htmlFor="email">E-mail*</label>
                                 </div>
