@@ -12,25 +12,29 @@ const Form = () => {
                         </p>
 
                         <form className="contact-form">
-                            <div className="contact-form__field">
-                                <input id="name" className="input-text js-input" type="text" required/>
-                                <label className="label" htmlFor="name">Name*</label>
+                            <div className="contact-form__wrapper">
+                                <div className="contact-form__field contact-form__name">
+                                    <input id="name" className="input-text js-input" type="text" required/>
+                                    <label className="label" htmlFor="name">Name*</label>
+                                </div>
+                                <div className="contact-form__field">
+                                    <input id="email" className="input-text js-input" type="email" required/>
+                                    <label className="label" htmlFor="email">E-mail*</label>
+                                </div>
                             </div>
-                            <div className="contact-form__field">
-                                <input id="email" className="input-text js-input" type="email" required/>
-                                <label className="label" htmlFor="email">E-mail*</label>
-                            </div>
+                            
                             <div className="contact-form__field">
                                 <input id="message" className="input-text js-input" type="text" required/>
                                 <label className="label" htmlFor="message">Message*</label>
                             </div>
-                            <div className="contact-form__field contact-form__field--align">
+                            <div className="contact-form__field">
                                 <input className="submit-btn" type="submit" value="Send Message"/>
                             </div>
+                            
                         </form>
                         
                     </div>
-                   
+                    
                 </div>
                 <InfoSidebar/>
             </div>
