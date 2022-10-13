@@ -12,16 +12,20 @@
 @import  "../components/Card/card";
 @import  "../components/InfoSidebar/infosidebar";
 @import  "../components/Form/form";
-html{ overflow-y:scroll; }
-*{
+@import "../components/InfoContent/infocontent";
+html { height: 100% }  
+
+* {
     box-sizing: border-box;
-    height: 101%;
 }
+
 body{
     padding: 0;
     margin: 0 auto;
     overscroll-behavior-y: none;
+    min-height: 100% ;
 }
+
 img{
     width: 100%;
 }
