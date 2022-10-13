@@ -23,7 +23,7 @@ function NavBar() {
               <NavLink
                 exact
                 to="/home"
-                activeClassName="active"
+                
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -34,7 +34,7 @@ function NavBar() {
               <NavLink
                 exact
                 to="/about"
-                activeClassName="active"
+                
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -45,7 +45,7 @@ function NavBar() {
               <NavLink
                 exact
                 to="/skills"
-                activeClassName="active"
+                
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -56,7 +56,7 @@ function NavBar() {
               <NavLink
                 exact
                 to="/contact"
-                activeClassName="active"
+                
                 className="nav-links"
                 onClick={handleClick}
               >

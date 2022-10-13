@@ -3,7 +3,6 @@ const Form = () => {
     return (
         <div className="form ">
             <div className="form__wrapper container">
-                
                 <div className="form__params">
                     <div className="form__content ">
                         <p >
