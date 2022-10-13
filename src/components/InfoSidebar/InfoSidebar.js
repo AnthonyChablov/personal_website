@@ -1,5 +1,7 @@
 import InfoContent from "../InfoContent/InfoContent";
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import { motion } from "framer-motion";
+const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const Info = () => {
     return (
@@ -11,8 +13,20 @@ const Info = () => {
             <div className="info__socials">
                 <p>Find me Online</p>
                 <div className="info__links">
-                    <a className="info__icon" target={'_blank'} href="https://github.com/AnthonyChablov"><AiFillGithub size={33}/></a>
-                    <a className="info__icon" target={'_blank'} href="https://www.linkedin.com/in/anthony-chablov-7a7a2921a/"><AiFillLinkedin size={33}/></a>
+                    <motion.a className="info__icon" 
+                        whileHover={{ color:'blue' }}
+                        transition={{delay : 0.05, ...transition}}
+                        target={'_blank'} 
+                        href="https://github.com/AnthonyChablov">
+                            <AiFillGithub size={33}/>
+                    </motion.a>
+                    <motion.a className="info__icon" 
+                        whileHover={{ color:'blue' }}
+                        transition={{delay : 0.05, ...transition}}
+                        target={'_blank'} 
+                        href="https://www.linkedin.com/in/anthony-chablov-7a7a2921a/">
+                            <AiFillLinkedin size={33}/>
+                    </motion.a>
                     
                 </div>
                 

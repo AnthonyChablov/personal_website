@@ -1,4 +1,6 @@
 import InfoSidebar from "../InfoSidebar/InfoSidebar";
+import {motion} from 'framer-motion';
+const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Form = () => {
     return (
         <div className="form ">
@@ -27,9 +29,16 @@ const Form = () => {
                                 <input id="message" className="input-text js-input" type="text" required/>
                                 <label className="label" htmlFor="message">Message*</label>
                             </div>
-                            <div className="contact-form__field">
-                                <input className="submit-btn" type="submit" value="Send Message"/>
-                            </div>
+                            <motion.div className="contact-form__field"
+                                
+                            >
+                                <motion.input className="submit-btn" 
+                                    type="submit" 
+                                    value="Send Message"
+                                    whileHover={{ backgroundColor: '#8a8b8f' }}
+                                    transition={{delay : 0.02}}
+                                />
+                            </motion.div>
                             
                         </form>
                         
