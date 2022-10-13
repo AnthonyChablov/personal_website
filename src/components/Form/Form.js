@@ -36,7 +36,7 @@ const Form = () => {
                                     type="submit" 
                                     value="Send Message"
                                     whileHover={{ backgroundColor: '#8a8b8f' }}
-                                    transition={{delay : 0.02}}
+                                    transition={{delay : 0.013}}
                                 />
                             </motion.div>
                             

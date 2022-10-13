@@ -181,7 +181,7 @@
   background-position: 0px 0px;
 }
 .hero .hero__wrapper .hero__content h1 {
-  padding-top: 165px;
+  padding: 165px 0 1.2px 0;
   margin: 0;
   font-family: "Felice-Bold-Italics", sans-serif;
   font-weight: 300;
@@ -193,6 +193,7 @@
   font-weight: 600;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 1.13em;
 }
 
 /* 

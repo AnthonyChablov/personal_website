@@ -2,12 +2,20 @@
 const Footer = () => {
     return (
         <div className="footer">
-            <h6>
-                Anthony Chablov
-            </h6>
-            <p>
-                © AnthonyChablov. Built by Anthony Cablov. Powered by React.
-            </p>
+            <div className="footer__header">
+                <h6>
+                    Anthony Chablov
+                </h6>
+                <p>
+                    © Built by Anthony Chablov. Powered by React.
+                </p>
+            </div>
+            <div className="footer__navigation">
+                <div className="footer__links">
+                    
+                </div>
+            </div>
+            
         </div>
     )
 }
