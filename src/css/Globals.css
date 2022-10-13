@@ -317,8 +317,74 @@
 
 .footer {
   background-color: #f8f8f8;
+  height: 100%;
+}
+.footer .footer__header {
+  padding-bottom: 2.45em;
+}
+.footer .footer__header .footer__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  color: black;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+}
+.footer .footer__header .footer__subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: black;
+  opacity: 0.75;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+.footer .footer__links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.footer .footer__socials {
+  padding-top: 30px;
 }
 
+.footer__column {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+}
+
+.column__link p {
+  color: black;
+  font-size: 14px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 478px) {
+  .footer .footer__wrapper .footer__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+  .footer .footer__wrapper .footer__navigation .footer__links {
+    width: 70%;
+  }
+  .footer .footer__wrapper .footer__navigation .footer__socials {
+    padding-top: 0;
+    margin: 0 auto 0 0;
+  }
+}
+/* Medium devices (landscape tablets, 766px and up) */
+@media only screen and (min-width: 766px) {
+  .footer .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .footer__wrapper .footer__navigation {
+    margin: 0 auto;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .content-section {
   font-family: "Trebuchet MS", sans-serif;
 }
@@ -398,8 +464,9 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .info {
-  padding: 1.2em 0 6em 0;
+  padding: 1.2em 0 4.3em 0;
   width: 100%;
+  max-width: 400px;
 }
 .info .info__socials {
   padding-top: 1.8em;
@@ -429,7 +496,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .form {
   background-color: #f8f8f8;
-  padding-bottom: 5em;
+  padding-bottom: 0em;
   display: flex;
   z-index: 1;
 }
@@ -540,11 +607,20 @@
   font-weight: 200;
 }
 .info__content .info__subcontent {
-  font-size: 1.1rem;
+  font-size: 0.94rem;
   text-decoration: none;
   color: #2e3047;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 480px) {
+  .info__content .info__subcontent {
+    font-size: 1.1rem;
+  }
+}
+/* Medium devices (landscape tablets, 767px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 html {
   height: 100%;
 }

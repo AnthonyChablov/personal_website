@@ -7,8 +7,8 @@ const InfoContent = ({header, subContent}) => {
                     {header}
                 </h2>
                 <motion.a className="info__subcontent" 
-                    whileHover={{ color:'blue' }}
-                    transition={{delay : 0.05, ...transition}}
+                    whileHover={{ color: 'blue' }}
+                    transition={{ delay : 0.05, ...transition}}
                     href="#">
                         {subContent}
                 </motion.a>
