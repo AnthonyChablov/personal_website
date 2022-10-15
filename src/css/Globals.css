@@ -566,6 +566,10 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.content-section-skills .content-section-skills__wrapper {
+  padding: 100px 0 0 0;
+}
+
 html {
   height: 100%;
 }
