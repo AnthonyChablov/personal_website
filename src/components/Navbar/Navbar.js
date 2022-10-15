@@ -9,10 +9,10 @@ function NavBar() {
     <>
       <nav className="navbar ">
         <div className="navbar__wrapper container">
-          <div className="navbar__container">
+          <div className="navbar__container ">
             <span>
               <NavLink 
-                exact to="/" 
+                exact to="/home" 
                 className="nav__logo"
               >Anthony Chablov
               </NavLink>
@@ -23,12 +23,12 @@ function NavBar() {
                 <NavLink
                   
                   exact
-                  to="/home"
+                  to="/projects"
                   
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Home
+                  Projects
                 </NavLink>
               </li>
               <li className="nav-item">

@@ -183,138 +183,37 @@
 .hero .hero__wrapper .hero__content h1 {
   padding: 165px 0 1.2px 0;
   margin: 0;
-  font-family: "Felice-Bold-Italics", sans-serif;
+  font-family: "Fraunces", sans-serif;
+  font-style: italic;
   font-weight: 300;
   font-size: 3.6rem;
 }
 .hero .hero__wrapper .hero__subtitle {
   font-size: 3rem;
-  font-family: "Trebuchet MS", sans-serif;
-  font-weight: 600;
-  font-weight: bold;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 1.13em;
 }
 
-/* 
-.container-hero {
-  flex-grow: 1;
-  margin: 0 auto;
-  padding: 0 32px;
-  position: relative;
-  width: auto;
-  height: 100%;
-  &.fluid {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-  @media (min-width: 1024px) {
-    max-width: 960px;
-  }
-  @media (min-width: 1216px) {
-    max-width: 1152px;
-  }
-  @media (min-width: 1408px) {
-    max-width: 1560px;
-  }
-  .row {
-    display: flex;
-    align-items: center;
-    &.space-between {
-      justify-content: space-between;
-    }
-    &.center {
-      justify-content: center;
-    }
-  }
-}
-
-.single {
-    .container {
-      .top-row {
-        height: 50vh;
-        width: 100%;
-        align-items: flex-end;
-        .top {
-          padding-bottom: 40px;
-          .details {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .location {
-              span:nth-child(2) {
-                margin-left: 16px;
-              }
-            }
-            .mua {
-              text-transform: uppercase;
-            }
-          }
-          .model {
-            overflow: hidden;
-            .first {
-              margin-right: 72px;
-            }
-            span {
-              display: inline-block;
-              position: relative;
-              font-weight: 400;
-              font-size: 224px;
-              font-family: "Maragsa";
-              @media (max-width: 1440px) {
-                font-size: 128px;
-              }
-            }
-          }
-        }
-      }
-      .bottom-row {
-        height: 50vh;
-        position: relative;
-        .bottom {
-          height: 100%;
-          width: 100%;
-          .thumbnail-single {
-            width: 100%;
-            height: 800px;
-            margin: 0 auto;
-            overflow: hidden;
-            position: absolute;
-            left: 0;
-            right: 0;
-            .frame-single {
-              img {
-                position: absolute;
-                width: 100%;
-              }
-            }
-          }
-        }
-        .scroll-for-more {
-          position: absolute;
-          bottom: 200px;
-          left: 200px;
-          z-index: 20;
-          .icon {
-            svg {
-              height: auto;
-              width: 28px;
-            }
-          }
-          .text {
-            margin-top: 8px;
-            color: $white;
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
-  } */
 .paragraph-text {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 480px) {
+  .paragraph-text {
+    font-size: 1.125em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 767px) {
+  .paragraph-text {
+    font-size: 1.25rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .footer {
   background-color: #f8f8f8;
   height: 100%;
@@ -386,21 +285,30 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .content-section {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+.content-section .content-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-section--white {
   background-color: white;
-  padding: 5em 0 5em 0;
-  width: 80%;
-  margin: auto;
+  padding: 7em 0 7em 0;
 }
 
 .content-section--grey {
+  padding: 4em 0 4em 0;
   margin: auto;
   background-color: #f8f8f8;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .layout {
   background-color: #eadbcd;
   min-height: 100vh;
@@ -463,6 +371,13 @@
 }
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.card .card__img {
+  width: 100%;
+}
+.card .card__text {
+  padding: 1em 0;
+}
+
 .info {
   padding: 1.2em 0 4.3em 0;
   width: 100%;
@@ -517,14 +432,16 @@
 .form .form__wrapper .form__params .form__content .form__text {
   font-size: 1.15rem;
   font-weight: 100;
-  color: #2e3047;
+  color: black;
   letter-spacing: 0.25px;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 0.6em;
 }
 
 /* form */
 .contact-form .contact-form__field {
   position: relative;
-  margin: 30px 0;
+  margin: 30px 0 30px 0;
 }
 .contact-form .input-text {
   display: block;
@@ -552,9 +469,10 @@
   color: #888;
   cursor: text;
   transition: transform 0.2s ease-in-out;
+  padding-bottom: 0.4em;
 }
 .contact-form .submit-btn {
-  margin-top: 0.7em;
+  margin-top: 0.9em;
   display: inline-block;
   background-color: #000;
   color: #fff;
@@ -563,7 +481,7 @@
   letter-spacing: 2px;
   font-size: 16px;
   line-height: 24px;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 16px;
   border: none;
   cursor: pointer;
 }
@@ -619,6 +537,33 @@
   }
 }
 /* Medium devices (landscape tablets, 767px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.content-section-projects {
+  height: 100%;
+  background-color: #f8f8f8;
+  padding: 4.17em 0;
+}
+.content-section-projects .content-section-projects__wrapper .content-section-projects__project .card + .card {
+  margin-right: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .content-section-projects__project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .content-section-projects__project .card-left {
+    width: 46%;
+  }
+  .content-section-projects__project .card-right {
+    width: 46%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 html {

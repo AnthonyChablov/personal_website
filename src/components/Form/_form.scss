@@ -19,8 +19,10 @@
                 .form__text{
                     font-size: 1.15rem;
                     font-weight: 100;
-                    color: $dark-grey;
+                    color: black;
                     letter-spacing: 0.25px;
+                    font-family: $Inter;
+                    padding-bottom: 0.6em;
                 }
             }
         }
@@ -31,7 +33,7 @@
 .contact-form {
     .contact-form__field {
         position: relative;
-        margin: 30px 0;
+        margin: 30px 0 30px 0;
         
     }
     
@@ -66,10 +68,11 @@
         color: #888;
         cursor: text;
         transition: transform .2s ease-in-out;
+        padding-bottom: 0.4em;
     }
     
     .submit-btn {
-        margin-top: 0.7em;
+        margin-top: 0.9em;
         display: inline-block;
         background-color: #000;
         color: #fff;
@@ -78,7 +81,7 @@
         letter-spacing: 2px;
         font-size: 16px;
         line-height: 24px;
-        padding: 8px 16px;
+        padding: 8px 16px 8px 16px;
         border: none;
         cursor: pointer;
         

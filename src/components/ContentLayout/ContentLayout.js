@@ -1,11 +1,11 @@
-import ContentSection from "../ContentSection/ContentSection";
+import ContentSectionText from "../ContentSectionText/ContentSectionText";
+import ContentSectionProjects from "../ContentSectionProjects/ContentSectionProjects";
 const ContentLayout = () => {
   return (
     <div className="content-layout">
-        <ContentSection bgColorClass={'content-section--white'} insertClass={'content-section'}/>
-        <ContentSection bgColorClass={'content-section--grey'} insertClass={'content-section'}/>
-        <ContentSection bgColorClass={'content-section--grey'} insertClass={'content-section'}/>
-        <ContentSection bgColorClass={'content-section--grey'} insertClass={'content-section'}/>
+        <ContentSectionText bgColorClass={'content-section--white'} insertClass={'content-section'}/>
+        <ContentSectionProjects/>
+
     </div>
   )
 }

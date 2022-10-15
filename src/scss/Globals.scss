@@ -6,32 +6,30 @@
 @import "../components/ContentLayout/contentlayout";
 @import "../components/ParagraphText/paragraphtext";
 @import "../components/Footer/footer";
-@import "../components/ContentSection/contentsection";
+@import "../components/ContentSectionText/contentsectiontext";
 @import "../components/IntroLayout/introlayout";
 @import  "../components/Header/header";
 @import  "../components/Card/card";
 @import  "../components/InfoSidebar/infosidebar";
 @import  "../components/Form/form";
 @import "../components/InfoContent/infocontent";
-
-html { height: 100% }  
-
+@import "../components/contentsectionprojects/contentsectionprojects.scss";
+html { 
+    height: 100% 
+}  
 * {
     box-sizing: border-box;
 }
-
-body{
+body {
     padding: 0;
     margin: 0 auto;
     overscroll-behavior-y: none;
     min-height: 100% ;
 }
-
-img{
+img {
     width: 100%;
 }
-
-.container{
+.container {
     width: 98%;
     margin: 0 auto;
     max-width: 80.75em;
