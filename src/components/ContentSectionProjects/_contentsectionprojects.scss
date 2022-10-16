@@ -1,14 +1,21 @@
 .content-section-projects{
     height: 100%;
     background-color: $light-grey;
-    padding: 4.17em 0 ;
+    padding: 6.17em 0 4.17em 0;
+
+    .content-section-projects__title{
+        font-family: $Fraunces;
+        text-align: left;
+        padding-bottom: 30px;
+        font-size: 2.4em;
+        font-weight: 500;
+    }
     .content-section-projects__wrapper{
         .content-section-projects__project{
             .card+.card{
                 margin-right: 10px;
             }
         }
-        
     }
 }
 
@@ -19,7 +26,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
-        
         .card-left{
             width: 46%;
         }

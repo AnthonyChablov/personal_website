@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer';
 const Skills = () => {
     return (
         <>
-            <Header title="Skills"/>
+            <Header title="My Resume"/>
             <Footer/>
         </>
     )

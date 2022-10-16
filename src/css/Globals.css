@@ -542,7 +542,14 @@
 .content-section-projects {
   height: 100%;
   background-color: #f8f8f8;
-  padding: 4.17em 0;
+  padding: 6.17em 0 4.17em 0;
+}
+.content-section-projects .content-section-projects__title {
+  font-family: "Fraunces", sans-serif;
+  text-align: left;
+  padding-bottom: 30px;
+  font-size: 2.4em;
+  font-weight: 500;
 }
 .content-section-projects .content-section-projects__wrapper .content-section-projects__project .card + .card {
   margin-right: 10px;
@@ -567,9 +574,45 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .content-section-skills .content-section-skills__wrapper {
-  padding: 100px 0 0 0;
+  padding: 8em 0 8em 0;
+}
+.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__title {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.4em;
+  font-weight: 500;
+}
+.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
+  width: 100%;
+  background-color: none;
+  border-radius: 8px;
+  padding: 1.7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Courier New", Courier, monospace;
+}
+.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .card__skill {
+  text-align: center;
 }
 
+/* Small devices (portrait tablets and large phones, 480px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 767px) {
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__title {
+    font-size: 2.4em;
+    width: 30%;
+  }
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
+    width: 100%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 html {
   height: 100%;
 }

@@ -2,7 +2,7 @@ import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Contact from "../../pages/Contact";
 import Projects from "../../pages/Projects";
-import Skills from '../../pages/Skills';
+import Resume from '../../pages/Resume';
 import Intro from '../../pages/Intro';
 import {
     Routes,
@@ -47,9 +47,9 @@ const AnimatedRoutes = () => {
                     }
                 />
                 <Route 
-                    path='/skills' 
+                    path='/resume' 
                     element={
-                        <Skills/>
+                        <Resume/>
                     }
                 />
             </Routes>

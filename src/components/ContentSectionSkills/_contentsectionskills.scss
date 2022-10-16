@@ -1,6 +1,69 @@
 .content-section-skills{
     
     .content-section-skills__wrapper{
-        padding: 100px 0 0 0;
+        padding: 8em 0 8em 0;
+
+        .content-section-skill__content{
+            
+            .content-section-skills__title{
+                font-family: $Fraunces;
+                font-size: 2.4em;
+                font-weight: 500;
+            }
+            .content-section-skills__card{
+                width: 100%;
+                background-color: none;
+                border-radius: 8px;
+                padding: 1.7em;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-family: 'Courier New', Courier, monospace;
+                .card__skill{
+                    text-align: center;
+                }
+                
+            }
+        }
     }
+}
+
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 767px) {
+    .content-section-skills{
+    
+        .content-section-skills__wrapper{
+            
+    
+            .content-section-skill__content{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                
+                .content-section-skills__title{
+                    font-size: 2.4em;
+                    width: 30%;
+                }
+                .content-section-skills__card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }
