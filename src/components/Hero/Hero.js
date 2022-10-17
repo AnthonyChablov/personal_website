@@ -41,7 +41,7 @@ const Hero = () => {
                             transition :{delay : 0.5, ...transition}
                         }}
                     >
-                        Hey, I'm Anthony<br/>
+                        Hey, I'm Anthony.<br/>
                     </motion.h1>
                     <motion.span className="hero__subtitle"
                         initial={{
