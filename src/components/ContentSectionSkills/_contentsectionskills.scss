@@ -1,28 +1,36 @@
 .content-section-skills{
-    
+
     .content-section-skills__wrapper{
-        padding: 8em 0 8em 0;
+        padding: 5em 0 5em 0;
 
         .content-section-skill__content{
-            
-            .content-section-skills__title{
-                font-family: $Fraunces;
-                font-size: 2.4em;
-                font-weight: 500;
+            .content-section-skill__text{
+                padding: 0 0 2em 0;
+                .content-section-skills__title{
+                    padding-bottom: 0.31em;
+                    font-family: $Fraunces;
+                    font-size: 2.4em;
+                    font-weight: 500;
+                }
+                .content-section-skills__paragraph{
+                    padding-top: 1em;
+                }
             }
             .content-section-skills__card{
                 width: 100%;
                 background-color: none;
                 border-radius: 8px;
-                padding: 1.7em;
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-end;
-                font-family: 'Courier New', Courier, monospace;
+                flex-direction: column;
+                align-items: center;
+                font-family: $Inter;
+
                 .card__skill{
+                    padding-top: 2.04em;
                     text-align: center;
+                    
                 }
-                
             }
         }
     }
@@ -35,7 +43,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 650px) {
     .content-section-skills{
     
         .content-section-skills__wrapper{
@@ -45,14 +53,20 @@
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
-                
-                .content-section-skills__title{
-                    font-size: 2.4em;
-                    width: 30%;
+                .content-section-skill__text{
+                    
+                    width: 38%;
+                    .content-section-skills__title{
+                        font-size: 2.4em;
+                        
+                    }
+                    
                 }
                 .content-section-skills__card{
-                    width: 100%;
+                    width: 53.5%;
+                    padding: 3.8em 0 1.7em 0;
                 }
+                
             }
         }
     }

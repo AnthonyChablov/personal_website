@@ -35,3 +35,9 @@ img {
     margin: 0 auto;
     max-width: 80.75em;
 }
+.row{
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+}
