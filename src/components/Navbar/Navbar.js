@@ -9,7 +9,7 @@ function NavBar() {
     <>
       <nav className="navbar ">
         <div className="navbar__wrapper container">
-          <div className="navbar__container ">
+          <div className="navbar__content ">
             <span>
               <NavLink 
                 exact to="/home" 

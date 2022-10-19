@@ -1,7 +1,18 @@
 import React from 'react'
-
-export const Button = () => {
+import { Link } from 'react-router-dom'
+import {motion} from 'framer-motion'; 
+export const Button = ({linkTo, text, bgColor}) => {
   return (
-    <div>Button</div>
+    <Link
+      exact
+      to={linkTo}
+    >
+      <motion.div className='button'
+        style={{bgColor}}
+      >
+        <p className='button__content'>{text}</p>
+      </motion.div>
+    </Link>
+    
   )
 }

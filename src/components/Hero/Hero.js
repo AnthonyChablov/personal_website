@@ -1,7 +1,7 @@
 import { motion, useScroll , useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import img from "../../assets/images/mountain-nature-bg.png";
-
+import { Button } from "../Button/Button";
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Hero = () => {
@@ -38,7 +38,7 @@ const Hero = () => {
                         }}
                         animate={{
                             filter:'opacity(100%)',
-                            transition :{delay : 0.5, ...transition}
+                            transition :{delay : 0.2, ...transition}
                         }}
                     >
                         Hey, I'm Anthony.<br/>
@@ -49,13 +49,28 @@ const Hero = () => {
                         }}
                         animate={{
                             filter:'opacity(100%)',
-                            transition :{delay : 1.2, ...transition}
+                            transition :{delay : 0.8, ...transition}
                         }}
                     >
                         I'm a web-<br/> developer based<br/> 
                         in Toronto.
                     </motion.span>
+                    
+                    <motion.div className="hero__button"
+                        initial={{
+                            filter:'opacity(0%)'
+                        }}
+                        animate={{
+                            filter:'opacity(100%)',
+                            transition :{delay : 0.8, ...transition}
+                        }}
+                    >
+                        <Button text={'My Resume'} linkTo={"/resume"} style={{backgroundColor:'green'}}/>
+                        
+                    </motion.div>
+
                 </motion.div>
+                
             </motion.div>
         </div>
     )

@@ -20,12 +20,14 @@ html {
 }  
 * {
     box-sizing: border-box;
+    
 }
 body {
     padding: 0;
     margin: 0 auto;
     overscroll-behavior-y: none;
     min-height: 100% ;
+    background-color: $pink;
 }
 img {
     width: 100%;

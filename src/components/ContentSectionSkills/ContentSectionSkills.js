@@ -4,8 +4,6 @@ import {DiCss3, DiSass, DiReact, DiNodejs, DiNpm, DiPython} from 'react-icons/di
 import {HiDatabase} from "react-icons/hi";
 import {IoLogoJavascript} from 'react-icons/io';
 import {SiTypescript, SiJavascript, SiTailwindcss, SiFirebase} from 'react-icons/si';
-
-
 const ContentSectionSkills = () => {
   return (
     <div className='content-section-skills'>

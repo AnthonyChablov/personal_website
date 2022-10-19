@@ -21,23 +21,24 @@
 /* fonts */
 /* colors */
 .navbar {
-  margin-top: 0.3em;
+  margin-top: 0.745pt;
   text-align: center;
   font-family: "Neaue-Singular-regular", sans-serif;
   font-size: 1.2rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
+  height: 0;
   z-index: 1;
-  margin: 0 auto;
   display: flex;
 }
 
-.navbar__container {
+.navbar__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 88px;
+  flex-wrap: wrap;
+  margin-top: 1.1em;
 }
 
 .nav__logo {
@@ -50,9 +51,9 @@
 }
 
 .nav-menu {
-  display: flex;
   list-style: none;
   text-align: center;
+  display: flex;
   justify-content: space-around;
   align-content: center;
   margin: 0;
@@ -89,11 +90,6 @@
 .nav-item:hover:after {
   width: 100%;
   background: #2e3047;
-}
-
-.nav-item .active {
-  color: #2e3047;
-  border: 0.8px solid #2e3047;
 }
 
 .navbar__icon-wrapper {
@@ -144,6 +140,46 @@
     cursor: pointer;
   }
 }
+.button {
+  margin: 1.37em 1em 0 0;
+  background-color: #2e3047;
+  display: inline-block;
+  width: 10em;
+  border-radius: 7px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.button .button__content {
+  color: #f8f8f8;
+  text-transform: capitalize;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.button:hover {
+  background-color: #4e4673;
+  color: #2e3047;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 570px) {
+  .button .button__content {
+    font-size: 1.2rem;
+  }
+}
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (min-width: 767px) {
+  .button .button__content {
+    font-size: 1.38rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .navbar__link--primary {
   font-family: "Neaue-Singular-light", sans-serif;
   color: #ffffff;
@@ -181,7 +217,7 @@
   background-position: 0px 0px;
 }
 .hero .hero__wrapper .hero__content h1 {
-  padding: 110px 0 1.2px 0;
+  padding: 84px 0 1.2px 0;
   margin: 0;
   font-family: "Fraunces", sans-serif;
   font-style: italic;
@@ -195,11 +231,15 @@
   letter-spacing: 1px;
   line-height: 1.2em;
 }
+.hero .hero__wrapper .hero__button {
+  display: block;
+  text-align: left;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 570px) {
   .hero .hero__wrapper .hero__content h1 {
-    padding: 140px 0 1.2px 0;
+    padding: 110px 0 1.2px 0;
     font-size: 4rem;
   }
   .hero .hero__wrapper .hero__subtitle {
@@ -209,6 +249,7 @@
 /* Medium devices (landscape tablets, 767px and up) */
 @media only screen and (min-width: 767px) {
   .hero .hero__wrapper .hero__content h1 {
+    padding: 118px 0 1.2px 0;
     font-size: 5rem;
   }
   .hero .hero__wrapper .hero__subtitle {
@@ -432,7 +473,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .form {
   background-color: #f8f8f8;
-  padding-bottom: 0em;
+  padding: 2.5em 0 6em 0;
   display: flex;
   z-index: 1;
 }
@@ -568,7 +609,7 @@
 .content-section-projects .content-section-projects__title {
   font-family: "Fraunces", sans-serif;
   text-align: left;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   font-size: 2.4em;
   font-weight: 500;
 }
@@ -594,6 +635,9 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.content-section-skills {
+  background-color: #8c8fb9;
+}
 .content-section-skills .content-section-skills__wrapper {
   padding: 5em 0 5em 0;
 }
@@ -658,6 +702,7 @@ body {
   margin: 0 auto;
   overscroll-behavior-y: none;
   min-height: 100%;
+  background-color: #fccfce;
 }
 
 img {
