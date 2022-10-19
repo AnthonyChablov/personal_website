@@ -1,0 +1,36 @@
+.box{
+    font-family: $Inter;
+    .box__wrapper{
+        width: 9em;
+        padding-top: 1.94em;
+        text-align: center;
+        .box__icon{
+            height: 4em;
+        }
+        .box__text{
+            text-transform: capitalize;
+            font-size: 1rem;
+        }   
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 650px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

@@ -1,9 +1,12 @@
 .content-section-skills{
-    background-color: #8c8fb9;
+    background:linear-gradient(45deg,$light-grey, $pink,$light-purple-2,$pink,$light-grey);
+    background-size: 400% 400%; 
+    animation: gradient 18s ease-in infinite;
     .content-section-skills__wrapper{
         padding: 5em 0 5em 0;
 
         .content-section-skill__content{
+
             .content-section-skill__text{
                 padding: 0 0 2em 0;
                 .content-section-skills__title{
@@ -27,15 +30,29 @@
                 font-family: $Inter;
 
                 .card__skill{
-                    padding-top: 2.04em;
+                    width: 9em;
+                    padding-top: 1.94em;
                     text-align: center;
-                    
                 }
             }
         }
     }
 }
 
+/* Animations */
+@keyframes gradient{
+    0%{
+        background-position: 0%;
+    }
+    // at 50% of this animation
+    50%{
+        background-position: 100%;
+    }
+    // at the end of this animation
+    100%{
+        background-position: 0%;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
