@@ -16,21 +16,21 @@ const ContentSectionSkills = () => {
                 </div>
                 <div className="content-section-skills__card">
 
-                  <div className="row">
+                  <div className="content__row">
                     <Box iconName={'html'} text={'Html-5'}/>
                     <Box iconName={'css'} text={'Css'}/>
                     <Box iconName={'scss'} text={'Scss'}/>
                     <Box iconName={'tailwind'} text={'Tailwind'}/>
                   </div>
 
-                  <div className="row">
+                  <div className="content__row">
                     <Box iconName={'javascript'} text={'javascript'}/>
                     <Box iconName={'typescript'} text={'typescript'}/>
                     <Box iconName={'react'} text={'react.js'}/>
                     <Box iconName={'nodeJS'} text={'Node.js'}/>
                   </div>
 
-                  <div className="row">
+                  <div className="content__row">
                     <Box iconName={'npm'} text={'npm'}/>
                     <Box iconName={'database'} text={'Sql-database'}/>
                     <Box iconName={'python'} text={'python'}/>

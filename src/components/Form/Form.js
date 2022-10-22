@@ -30,7 +30,6 @@ const Form = () => {
                                 <label className="label" htmlFor="message">Message*</label>
                             </div>
                             <motion.div className="contact-form__field"
-                                
                             >
                                 <motion.input className="submit-btn" 
                                     type="submit" 

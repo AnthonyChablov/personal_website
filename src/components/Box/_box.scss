@@ -1,11 +1,12 @@
 .box{
     font-family: $Inter;
     .box__wrapper{
-        width: 9em;
-        padding-top: 1.94em;
+        width: 6em;
+        padding-top: 2em;
         text-align: center;
         .box__icon{
             height: 4em;
+            
         }
         .box__text{
             text-transform: capitalize;
@@ -17,7 +18,11 @@
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
-    
+    .box{
+        .box__wrapper{
+            width: 9em;
+        }
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

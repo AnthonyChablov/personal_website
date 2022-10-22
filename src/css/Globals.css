@@ -657,14 +657,19 @@
   padding-top: 1em;
 }
 .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
-  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
   background-color: none;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   font-family: "Inter", sans-serif;
+}
+.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .content__row {
+  display: flex;
+  flex-direction: column;
 }
 .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .card__skill {
   width: 9em;
@@ -684,33 +689,54 @@
     background-position: 0%;
   }
 }
-/* Small devices (portrait tablets and large phones, 480px and up) */
+/* Small devices (portrait tablets and large phones, 520px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 865px) {
   .content-section-skills .content-section-skills__wrapper .content-section-skill__content {
     display: flex;
     justify-content: space-between;
+  }
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text {
+    width: 46%;
+  }
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
+    margin: 0 0;
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+  }
+}
+/* Large devices (laptops/desktops, 910px and up) */
+@media only screen and (min-width: 1174px) {
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content {
+    display: flex;
     flex-direction: row;
   }
   .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text {
-    width: 38%;
+    width: 46%;
   }
   .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text .content-section-skills__title {
     font-size: 2.4em;
   }
   .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
-    width: 53.5%;
-    padding: 3.8em 0 1.7em 0;
+    width: 46%;
+    padding: 0em 0 9em 0;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .content__row {
+    display: flex;
+    flex-direction: row;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .box {
   font-family: "Inter", sans-serif;
 }
 .box .box__wrapper {
-  width: 9em;
-  padding-top: 1.94em;
+  width: 6em;
+  padding-top: 2em;
   text-align: center;
 }
 .box .box__wrapper .box__icon {
@@ -722,6 +748,11 @@
 }
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+  .box .box__wrapper {
+    width: 9em;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
