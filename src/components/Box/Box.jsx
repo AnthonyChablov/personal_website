@@ -7,7 +7,7 @@ const Box = ({iconName, text}) => {
     return (
         <div className="box">
             <motion.div className='box__wrapper'
-                whileHover={{color: "#2e3047"}}
+                whileHover={{color: "#4e4673"}}
                 transition={{delay : 0.02}}
             >
                 <div className="box__icon">
