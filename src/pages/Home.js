@@ -25,7 +25,7 @@ const Home = () => {
       animate='animate'
       exit='exit'
     >
-        <Hero/>
+        <Hero heroType={'Homepage'}/>
         <ContentLayout/>
         <Footer/>
     </motion.div>

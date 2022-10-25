@@ -16,12 +16,12 @@
 @import "../components/contentsectionprojects/contentsectionprojects";
 @import "../components/contentsectionskills/contentsectionskills";
 @import "../components/Box/box";
+@import "../components/contentsectioncontact/contentsectioncontact";
 html { 
     height: 100% 
 }  
 * {
     box-sizing: border-box;
-    
 }
 body {
     padding: 0;

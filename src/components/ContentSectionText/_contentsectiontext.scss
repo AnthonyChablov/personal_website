@@ -1,25 +1,43 @@
+/* Main section */
 .content-section{
     font-family: $Inter;
     text-align: left;
-    
-    
     .content-section__wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
-
 .content-section--white{
     background-color: white;
-    padding: 7em 0 7em 0;
-    
+    padding: 7em 0 7em 0;   
 }
 .content-section--grey{
     padding: 4em 0 4em 0;
     margin: auto;
     background-color: $light-grey;
 }
+
+/* about section */
+.content-about{
+    font-family: $Inter;
+    text-align: left;
+    .content-about__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.content-about--white{
+    background-color: white;
+    padding: 7em 0 7em 0;   
+}
+.content-about--grey{
+    padding: 4em 0 4em 0;
+    margin: auto;
+    background-color: $light-grey;
+}
+
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

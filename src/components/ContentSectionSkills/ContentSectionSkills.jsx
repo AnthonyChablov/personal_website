@@ -15,7 +15,6 @@ const ContentSectionSkills = () => {
                   </div>
                 </div>
                 <div className="content-section-skills__card">
-
                   <div className="content__row">
                     <Box iconName={'html'} text={'Html-5'}/>
                     <Box iconName={'css'} text={'Css'}/>
