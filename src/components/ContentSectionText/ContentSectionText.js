@@ -20,7 +20,7 @@ const ContentSectionText = ({ contentType,bgColorClass, insertClass}) => {
             <div className=" content-about container">
                 <div className="content-about__wrapper">
                     <div className="content-about__text">
-                        <ParagraphText text={'Ea voluptates odit non accusamus nihil rem voluptatem perspiciatis ex quam numquam. Cum expedita doloremque rem Quis voluptatem et vitae velit et soluta mollitia aut voluptatum illo qui rerum facilis. Et enim et fugiat omnis eum voluptate internos eos nemo perspiciatis aut expedita natus. Et soluta autem et earum consequatur ab voluptatem quos qui repudiandae soluta vel magnam mollitia hic veniam repudiandae. Hic pariatur possimus et voluptas voluptas in reprehenderit commodi qui veritatis autem qui quia ratione eum corporis aspernatur.'}/>
+                        <ParagraphText text={'          I am '}/>
                         <ParagraphText text={'Lorem ipsum dolor sit amet. Et accusamus eius qui internos dolorum non magnam voluptate ab atque tempore qui voluptatem ipsam ab quia pariatur eum provident omnis. Sed eaque quisquam sit dolorem reprehenderit vel inventore error.'}/>
                     </div>
                 </div>
