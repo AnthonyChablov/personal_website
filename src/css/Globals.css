@@ -950,6 +950,16 @@
   pointer-events: none;
 }
 
+.document-display {
+  padding: 5em 0 5em 0;
+  background-color: #f5f5f5;
+  z-index: 2;
+}
+.document-display .document-display__wrapper {
+  border: 1px dotted #2e3047;
+  padding: 0;
+}
+
 html {
   height: 100%;
 }

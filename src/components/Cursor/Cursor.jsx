@@ -1,16 +1,16 @@
 
 import useMousePosition from "../../hooks/useMousePosition";
 
-const DotRing = () => {
+const Cursor = () => {
     // 1.
   const { x, y } = useMousePosition();
   return (
     <>
             {/* 2. */}
-      <div
+      {/* <div
         style={{ left: `${x}px`, top: `${y}px` }}
         className="ring"
-      ></div>
+      ></div> */}
             {/* 3. */}
       <div
         className="dot"
@@ -20,4 +20,4 @@ const DotRing = () => {
   );
 };
 
-export default DotRing;
+export default Cursor;

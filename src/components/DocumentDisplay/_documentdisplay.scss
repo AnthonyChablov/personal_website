@@ -1,0 +1,10 @@
+.document-display{
+    padding: 5em 0 5em 0;
+    background-color: #f5f5f5;
+    z-index: 2;
+    
+    .document-display__wrapper{
+        border: 1px dotted $dark-grey;
+        padding: 0;
+    }
+}
