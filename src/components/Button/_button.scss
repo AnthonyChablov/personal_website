@@ -1,3 +1,4 @@
+/* Button 1 */
 .button{
     margin: 1.37em 1em 0 0;
     background-color: $dark-grey;
@@ -24,6 +25,46 @@
     color: $dark-grey;
 }
 
+/* Button contact */
+.button--contact{
+    background-color: white;
+    
+    display: inline-block;
+    font-family: $Inter;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 40px;
+    border-radius: 100px;
+    border: 2px solid $light-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    transition-duration: 0.8s;
+    .button--contact__icon{
+        color: $light-purple;
+        transition-duration:0.8s;
+    }
+    .button--contact__content{
+        color:  $light-purple;
+        text-transform: capitalize;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0 0 0 0.5em;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition-duration: 0.8s;
+    }
+}
+.button--contact:hover{
+    background-color: $light-purple;
+    .button--contact__icon{
+        color:white;
+    }
+    .button--contact__content{
+        color: white;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 570px) {

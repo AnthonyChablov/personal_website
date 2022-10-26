@@ -65,7 +65,7 @@ const Hero = ({heroType}) => {
                                 transition :{delay : 0.7, ...transition}
                             }}
                         >
-                            <Button text={'My Resumé'} linkTo={"/resume"} style={{backgroundColor:'green'}}/>
+                            <Button buttonType={'hero'} text={'My Resumé'} linkTo={"/resume"} style={{backgroundColor:'green'}}/>
                             
                         </motion.div>
                     </motion.div>

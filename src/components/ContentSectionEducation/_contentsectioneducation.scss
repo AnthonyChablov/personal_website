@@ -1,0 +1,13 @@
+.content-section-education{
+    background-color: $light-grey;
+    padding: 5em 0 5em 0;
+    .content-section-skills__wrapper{
+        .content-section-skills__header{
+            font-family: $Fraunces;
+            text-align: left;
+            padding-bottom: 35px;
+            font-size: 2.4em;
+            font-weight: 500;
+        }
+    }
+}

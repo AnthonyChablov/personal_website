@@ -139,6 +139,7 @@
     cursor: pointer;
   }
 }
+/* Button 1 */
 .button {
   margin: 1.37em 1em 0 0;
   background-color: #2e3047;
@@ -163,6 +164,47 @@
 .button:hover {
   background-color: #4e4673;
   color: #2e3047;
+}
+
+/* Button contact */
+.button--contact {
+  background-color: white;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px 40px;
+  border-radius: 100px;
+  border: 2px solid #a39ac4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20em;
+  transition-duration: 0.8s;
+}
+.button--contact .button--contact__icon {
+  color: #a39ac4;
+  transition-duration: 0.8s;
+}
+.button--contact .button--contact__content {
+  color: #a39ac4;
+  text-transform: capitalize;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 0 0 0.5em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition-duration: 0.8s;
+}
+
+.button--contact:hover {
+  background-color: #a39ac4;
+}
+.button--contact:hover .button--contact__icon {
+  color: white;
+}
+.button--contact:hover .button--contact__content {
+  color: white;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -692,7 +734,7 @@
 .content-section-projects {
   height: 100%;
   background-color: #f8f8f8;
-  padding: 6.17em 0 4.17em 0;
+  padding: 5em 0 5em 0;
 }
 .content-section-projects .content-section-projects__title {
   font-family: "Fraunces", sans-serif;
@@ -843,8 +885,38 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-.content-section-contact .content-section-skills__wrapper {
+.content-section-contact {
+  background-color: #ffffff;
   padding: 5em 0 5em 0;
+  text-align: center;
+}
+
+.content-section-contact__wrapper .wrapper__header {
+  font-size: 2.4em;
+  font-family: "Fraunces", sans-serif;
+  padding-bottom: 0.31em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.content-section-contact__wrapper .wrapper__text {
+  padding-bottom: 1.5em;
+}
+.content-section-contact__wrapper .wrapper__button {
+  display: flex;
+  justify-content: center;
+}
+
+.content-section-education {
+  background-color: #f8f8f8;
+  padding: 5em 0 5em 0;
+}
+.content-section-education .content-section-skills__wrapper .content-section-skills__header {
+  font-family: "Fraunces", sans-serif;
+  text-align: left;
+  padding-bottom: 35px;
+  font-size: 2.4em;
+  font-weight: 500;
 }
 
 html {
