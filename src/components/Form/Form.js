@@ -12,7 +12,6 @@ const Form = () => {
                             so feel free to send me a message about anything that 
                             you want to run past me.
                         </p>
-
                         <form className="contact-form">
                             <div className="contact-form__wrapper">
                                 <div className="contact-form__field contact-form__name">
@@ -38,11 +37,8 @@ const Form = () => {
                                     transition={{delay : 0.013}}
                                 />
                             </motion.div>
-                            
                         </form>
-                        
                     </div>
-                    
                 </div>
                 <InfoSidebar/>
             </div>

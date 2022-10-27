@@ -19,6 +19,16 @@ export const Button = ({buttonType ,linkTo, text, bgColor}) => {
         </motion.div>
       </Link>
     )
+  }else if(buttonType==='visitSite'){
+    return(
+    <motion.div className='button--projects'
+        style={{bgColor}}
+        whileHover={{ backgroundColor: '#4e4673', color:'white'}}
+        whileTap={{ scale: 0.95 , backgroundColor: '#4e4673' }}
+        whileFocus={{ scale: 1.2 }}
+      >
+        <p className='button--projects__content'>{text}</p>
+    </motion.div>)
   }else{
     return (
       

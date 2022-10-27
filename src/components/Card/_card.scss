@@ -2,7 +2,16 @@
     .card__img{
         width: 100%;
     }
-    .card__text{
+    .card__info{
         padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        .card__text{
+            margin: 0;
+        }
+        .card__links{
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

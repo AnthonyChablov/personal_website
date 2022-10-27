@@ -28,7 +28,6 @@
 /* Button contact */
 .button--contact{
     background-color: white;
-    
     display: inline-block;
     font-family: $Inter;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -38,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20em;
+    width: 100%;
     transition-duration: 0.8s;
     .button--contact__icon{
         color: $light-purple;
@@ -66,6 +65,32 @@
     }
 }
 
+/* Button Projects */
+.button--projects{
+    background-color: white;
+    display: inline-block;
+    font-family: $Inter;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 40px;
+    border-radius: 100px;
+    border: 2px solid $light-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9em;
+    transition-duration: 0.8s;
+    .button--projects__content{
+        color:  $light-purple;
+        text-transform: capitalize;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0 0 0 0.5em;
+        font-size: 1rem;
+        font-weight: 500;
+        transition-duration: 0.8s;
+    }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 570px) {
     .button{
