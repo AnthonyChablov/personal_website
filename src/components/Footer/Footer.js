@@ -16,9 +16,7 @@ const Footer = () => {
                 <div className="footer__navigation">
                     <div className="footer__links">
                         <ul className='footer__column'>
-                            <li className=""
-                                
-                            >
+                            <li className="">
                                 <Link
                                     exact
                                     to="/home"

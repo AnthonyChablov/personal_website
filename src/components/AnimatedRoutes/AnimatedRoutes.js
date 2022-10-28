@@ -9,12 +9,14 @@ import {
     Route, 
     useLocation
 } from "react-router-dom";
+
 import {AnimatePresence} from 'framer-motion';
+
 const AnimatedRoutes = () => {
     const location = useLocation();
-
     return (
         <AnimatePresence initial={true} wait>
+            
             <Routes>
                 <Route 
                     path='/' 
@@ -53,6 +55,7 @@ const AnimatedRoutes = () => {
                     }
                 />
             </Routes>
+            
         </AnimatePresence>
     )
 }

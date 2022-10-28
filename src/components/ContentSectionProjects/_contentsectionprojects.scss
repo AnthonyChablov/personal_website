@@ -12,9 +12,7 @@
     }
     .content-section-projects__wrapper{
         .content-section-projects__project{
-            .card+.card{
-                margin-right: 10px;
-            }
+            
         }
     }
 }
@@ -27,10 +25,10 @@
         justify-content: space-between;
         align-content: center;
         .card-left{
-            width: 46%;
+            width: 48.1%;
         }
         .card-right{
-            width: 46%;
+            width: 48.1%;
         }
     }
 }
