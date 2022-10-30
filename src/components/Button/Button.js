@@ -37,11 +37,9 @@ export const Button = ({buttonType ,linkTo, text, bgColor}) => {
           to={linkTo}
         >
           <motion.div className='button--contact'
-            style={{bgColor}}
-           
-            whileTap={{ scale: 0.95 }}
-            whileFocus={{ scale: 1.2 }}
-           
+              style={{bgColor}}
+              whileTap={{ scale: 0.95 }}
+              whileFocus={{ scale: 1.2 }}
           >
             <motion.div className="button--contact__icon"
                 

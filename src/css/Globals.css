@@ -162,7 +162,7 @@
 }
 
 .button:hover {
-  background-color: #4e4673;
+  background-color: #747baf;
   color: #2e3047;
 }
 
@@ -1005,15 +1005,19 @@
 }
 
 .project {
-  padding: 0 0 5em 0;
+  padding: 2em 0 5em 0;
 }
 .project .project__wrapper {
   padding-bottom: 1em;
-  border-bottom: 1px solid #a39ac4;
 }
 .project .project__wrapper .project__title h2 {
   padding: 1.25em 0 0.1em 0;
   font-size: 1.275rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.project .project__wrapper .project__description {
+  text-align: center;
 }
 .project .project__wrapper .project__link {
   display: flex;
@@ -1034,12 +1038,15 @@
   border-radius: 100px;
   display: inline-block;
   padding: 0 1.5em;
-  margin-right: 0.9em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition-duration: 0.8s;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn1 .btn1__text {
   padding: 10px 0 10px 0;
   margin: 0;
+}
+.project .project__wrapper .project__link .link__wrapper .link__btn1:hover {
+  background-color: #171823;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn2 {
   background-color: #ffffff;
@@ -1049,13 +1056,55 @@
   border-radius: 100px;
   padding: 0 1em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition-duration: 0.8s;
+  display: none;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn2 .btn2__text {
   padding: 10px;
   margin: 0;
 }
+.project .project__wrapper .project__link .link__wrapper .link__btn2:hover {
+  background-color: #2e3047;
+  color: #f8f8f8;
+}
 
+@media only screen and (min-width: 300px) {
+  .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn1 {
+    margin-right: 0.9em;
+  }
+  .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn1 .btn1__text {
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn2 {
+    display: inline-block;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 925px) {
+  .project .project__wrapper {
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .project .project__wrapper .project__image {
+    width: 46%;
+  }
+  .project .project__wrapper .wrapper {
+    width: 48%;
+  }
+  .project .project__wrapper .wrapper .project__title h2 {
+    padding: 0;
+    text-align: left;
+    font-size: 2rem;
+  }
+  .project .project__wrapper .wrapper .project__description {
+    text-align: left;
+  }
+  .project .project__wrapper .wrapper .project__link {
+    align-items: flex-start;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .project-display {
