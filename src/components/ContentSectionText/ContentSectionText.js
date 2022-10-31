@@ -1,9 +1,13 @@
 import ParagraphText from "../ParagraphText/ParagraphText";
-
+import { motion } from "framer-motion";
 const ContentSectionText = ({ contentType,bgColorClass, insertClass}) => {
     if(contentType === 'heroText'){
         return (
-            <section className={`${bgColorClass} ${insertClass} content-section `}>
+            <motion.section className={`${bgColorClass} ${insertClass} content-section `}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+            >
                 <div className=" content-section__wrapper container">
                     <div>
                         <ParagraphText text={'          I am an enthusiastic, and fast-learning second-year computer-programming student.'}/>
@@ -12,7 +16,7 @@ const ContentSectionText = ({ contentType,bgColorClass, insertClass}) => {
                         <ParagraphText text={'When I am not programming, I love rock-climbing 🧗‍♂️ and music production 🎧!'}/>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         )
     }else if( contentType === 'aboutText'){
         return(

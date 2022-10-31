@@ -1,12 +1,26 @@
 import project1 from '../../assets/images/project1.jpg';
 import ParagraphText from '../ParagraphText/ParagraphText';
+import reactWeatherApp from '../../assets/images/reactWeatherApp.png';
+import passwordGen from "../../assets/images/passwordGen.png" ;
+import ipAddress from "../../assets/images/ipAddress.png";
+import clockApp from "../../assets/images/clockApp.png";
 import {motion} from 'framer-motion'; 
 const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) => {
     return (
         <div className="project" id={id}>
             <div className="project__wrapper ">
                 <div className="project__image">
-                    <img src={project1} alt="project-image" />
+                    <div className="image__wrapper">
+                        <img src={
+                            {
+                                passwordGen:passwordGen,
+                                reactWeatherApp:reactWeatherApp,
+                                ipAddress:ipAddress,
+                                clockApp:clockApp,
+                            }[img]
+                        } alt="project-image" />
+                    </div>
+                    
                 </div>
                 <div className="wrapper">
                     <div className="project__title">

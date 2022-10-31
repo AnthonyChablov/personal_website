@@ -1,8 +1,13 @@
 import ParagraphText from "../ParagraphText/ParagraphText";
 import { Button } from "../Button/Button";
+import { motion } from "framer-motion";
 const ContentSectionContact = () => {
     return (
-        <div className="content-section-contact">
+        <motion.div className="content-section-contact"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+        >
             <div className="content-section-contact__wrapper container">
                 <h1 className="wrapper__header">
                     Interested in collaborating?
@@ -18,7 +23,7 @@ const ContentSectionContact = () => {
             </div>
             
             
-        </div>
+        </motion.div>
     )
 }
 

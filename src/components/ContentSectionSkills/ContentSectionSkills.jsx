@@ -1,17 +1,23 @@
 import ParagraghText from '../ParagraphText/ParagraphText'
 import Box from '../Box/Box';
+import { motion } from 'framer-motion';
 const ContentSectionSkills = () => {
   return (
-    <div className='content-section-skills'>
+    <motion.div className='content-section-skills'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
         <div className="content-section-skills__wrapper">
             <div className="container">
               <div className="content-section-skill__content">
                 <div className="content-section-skill__text">
                   <h3 className="content-section-skills__title">My Skills.</h3>
                   <div className="content-section-skills__paragraph">
-                    <ParagraghText text={'Developing highly interactive Front-End / User Interfaces for web and mobile applications'}/>
-                    <ParagraghText text={'Working as a team to solve problems'}/>
-                    <ParagraghText text={'Integration of third party services such as Firebase/ AWS / Digital Ocean'}/>
+                    <ParagraghText text={'Developing highly interactive Front-End / User Interfaces for web and mobile applications.'}/>
+                    <ParagraghText text={'Working as a team to solve problems.'}/>
+                    <ParagraghText text={'Integration of third party services such as Firebase.'}/>
+                    <ParagraghText text={'Version control using Git.'}/>
                   </div>
                 </div>
                 <div className="content-section-skills__card">
@@ -40,7 +46,7 @@ const ContentSectionSkills = () => {
               </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

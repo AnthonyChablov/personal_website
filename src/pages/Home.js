@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <motion.div className='single'
-      onAnimationComplete={() => setCanScroll(true)}
+      
       initial='initial'
       animate='animate'
       exit='exit'

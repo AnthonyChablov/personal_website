@@ -1,4 +1,8 @@
 import project1 from '../../assets/images/project1.jpg';
+import reactWeatherApp from '../../assets/images/reactWeatherApp.png';
+import passwordGen from "../../assets/images/passwordGen.png" ;
+import ipAddress from "../../assets/images/ipAddress.png";
+import clockApp from "../../assets/images/clockApp.png";
 import ParagraphText from "../ParagraphText/ParagraphText"; 
 
 import { motion } from 'framer-motion';
@@ -10,8 +14,18 @@ const Card = ({img, text, positionClass, scrollTo}) => {
         >
             
             <div className="card__img">
-                <img src={project1} alt="project-demo" />
+                <img src={
+                    {
+                        passwordGen:passwordGen,
+                        reactWeatherApp:reactWeatherApp,
+                        ipAddress:ipAddress,
+                        clockApp:clockApp,
+
+                    }[img]
+                } alt="project-demo" />
             </div>
+            
+            
             <div className="card__info">
                 <p className='card__text'><ParagraphText text={text}/></p>
                 {/* <div className="card__links">

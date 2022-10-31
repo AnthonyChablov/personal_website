@@ -16,6 +16,11 @@
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
+    
+}
+
+/* Medium devices (landscape tablets, 850px and up) */
+@media only screen and (min-width: 850px) {
     .content-section-projects__project{
         display: flex;
         flex-direction: row;
@@ -30,14 +35,9 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 767px) {
-    
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

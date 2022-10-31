@@ -624,7 +624,7 @@
 }
 
 .header .header__wrapper {
-  height: 15.98em;
+  height: 18em;
   background: linear-gradient(90deg, #f8f8f8, #eadbcd, #fccfce, #b6abde, #fccfce, #f8f8f8);
   background-size: 400% 400%;
   animation: gradient 12s ease-in infinite;
@@ -657,8 +657,14 @@
 }
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.card {
+  -webkit-mask-image: linear-gradient(to bottom, transparent -100%, black 72%);
+  mask-image: linear-gradient(to bottom, transparent -200%, black 72%);
+}
 .card .card__img {
   width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .card .card__info {
   padding: 1em 0;
@@ -860,7 +866,8 @@
 }
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
-@media only screen and (min-width: 480px) {
+/* Medium devices (landscape tablets, 850px and up) */
+@media only screen and (min-width: 850px) {
   .content-section-projects__project {
     display: flex;
     flex-direction: row;
@@ -874,7 +881,6 @@
     width: 48.1%;
   }
 }
-/* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .content-section-skills {
@@ -962,7 +968,7 @@
   }
   .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
     width: 46%;
-    padding: 0em 0 9em 0;
+    padding: 0em 0 1.62em 0;
     flex-direction: column;
     justify-content: space-around;
   }
@@ -1078,6 +1084,14 @@
 .project .project__wrapper {
   padding-bottom: 1em;
 }
+.project .project__wrapper .project__image {
+  -webkit-mask-image: linear-gradient(to bottom, transparent -100%, black 72%);
+  mask-image: linear-gradient(to bottom, transparent -100%, black 72%);
+}
+.project .project__wrapper .project__image .image__wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+}
 .project .project__wrapper .project__title h2 {
   padding: 1.25em 0 0.1em 0;
   font-size: 1.275rem;
@@ -1087,6 +1101,9 @@
 }
 .project .project__wrapper .project__description {
   text-align: center;
+}
+.project .project__wrapper .project__description p {
+  font-size: 0.9rem;
 }
 .project .project__wrapper .project__link {
   display: flex;
@@ -1138,6 +1155,27 @@
 }
 
 @media only screen and (min-width: 300px) {
+  .project .project__wrapper .project__description p {
+    font-size: 1rem;
+  }
+  .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn1 {
+    margin-right: 0.9em;
+  }
+  .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn1 .btn1__text {
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn2 {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 450px) {
+  .project .project__wrapper .project__description p {
+    font-size: 1.2rem;
+  }
+  .project .project__wrapper .wrapper .project__title h2 {
+    font-size: 1.7rem;
+  }
   .project .project__wrapper .wrapper .project__link .link__wrapper .link__btn1 {
     margin-right: 0.9em;
   }
@@ -1156,6 +1194,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .project .project__wrapper .project__description p {
+    font-size: 1rem;
+  }
   .project .project__wrapper .project__image {
     width: 46%;
   }
@@ -1165,7 +1206,7 @@
   .project .project__wrapper .wrapper .project__title h2 {
     padding: 0;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .project .project__wrapper .wrapper .project__description {
     text-align: left;
