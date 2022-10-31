@@ -9,7 +9,6 @@ import {
     Route, 
     useLocation
 } from "react-router-dom";
-
 import {AnimatePresence} from 'framer-motion';
 
 const AnimatedRoutes = () => {
@@ -27,6 +26,7 @@ const AnimatedRoutes = () => {
                 <Route 
                     path='/home' 
                     element={
+                        
                         <Home/>
                     }
                 />

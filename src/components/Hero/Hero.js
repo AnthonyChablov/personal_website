@@ -1,6 +1,8 @@
 import { motion, useScroll , useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
+
 import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Hero = ({heroType}) => {
@@ -66,9 +68,26 @@ const Hero = ({heroType}) => {
                             }}
                         >
                             <Button buttonType={'hero'} text={'My Resumé'} linkTo={"/resume"} style={{backgroundColor:'green'}}/>
-                            
                         </motion.div>
+                        <motion.div className="hero__contact"
+                            whileHover={{opcaity:1.5}}
+                        >
+                            <Link
+                                exact
+                                to="/contact"
+                            >
+                                <motion.div className=""
+                                    whileHover={{opacity:.6}}
+                                    whileTap={{scale:0.95}}
+                                    whileFocus={{scale:1.1}}
+                                >
+                                    <img src={require('../../assets/images/start-project.svg').default} alt="" />
+                                </motion.div>
+                            </Link>
+                        </motion.div>
+                                
                     </motion.div>
+                    
                 </motion.div>
             </div>
         )

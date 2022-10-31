@@ -3,7 +3,7 @@ import ParagraphText from '../ParagraphText/ParagraphText';
 import {motion} from 'framer-motion'; 
 const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) => {
     return (
-        <div className="project">
+        <div className="project" id={id}>
             <div className="project__wrapper ">
                 <div className="project__image">
                     <img src={project1} alt="project-image" />

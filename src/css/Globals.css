@@ -283,6 +283,7 @@
   width: 100%;
   z-index: 1;
   background-position: 0px 0px;
+  transform-style: preserve-3d;
 }
 .hero .hero__wrapper .hero__content h1 {
   padding: 84px 0 1.2px 0;
@@ -302,8 +303,32 @@
 .hero .hero__wrapper .hero__button {
   display: block;
   text-align: left;
+  padding-bottom: 400px;
+}
+.hero .hero__wrapper .hero__contact {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 125px;
+  animation: rotating 7s linear infinite;
+}
+.hero .hero__wrapper .hero__contact:hover {
+  animation-play-state: paused;
 }
 
+/* keyframes */
+@keyframes rotating {
+  from {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    will-change: auto;
+  }
+  to {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg);
+    transform-style: preserve-3d;
+    will-change: auto;
+  }
+}
 .hero--secondary {
   background-color: #eadbcd;
 }
@@ -342,6 +367,26 @@
   text-align: left;
 }
 
+@media screen and (min-width: 300px) {
+  .hero .hero__wrapper .hero__content h1 {
+    padding: 110px 0 1.2px 0;
+    font-size: 4rem;
+  }
+  .hero .hero__wrapper .hero__subtitle {
+    font-size: 2.55rem;
+  }
+  .hero .hero__wrapper .hero__button {
+    padding-bottom: 475px;
+  }
+  .hero .hero__wrapper .hero__contact {
+    width: 125px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .hero .hero__wrapper .hero__button {
+    padding-bottom: 525px;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 570px) {
   .hero .hero__wrapper .hero__content h1 {
@@ -350,6 +395,17 @@
   }
   .hero .hero__wrapper .hero__subtitle {
     font-size: 2.55rem;
+  }
+  .hero .hero__wrapper .hero__button {
+    display: block;
+    text-align: left;
+    padding-bottom: 575px;
+  }
+  .hero .hero__wrapper .hero__contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
   }
   .hero--secondary .hero__wrapper--secondary {
     height: 470px;
@@ -372,6 +428,17 @@
   }
   .hero .hero__wrapper .hero__subtitle {
     font-size: 3rem;
+  }
+  .hero .hero__wrapper .hero__button {
+    display: block;
+    text-align: left;
+    padding-bottom: 520px;
+  }
+  .hero .hero__wrapper .hero__contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 175px;
   }
   .hero--secondary .hero__wrapper--secondary {
     height: 670px;
@@ -791,6 +858,7 @@
   font-size: 2.4em;
   font-weight: 500;
 }
+
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
   .content-section-projects__project {
@@ -1014,7 +1082,8 @@
   padding: 1.25em 0 0.1em 0;
   font-size: 1.275rem;
   text-align: center;
-  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 .project .project__wrapper .project__description {
   text-align: center;
@@ -1110,6 +1179,7 @@
 .project-display {
   background-color: #ffffff;
   padding: 5em 0 1em 0;
+  scroll-behavior: smooth;
 }
 
 html {

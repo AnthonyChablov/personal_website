@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Hero from "../components/Hero/Hero";
 import ContentLayout from "../components/ContentLayout/ContentLayout";
 import Footer from '../components/Footer/Footer';
+import ScrollToTop from '../utils/ScrollToTop';
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
       animate='animate'
       exit='exit'
     >
+        <ScrollToTop/>
         <Hero heroType={'Homepage'}/>
         <ContentLayout/>
         <Footer/>

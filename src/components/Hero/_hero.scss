@@ -8,6 +8,7 @@
         width: 100%;
         z-index: 1;
         background-position: 0px -0px;
+        transform-style: preserve-3d;
         .hero__content h1{
             padding: 84px 0 1.2px 0;
             margin: 0;
@@ -26,10 +27,34 @@
         .hero__button{
             display: block;
             text-align: left;
+            padding-bottom: 400px;
+        }
+        .hero__contact{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 125px;
+            animation: rotating 7s linear infinite;
+            
+        }
+        .hero__contact:hover{
+            animation-play-state: paused;
         }
     }
 }
-
+/* keyframes */
+@keyframes rotating {
+    from{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+        will-change: auto;
+    }
+    to{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(360deg) skew(0deg);
+        transform-style: preserve-3d;
+        will-change: auto;
+    }
+}
 
 .hero--secondary{
     background-color: $tan;
@@ -39,7 +64,6 @@
         background-size: 400% 400%; 
         animation: gradient 13s ease-in infinite;
         height: 400px; //1040px;
-
         color: $dark-grey;
         width: 100%;
         z-index: 1;
@@ -70,7 +94,42 @@
         }
     }
 }
+@media screen and (min-width: 300px) {
+    .hero{
+        .hero__wrapper{
+            .hero__content h1{
+                padding: 110px 0 1.2px 0;
+                font-size: 4rem;
+            }
+            .hero__subtitle{
+                font-size: 2.55rem;
+            }
+            .hero__button{
+                
+                padding-bottom: 475px;
+            }
+            .hero__contact{
+               
+                width: 125px;
+                
+            }
+            
+        }
+    }
+}
 
+@media screen and (min-width: 376px) {
+    .hero{
+        .hero__wrapper{
+
+            .hero__button{
+                
+                padding-bottom: 525px;
+            }
+            
+        }
+    }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 570px) {
     .hero{
@@ -82,6 +141,19 @@
             .hero__subtitle{
                 font-size: 2.55rem;
             }
+            .hero__button{
+                display: block;
+                text-align: left;
+                padding-bottom: 575px;
+            }
+            .hero__contact{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 150px;
+                
+            }
+            
         }
     }
 
@@ -95,6 +167,7 @@
                 width: 80%;
                 margin: 0 auto;
             }
+            
             .hero__subtitle--secondary{
                 font-size: 1.125rem;
             }
@@ -113,12 +186,23 @@
             .hero__subtitle{
                 font-size: 3rem;
             }
+            .hero__button{
+                display: block;
+                text-align: left;
+                padding-bottom: 520px;
+            }
+            .hero__contact{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 175px;
+                
+            }
         }
     }
     .hero--secondary{
         .hero__wrapper--secondary{
             height: 670px; //1040px;
-
             .hero__content--secondary h1{
                 padding: 4.5em 0 1.2px 0;
                 font-size: 2.78rem;
