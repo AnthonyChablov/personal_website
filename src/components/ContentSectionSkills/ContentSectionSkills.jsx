@@ -12,15 +12,37 @@ const ContentSectionSkills = () => {
             <div className="container">
               <div className="content-section-skill__content">
                 <div className="content-section-skill__text">
-                  <h3 className="content-section-skills__title">My Skills.</h3>
-                  <div className="content-section-skills__paragraph">
+                  <motion.h3 className="content-section-skills__title"
+                    initial={{
+                      opacity:0,  
+                      
+                    }}
+                    whileInView={{opacity:1}}
+                    transition={{ delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >My Skills.</motion.h3>
+                  <motion.div className="content-section-skills__paragraph"
+                    initial={{
+                      opacity:0,  
+                    }}
+                    whileInView={{opacity:1}}
+                    transition={{ delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
                     <ParagraghText text={'Developing highly interactive Front-End / User Interfaces for web and mobile applications.'}/>
                     <ParagraghText text={'Working as a team to solve problems.'}/>
                     <ParagraghText text={'Integration of third party services such as Firebase.'}/>
                     <ParagraghText text={'Version control using Git.'}/>
-                  </div>
+                  </motion.div>
                 </div>
-                <div className="content-section-skills__card">
+                <motion.div className="content-section-skills__card"
+                  initial={{
+                    opacity:0,  
+                  }}
+                  whileInView={{opacity:1}}
+                  transition={{ delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
                   <div className="content__row">
                     <Box iconName={'html'} text={'Html-5'}/>
                     <Box iconName={'css'} text={'Css'}/>
@@ -41,8 +63,7 @@ const ContentSectionSkills = () => {
                     <Box iconName={'python'} text={'python'}/>
                     <Box iconName={'firebase'} text={'firebase'}/>
                   </div>
-
-                </div>
+                </motion.div>
               </div>
             </div>
         </div>

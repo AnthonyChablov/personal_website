@@ -405,7 +405,7 @@
   .hero .hero__wrapper .hero__contact {
     position: absolute;
     bottom: 0;
-    right: 8%;
+    right: 4%;
     width: 150px;
   }
   .hero--secondary .hero__wrapper--secondary {
@@ -438,7 +438,7 @@
   .hero .hero__wrapper .hero__contact {
     position: absolute;
     bottom: 0;
-    right: 8%;
+    right: 4%;
     width: 175px;
   }
   .hero--secondary .hero__wrapper--secondary {
@@ -457,7 +457,19 @@
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero .hero__wrapper .hero__contact {
+    right: 3%;
+    width: 175px;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1390px) {
+  .hero .hero__wrapper .hero__contact {
+    right: 0;
+    width: 175px;
+  }
+}
 .paragraph-text {
   font-size: 1rem;
 }
@@ -666,6 +678,7 @@
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .card .card__info {
   padding: 1em 0;
@@ -726,6 +739,7 @@
 .form .form__wrapper .form__params {
   width: 100%;
   background-color: #ffffff;
+  box-shadow: #a39ac4 3px 3px, #b6abde 10px 10px, #fccfce 15px 15px;
 }
 .form .form__wrapper .form__params .form__content {
   padding: 38px;
@@ -1084,6 +1098,9 @@
 }
 .project .project__wrapper {
   padding-bottom: 1em;
+  border: 1px solid #a39ac4;
+  border-radius: 18px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .project .project__wrapper .project__image {
   -webkit-mask-image: linear-gradient(to bottom, transparent -100%, black 72%);
@@ -1225,9 +1242,10 @@
 }
 
 .divider {
-  margin: 0 auto 2.5em auto;
+  margin: 2em auto 5em auto;
   width: 47%;
   border-bottom: 1px solid #b6abde;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 html {

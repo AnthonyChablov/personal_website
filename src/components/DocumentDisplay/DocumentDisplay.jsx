@@ -1,5 +1,6 @@
 import React from "react";
 import ViewSDKClient from "../../utils/ViewSDKClient";
+import { motion } from "framer-motion";
 const RenderMenu = ({ url }) => {
   const loadPDF = () => {
     const viewSDKClient = new ViewSDKClient();
@@ -20,11 +21,17 @@ const RenderMenu = ({ url }) => {
   };
   return (
     <div className="document-display">
-      <div className="document-display__wrapper container"
+      <motion.div className="document-display__wrapper container"
+        initial={{
+          opacity:0,  
+        }}
+        whileInView={{opacity:1}}
+        transition={{ delay: 1 }}
+        viewport={{ once: true }}
         style = {{height:"100vh"}}
         id="pdf-div"
         onClick={loadPDF()}
-      ></div>
+      ></motion.div>
     </div>
   );
 };

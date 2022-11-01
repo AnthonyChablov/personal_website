@@ -4,7 +4,14 @@ const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Form = () => {
     return (
         <div className="form ">
-            <div className="form__wrapper container">
+            <motion.div className="form__wrapper container"
+                initial={{
+                    opacity:0,  
+                }}
+                whileInView={{opacity:1}}
+                transition={{ delay: 0.7 }}
+                viewport={{ once: true }}
+            >
                 <div className="form__params">
                     <div className="form__content ">
                         <p className="form__text">
@@ -41,11 +48,7 @@ const Form = () => {
                     </div>
                 </div>
                 <InfoSidebar/>
-            </div>
-            
-            
-
-
+            </motion.div>
         </div>
     )
 }

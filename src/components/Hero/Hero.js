@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
-const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
+const transition = { duration: 0.7, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Hero = ({heroType}) => {
     const { scrollYProgress } = useScroll();
@@ -70,7 +70,7 @@ const Hero = ({heroType}) => {
                             <Button buttonType={'hero'} text={'My Resumé'} linkTo={"/resume"} style={{backgroundColor:'green'}}/>
                         </motion.div>
                         <motion.div className="hero__contact"
-                            whileHover={{opcaity:1.5}}
+                            whileHover={{opacity:1.5}}
                         >
                             <Link
                                 exact
@@ -80,6 +80,14 @@ const Hero = ({heroType}) => {
                                     whileHover={{opacity:.6}}
                                     whileTap={{scale:0.95}}
                                     whileFocus={{scale:1.1}}
+                                    initial={{
+                                        filter:'opacity(0%)'
+                                    }}
+                                    whileInView={{
+                                        filter:'opacity(100%)',
+                                        transition :{delay : 0, ...transition}
+                                    }}
+                                    viewport={{ once: true }}
                                 >
                                     <img src={require('../../assets/images/start-project.svg').default} alt="" />
                                 </motion.div>

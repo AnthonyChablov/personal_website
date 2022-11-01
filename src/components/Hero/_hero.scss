@@ -149,7 +149,7 @@
             .hero__contact{
                 position: absolute;
                 bottom: 0;
-                right: 8%;
+                right: 4%;
                 width: 150px;
                 
             }
@@ -194,7 +194,7 @@
             .hero__contact{
                 position: absolute;
                 bottom: 0;
-                right: 8%;
+                right: 4%;
                 width: 175px;
                 
             }
@@ -221,10 +221,27 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .hero{
+        .hero__wrapper{
+            .hero__contact{
+                right: 3%;
+                width: 175px;
+                
+            }
+        }
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
+@media only screen and (min-width: 1390px) {
+    .hero{
+        .hero__wrapper{
+            .hero__contact{
+                
+                right: 0;
+                width: 175px;
+                
+            }
+        }
+    }
 }

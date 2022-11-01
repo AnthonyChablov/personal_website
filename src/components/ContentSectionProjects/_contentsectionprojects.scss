@@ -3,7 +3,7 @@
     height: 100%;
     background-color: $light-grey;
     padding: 5em 0 5em 0;
-
+    
     .content-section-projects__title{
         font-family: $Fraunces;
         text-align: left;
@@ -26,6 +26,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
+        
         .card-left{
             width: 48.1%;
         }

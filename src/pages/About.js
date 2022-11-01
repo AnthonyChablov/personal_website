@@ -11,7 +11,7 @@ const About = () => {
     <>
         <ScrollToTop/>
         <Hero heroType={'About'}/>
-        <ContentSectionText contentType={'aboutText'} bgColorClass={'content-section--white'} insertClass={'content-section'}/>
+        <ContentSectionText contentType={''} bgColorClass={'content-section--white'} insertClass={'content-section'}/>
         <ContentSectionEducation/>
         <ContentSectionSkills/>
         <Footer/>
