@@ -308,7 +308,7 @@
 .hero .hero__wrapper .hero__contact {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 8%;
   width: 125px;
   animation: rotating 7s linear infinite;
 }
@@ -379,6 +379,7 @@
     padding-bottom: 475px;
   }
   .hero .hero__wrapper .hero__contact {
+    right: 8%;
     width: 125px;
   }
 }
@@ -404,7 +405,7 @@
   .hero .hero__wrapper .hero__contact {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 8%;
     width: 150px;
   }
   .hero--secondary .hero__wrapper--secondary {
@@ -437,7 +438,7 @@
   .hero .hero__wrapper .hero__contact {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 8%;
     width: 175px;
   }
   .hero--secondary .hero__wrapper--secondary {
@@ -1079,7 +1080,7 @@
 }
 
 .project {
-  padding: 2em 0 5em 0;
+  padding: 2em 0 2.5em 0;
 }
 .project .project__wrapper {
   padding-bottom: 1em;
@@ -1221,6 +1222,12 @@
   background-color: #ffffff;
   padding: 5em 0 1em 0;
   scroll-behavior: smooth;
+}
+
+.divider {
+  margin: 0 auto 2.5em auto;
+  width: 47%;
+  border-bottom: 1px solid #b6abde;
 }
 
 html {
