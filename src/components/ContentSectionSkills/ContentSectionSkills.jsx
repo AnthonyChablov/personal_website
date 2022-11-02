@@ -14,8 +14,7 @@ const ContentSectionSkills = () => {
                 <div className="content-section-skill__text">
                   <motion.h3 className="content-section-skills__title"
                     initial={{
-                      opacity:0,  
-                      
+                      opacity:0,
                     }}
                     whileInView={{opacity:1}}
                     transition={{ delay: 0.5 }}
@@ -31,6 +30,7 @@ const ContentSectionSkills = () => {
                   >
                     <ParagraghText text={'Developing highly interactive Front-End / User Interfaces for web and mobile applications.'}/>
                     <ParagraghText text={'Working as a team to solve problems.'}/>
+                    <ParagraghText text={'Animating Pages using GSAP and Framer-Motion'}/>
                     <ParagraghText text={'Integration of third party services such as Firebase.'}/>
                     <ParagraghText text={'Version control using Git.'}/>
                   </motion.div>
@@ -40,7 +40,7 @@ const ContentSectionSkills = () => {
                     opacity:0,  
                   }}
                   whileInView={{opacity:1}}
-                  transition={{ delay: 0.5 }}
+                  transition={{ delay: 0.7 }}
                   viewport={{ once: true }}
                 >
                   <div className="content__row">

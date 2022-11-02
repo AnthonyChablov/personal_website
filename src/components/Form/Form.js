@@ -4,6 +4,7 @@ const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Form = () => {
     return (
         <div className="form ">
+            
             <motion.div className="form__wrapper container"
                 initial={{
                     opacity:0,  
@@ -49,6 +50,7 @@ const Form = () => {
                 </div>
                 <InfoSidebar/>
             </motion.div>
+            
         </div>
     )
 }

@@ -35,9 +35,12 @@ body {
     margin: 0 auto;
     overscroll-behavior-y: none;
     min-height: 100% ;
-    background-color: $pink;
-   
+    overflow-x: hidden;
+    background:linear-gradient(90deg,$pink,$tan,$light-grey,$light-grey);
+    background-size: 400% 400%; 
+    animation: gradient 2s ease-in infinite;
 }
+
 img {
     width: 100%;
 }

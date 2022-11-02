@@ -41,16 +41,7 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="">
-                            <Link
-                                exact
-                                to="/skills"
-                                className="column__link"
-                            >
-                                <motion.p
-                                        whileHover={{ color: 'blue' }}
-                                        transition={{delay : 0.013}}
-                                    >Skills</motion.p>
-                            </Link>
+                            
                             </li>
                             <li className="">
                             <Link

@@ -8,7 +8,7 @@ import {motion} from 'framer-motion';
 const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) => {
     return (
         <div className="project" id={id}>
-            <div className="project__wrapper ">
+            <div className="project__wrapper">
                 <div className="project__image">
                     <div className="image__wrapper">
                         <img src={
@@ -35,6 +35,7 @@ const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) 
                                 whileTap={{ scale: 0.95 }}
                                 whileFocus={{ scale: 1 }}
                                 whileHover={{}}
+                                target="_blank"
                             >
                                 <div className='link__btn1'>
                                     <p className='btn1__text'>{btn1}</p>
@@ -43,6 +44,7 @@ const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) 
                             <motion.a href={codeLink}
                                 whileTap={{ scale: 0.95 }}
                                 whileFocus={{ scale: 1 }}
+                                target="_blank"
                             >
                                 <div className="link__btn2">
                                     <p className='btn2__text'>{btn2}</p>

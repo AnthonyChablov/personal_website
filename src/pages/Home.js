@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero";
 import ContentLayout from "../components/ContentLayout/ContentLayout";
 import Footer from '../components/Footer/Footer';
 import ScrollToTop from '../utils/ScrollToTop';
+import AnimatedPage from "../components/AnimatedPage/AnimatedPage";
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {
@@ -20,17 +21,12 @@ const Home = () => {
   }, [canScroll]);
 
   return (
-    <motion.div className='single'
-      
-      initial='initial'
-      animate='animate'
-      exit='exit'
-    >
+    <AnimatedPage>
         <ScrollToTop/>
         <Hero heroType={'Homepage'}/>
         <ContentLayout/>
         <Footer/>
-    </motion.div>
+    </AnimatedPage>
     
   )
 }

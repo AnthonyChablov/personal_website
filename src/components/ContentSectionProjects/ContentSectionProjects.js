@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 const ContentSectionProjects = () => {
     return (
         <motion.div className="content-section-projects "
-        
         >
             <div className="content-section-projects__wrapper container">
                 <motion.h2 className="content-section-projects__title"
@@ -17,16 +16,10 @@ const ContentSectionProjects = () => {
                 >My Projects.</motion.h2>
                 <motion.div className="content-section-projects__project "
                     initial={{
-                        filter:'opacity(0%)',
-                        x:"-100%"
+                        opacity:0,
                     }}
-                    whileInView={
-                        {
-                            filter:'opacity(100%)',  
-                            x:'0%'
-                        }
-                    }
-                    transition={{ delay: 1 }}
+                    whileInView={{opacity:1}}
+                    transition={{ delay: 0.5 }}
                     viewport={{ once: true }}
                 >
                     <Card 
@@ -39,12 +32,11 @@ const ContentSectionProjects = () => {
                 {/* 1000 x 667 */}
                 <motion.div className="content-section-projects__project"
                     initial={{
-                        opacity:0,  
-                        x:"-100%"
+                        opacity:0,
                     }}
-                    whileInView={{opacity:1,  x:0}}
-                    transition={{ delay: 1 }}
-                    viewport={{ once: true }} 
+                    whileInView={{opacity:1}}
+                    transition={{ delay: 0.5 }}
+                    viewport={{ once: true }}
                 >
                     <Card positionClass={'card card-left'} img={'reactWeatherApp'} text={'⁂ Weather Application'} scrollTo={3}/>
                     <Card positionClass={'card card-right'} img={'clockApp'} text={'⁂ Clock Application'} scrollTo={4}/>

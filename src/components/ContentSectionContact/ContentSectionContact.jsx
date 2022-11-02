@@ -33,7 +33,7 @@ const ContentSectionContact = () => {
                         opacity:0,  
                     }}
                     whileInView={{opacity:1}}
-                    transition={{ delay: 0.6 }}
+                    transition={{ delay: 0.5 }}
                     viewport={{ once: true }}
                 >
                     <Button linkTo={'/Contact'} text={"Start a Conversation"} bgColor={'blue'}/>
