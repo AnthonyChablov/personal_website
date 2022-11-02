@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/personal_website/static/css/main.ddf30b94.css",
+    "main.js": "/personal_website/static/js/main.f69575ba.js",
+    "static/media/clockApp.png": "/personal_website/static/media/clockApp.5c2dbf29a6f360c6f62e.png",
+    "static/media/ipAddress.png": "/personal_website/static/media/ipAddress.b829b7564505a6966dae.png",
+    "static/media/mountain-nature-bg.png": "/personal_website/static/media/mountain-nature-bg.038d07e5baa86186fc5d.png",
+    "static/media/reactWeatherApp.png": "/personal_website/static/media/reactWeatherApp.9d3859ed6bd6dec9ca44.png",
+    "static/media/project1.jpg": "/personal_website/static/media/project1.70614db06141d0877087.jpg",
+    "static/media/Resume.pdf": "/personal_website/static/media/Resume.23c296c9b2a48a86866c.pdf",
+    "static/media/Resgak-SemiBold.otf": "/personal_website/static/media/Resgak-SemiBold.4721efa905f8df8e8111.otf",
+    "static/media/Felice-W01-Bold-Italic.ttf": "/personal_website/static/media/Felice-W01-Bold-Italic.f9d1911bf95b10a14b0d.ttf",
+    "static/media/passwordGen.png": "/personal_website/static/media/passwordGen.08da1490c69dc20cab8a.png",
+    "static/media/Fontspring-DEMO-neuesingular-h-bold.otf": "/personal_website/static/media/Fontspring-DEMO-neuesingular-h-bold.1b23dcdff998139d3aea.otf",
+    "static/media/Fontspring-DEMO-neuesingular-v-light.otf": "/personal_website/static/media/Fontspring-DEMO-neuesingular-v-light.3c3844dffa411bb58491.otf",
+    "static/media/Fontspring-DEMO-neuesingular-d-regular.otf": "/personal_website/static/media/Fontspring-DEMO-neuesingular-d-regular.d6380ffe5ba59a4b97aa.otf",
+    "static/media/start-project.svg": "/personal_website/static/media/start-project.65ca85fac43e0da24eb38ad179de7087.svg",
+    "index.html": "/personal_website/index.html",
+    "main.ddf30b94.css.map": "/personal_website/static/css/main.ddf30b94.css.map",
+    "main.f69575ba.js.map": "/personal_website/static/js/main.f69575ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddf30b94.css",
+    "static/js/main.f69575ba.js"
+  ]
+}
