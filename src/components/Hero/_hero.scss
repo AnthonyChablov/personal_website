@@ -57,12 +57,9 @@
 }
 
 .hero--secondary{
-    background-color: $tan;
 
     .hero__wrapper--secondary{
-        background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey);
-        background-size: 400% 400%; 
-        animation: gradient 13s ease-in infinite;
+        
         height: 400px; //1040px;
         color: $dark-grey;
         width: 100%;
@@ -94,7 +91,7 @@
         }
     }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 399px) {
     .hero{
         .hero__wrapper{
             .hero__content h1{

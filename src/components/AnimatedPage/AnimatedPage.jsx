@@ -9,7 +9,7 @@ const animations ={
       x:'0vw'
     },
     exit:{
-      filter: 'opacity(100%) blur(2px)', 
+      filter: 'opacity(100%) blur(1.5px)', 
       x:'-100vw'
     }
 }

@@ -33,6 +33,11 @@
   display: flex;
 }
 
+.navbar__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar__content {
   display: flex;
   align-items: center;
@@ -96,37 +101,41 @@
 }
 
 @media screen and (max-width: 766px) {
+  /* exit */
   .nav-menu {
     display: flex;
+    padding-top: 0;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 5em;
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
   }
+  /* enter */
   .nav-menu.active {
     background: #eadbcd;
     filter: opacity(120%);
+    top: 5em;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    height: fit-content;
   }
   .nav-item .active {
     color: #2e3047;
     border: none;
   }
   .nav-links {
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
     display: table;
     color: #2e3047;
     margin: 0;
   }
   .navbar__icon-wrapper {
-    padding: 2px;
     display: block;
     position: absolute;
     top: 0;
@@ -329,13 +338,7 @@
     will-change: auto;
   }
 }
-.hero--secondary {
-  background-color: #eadbcd;
-}
 .hero--secondary .hero__wrapper--secondary {
-  background: linear-gradient(90deg, #f8f8f8, #eadbcd, #fccfce, #b6abde, #fccfce, #f8f8f8);
-  background-size: 400% 400%;
-  animation: gradient 13s ease-in infinite;
   height: 400px;
   color: #2e3047;
   width: 100%;
@@ -367,7 +370,7 @@
   text-align: left;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 399px) {
   .hero .hero__wrapper .hero__content h1 {
     padding: 110px 0 1.2px 0;
     font-size: 4rem;
@@ -645,11 +648,11 @@
 
 .header .header__wrapper {
   height: 18em;
-  background: linear-gradient(90deg, #f8f8f8, #eadbcd, #fccfce, #b6abde, #fccfce, #f8f8f8);
-  background-size: 400% 400%;
-  animation: gradient 12s ease-in infinite;
   z-index: 1;
   color: #2e3047;
+}
+.header .header__wrapper .header__content {
+  background-color: transparent;
 }
 .header .header__wrapper .header__content .header__title {
   padding-top: 125px;
@@ -1263,9 +1266,9 @@ body {
   overscroll-behavior-y: none;
   min-height: 100%;
   overflow-x: hidden;
-  background: linear-gradient(90deg, #fccfce, #eadbcd, #f8f8f8, #f8f8f8);
+  background: linear-gradient(90deg, #f8f8f8, #eadbcd, #fccfce, #b6abde, #fccfce, #f8f8f8);
   background-size: 400% 400%;
-  animation: gradient 2s ease-in infinite;
+  animation: gradient 12s ease-in infinite;
 }
 
 img {

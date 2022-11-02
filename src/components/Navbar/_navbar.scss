@@ -12,7 +12,8 @@
     display: flex;
 }
 .navbar__wrapper {
-    
+    display: flex;
+    justify-content: center;
 }
 .navbar__content{
     display: flex;
@@ -57,8 +58,7 @@
 
 .nav-item {
     line-height: 40px;
-    
-    
+
 }
 
 .nav-item:after {
@@ -85,34 +85,39 @@
 }
 
 @media screen and (max-width: 766px) {
+    /* exit */
     .nav-menu {
         display: flex;
-        
+        padding-top: 0;
         flex-direction: column;
         width: 100%;
         //border-top: 1px solid #fff;
         position: absolute;
-        top: 80px;
+        top: 5em;
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
         
     }
-
+    /* enter */
     .nav-menu.active {
         background: $tan;
         filter: opacity(120%);
+        top: 5em;
+
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        height: fit-content;
     }
     .nav-item .active {
         color: $dark-grey;
         border: none;
+        
     }
     .nav-links {
-        padding: 1.5rem;
+        padding: 1rem;
         width: 100%;
         display: table;
         color:  $dark-grey;
@@ -121,8 +126,7 @@
     }
 
     .navbar__icon-wrapper{
-        
-        padding: 2px;
+
         display: block;
         position: absolute;
         top: 0;

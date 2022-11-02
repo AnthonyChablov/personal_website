@@ -3,13 +3,11 @@
     .header__wrapper{
         
         height: 18em;
-        background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey);
-        background-size: 400% 400%; 
-        animation: gradient 12s ease-in infinite;
+        
         z-index: 1;
         color: $dark-grey;
         .header__content{
-            
+            background-color: transparent;
             .header__title{    
                 padding-top: 125px;
                 padding-bottom: 0.5em;
