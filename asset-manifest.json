@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.ddf30b94.css",
-    "main.js": "/personal_website/static/js/main.f69575ba.js",
+    "main.css": "/personal_website/static/css/main.1e069318.css",
+    "main.js": "/personal_website/static/js/main.bd2942dd.js",
     "static/media/clockApp.png": "/personal_website/static/media/clockApp.5c2dbf29a6f360c6f62e.png",
     "static/media/ipAddress.png": "/personal_website/static/media/ipAddress.b829b7564505a6966dae.png",
     "static/media/mountain-nature-bg.png": "/personal_website/static/media/mountain-nature-bg.038d07e5baa86186fc5d.png",
@@ -16,11 +16,11 @@
     "static/media/Fontspring-DEMO-neuesingular-d-regular.otf": "/personal_website/static/media/Fontspring-DEMO-neuesingular-d-regular.d6380ffe5ba59a4b97aa.otf",
     "static/media/start-project.svg": "/personal_website/static/media/start-project.65ca85fac43e0da24eb38ad179de7087.svg",
     "index.html": "/personal_website/index.html",
-    "main.ddf30b94.css.map": "/personal_website/static/css/main.ddf30b94.css.map",
-    "main.f69575ba.js.map": "/personal_website/static/js/main.f69575ba.js.map"
+    "main.1e069318.css.map": "/personal_website/static/css/main.1e069318.css.map",
+    "main.bd2942dd.js.map": "/personal_website/static/js/main.bd2942dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddf30b94.css",
-    "static/js/main.f69575ba.js"
+    "static/css/main.1e069318.css",
+    "static/js/main.bd2942dd.js"
   ]
 }
