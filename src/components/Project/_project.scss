@@ -39,6 +39,10 @@
                 align-content: center;
                 margin-bottom: 1.2em;
                 .link__btn1{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+
                     background-color: $dark-grey;
                     color: $light-grey;
                     cursor: pointer;
@@ -53,9 +57,15 @@
                     }
                 }
                 .link__btn1:hover{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
                     background-color:$darker-grey;
                 }
                 .link__btn2{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
                     background-color: $white;
                     cursor: pointer;
                     display: inline-block;
@@ -71,6 +81,10 @@
                     }
                 } 
                 .link__btn2:hover{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    
                     background-color:$dark-grey;
                     color: $light-grey;
                 }

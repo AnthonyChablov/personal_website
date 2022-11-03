@@ -21,13 +21,14 @@ const Home = () => {
   }, [canScroll]);
 
   return (
+    <>
+    <ScrollToTop/>
     <AnimatedPage>
-        <ScrollToTop/>
         <Hero heroType={'Homepage'}/>
         <ContentLayout/>
         <Footer/>
     </AnimatedPage>
-    
+    </>
   )
 }
 

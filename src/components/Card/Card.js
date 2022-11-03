@@ -10,7 +10,7 @@ const Card = ({img, text, positionClass, scrollTo}) => {
     return (
         <motion.a className={positionClass} href={`/projects#project-${scrollTo}`} 
             whileHover={{opacity:0.69}}
-            whileTap={{scale:0.98}}
+            whileTap={{scale:0.98, opacity:0.69}}
         >
             
             <div className="card__img">

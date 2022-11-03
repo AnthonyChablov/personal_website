@@ -77,8 +77,8 @@ const Hero = ({heroType}) => {
                                 to="/contact"
                             >
                                 <motion.div className=""
-                                    whileHover={{opacity:.6}}
-                                    whileTap={{scale:0.95}}
+                                    whileHover={{opacity:.3}}
+                                    whileTap={{scale:0.95,opacity:.3}}
                                     whileFocus={{scale:1.1}}
                                     initial={{
                                         filter:'opacity(0%)'

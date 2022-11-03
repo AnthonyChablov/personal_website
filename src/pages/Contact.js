@@ -5,12 +5,15 @@ import ScrollToTop from '../utils/ScrollToTop';
 import AnimatedPage from "../components/AnimatedPage/AnimatedPage";
 const Contact = () => {
   return (
-    <AnimatedPage>
-        <ScrollToTop/>
-        <Header title="Let's Collaborate"/>
-        <Form/>
-        <Footer/>
-    </AnimatedPage>
+    <>
+      <ScrollToTop/>
+      <AnimatedPage>
+          
+          <Header title="Let's Collaborate"/>
+          <Form/>
+          <Footer/>
+      </AnimatedPage>
+    </>
   )
 }
 

@@ -150,6 +150,9 @@
 }
 /* Button 1 */
 .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   margin: 1.37em 1em 0 0;
   background-color: #2e3047;
   display: inline-block;
@@ -171,12 +174,18 @@
 }
 
 .button:hover {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #747baf;
   color: #2e3047;
 }
 
 /* Button contact */
 .button--contact {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: white;
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -207,6 +216,9 @@
 }
 
 .button--contact:hover {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #a39ac4;
 }
 .button--contact:hover .button--contact__icon {
@@ -218,6 +230,9 @@
 
 /* Button Projects */
 .button--projects {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: white;
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -379,9 +394,15 @@
     font-size: 2.55rem;
   }
   .hero .hero__wrapper .hero__button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     padding-bottom: 475px;
   }
   .hero .hero__wrapper .hero__contact {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     right: 8%;
     width: 125px;
   }
@@ -1147,6 +1168,9 @@
   margin-bottom: 1.2em;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #2e3047;
   color: #f8f8f8;
   cursor: pointer;
@@ -1161,9 +1185,15 @@
   margin: 0;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn1:hover {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #171823;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #ffffff;
   cursor: pointer;
   display: inline-block;
@@ -1179,6 +1209,9 @@
   margin: 0;
 }
 .project .project__wrapper .project__link .link__wrapper .link__btn2:hover {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #2e3047;
   color: #f8f8f8;
 }
@@ -1263,9 +1296,9 @@ html {
 body {
   padding: 0;
   margin: 0 auto;
-  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  overflow-x: none;
   min-height: 100%;
-  overflow-x: hidden;
   background: linear-gradient(90deg, #f8f8f8, #eadbcd, #fccfce, #b6abde, #fccfce, #f8f8f8);
   background-size: 400% 400%;
   animation: gradient 12s ease-in infinite;

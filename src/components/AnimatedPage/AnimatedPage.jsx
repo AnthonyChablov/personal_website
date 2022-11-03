@@ -9,14 +9,14 @@ const animations ={
       x:'0vw'
     },
     exit:{
-      filter: 'opacity(100%) blur(1.5px)', 
+      filter: 'opacity(100%) ', 
       x:'-100vw'
     }
 }
 const AnimatedPage = ({children}) => {
   return (
     <motion.div variants={animations} initial="initial" animate="animate" exit="exit"
-      transition={{duration:0.8}}
+      transition={{duration:0.35}}
     >
       {children}
     </motion.div>

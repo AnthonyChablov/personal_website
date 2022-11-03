@@ -1,5 +1,9 @@
 /* Button 1 */
 .button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     margin: 1.37em 1em 0 0;
     background-color: $dark-grey;
     display: inline-block;
@@ -21,12 +25,18 @@
     }
 }
 .button:hover{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: $dark-purple;
     color: $dark-grey;
 }
 
 /* Button contact */
 .button--contact{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: white;
     display: inline-block;
     font-family: $Inter;
@@ -56,6 +66,9 @@
     }
 }
 .button--contact:hover{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: $light-purple;
     .button--contact__icon{
         color:white;
@@ -67,6 +80,9 @@
 
 /* Button Projects */
 .button--projects{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: white;
     display: inline-block;
     font-family: $Inter;

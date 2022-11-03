@@ -31,34 +31,25 @@ export const Button = ({buttonType ,linkTo, text, bgColor}) => {
     </motion.div>)
   }else{
     return (
-      
-        <Link
+        <Link 
           exact
           to={linkTo}
         >
           <motion.div className='button--contact'
-              style={{bgColor}}
-              whileTap={{ scale: 0.95 }}
-              whileFocus={{ scale: 1.2 }}
+            style={{bgColor}}
+            whileTap={{ scale: 0.95 }}
+            whileFocus={{ scale: 1.2 }}
           >
-            <motion.div className="button--contact__icon"
-                
-            >
+            <motion.div className="button--contact__icon">
               <BsChatLeftText className='button--contact__icon' 
                 size={23} 
-                
               />
             </motion.div> 
-            
-            <motion.p className='button--contact__content'
-              
-            >
+            <motion.p className='button--contact__content'>
               {text}
             </motion.p>
-            
           </motion.div>
         </Link>
-      
     )
   }
   

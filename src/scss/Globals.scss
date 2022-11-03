@@ -33,9 +33,10 @@ html {
 body {
     padding: 0;
     margin: 0 auto;
-    overscroll-behavior-y: none;
+    overscroll-behavior-x:none;
+    overflow-x:none;
     min-height: 100% ;
-    overflow-x: hidden;
+    
     background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey);
     background-size: 400% 400%; 
     animation: gradient 12s ease-in infinite;
