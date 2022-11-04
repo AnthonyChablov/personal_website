@@ -23,23 +23,27 @@
 @import "../components/Project/project";
 @import "../components/ProjectDisplay/projectdisplay";
 @import "../components/divider/divider";
+@import "../components/ContentSectionAbout/ContentSectionAbout";
+
 html { 
     height: 100%;
     
 }  
 * {
     box-sizing: border-box;
+    
 }
 body {
     padding: 0;
     margin: 0 auto;
     overscroll-behavior-x:none;
-    overflow-x:none;
-    min-height: 100% ;
+    overflow-x: none;
     
-    background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey);
-    background-size: 400% 400%; 
-    animation: gradient 12s ease-in infinite;
+    min-height: 100% ;
+    background:linear-gradient(80deg,$tan,$pink,$light-purple-2,$pink);
+    background-size: 200% 200%; 
+    /* background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey); */
+    /* animation: gradient 12s ease-in infinite; */
 }
 
 img {

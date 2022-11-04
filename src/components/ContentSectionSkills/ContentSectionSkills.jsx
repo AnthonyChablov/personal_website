@@ -30,9 +30,9 @@ const ContentSectionSkills = () => {
                   >
                     <ParagraghText text={'Developing highly interactive Front-End / User Interfaces for web and mobile applications.'}/>
                     <ParagraghText text={'Working as a team to solve problems.'}/>
-                    <ParagraghText text={'Animating Pages using GSAP and Framer-Motion'}/>
-                    <ParagraghText text={'Integration of third party services such as Firebase.'}/>
-                    <ParagraghText text={'Version control using Git.'}/>
+                    <ParagraghText text={'Creating animations using GreenSock (GSAP) and Framer-Motion.'}/>
+                    <ParagraghText text={'Integration of third-party services such as Firebase.'}/>
+                    <ParagraghText text={'Version control using Git and GitHub.'}/>
                   </motion.div>
                 </div>
                 <motion.div className="content-section-skills__card"

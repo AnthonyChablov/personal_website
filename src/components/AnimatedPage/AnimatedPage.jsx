@@ -1,22 +1,23 @@
 import { motion } from "framer-motion"
 const animations ={
     initial:{
-      filter: 'opacity(0%)  ',
+      opacity:0,
       x:'100vw'
     },
     animate:{
-      filter: 'opacity(100%) ', 
+      opacity:1, 
       x:'0vw'
     },
     exit:{
-      filter: 'opacity(100%) ', 
-      x:'-100vw'
+      opacity:0, 
+      x:'-100vw',
+      filter: 'blur(5px)'
     }
 }
 const AnimatedPage = ({children}) => {
   return (
     <motion.div variants={animations} initial="initial" animate="animate" exit="exit"
-      transition={{duration:0.35}}
+      transition={{duration:0.296}}
     >
       {children}
     </motion.div>

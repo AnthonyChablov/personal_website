@@ -8,8 +8,8 @@ const Info = () => {
     return (
         <div className="info ">
             <InfoContent header={'Prefer Email?'} subContent={'achablov@gmail.com'}/>
-            <InfoContent header={'Or to Call?'} subContent={'+123 4444 1212'}/>
-            <InfoContent header={'Address'} subContent={'66 Ceres St San Francisco,California, 94124'}/>
+            <InfoContent header={'Or Telegram?'} subContent={'+123 4444 1212'}/>
+            <InfoContent header={'Location'} subContent={'Toronto, Canada'}/>
             
             <div className="info__socials">
                 <p>Find me Online</p>
