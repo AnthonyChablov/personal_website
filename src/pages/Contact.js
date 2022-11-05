@@ -8,7 +8,6 @@ const Contact = () => {
     <>
       <ScrollToTop/>
       <AnimatedPage>
-          
           <Header title="Let's Collaborate"/>
           <Form/>
           <Footer/>

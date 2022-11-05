@@ -8,8 +8,7 @@ const Skills = () => {
     return (
         <>
             <ScrollToTop/>
-            <AnimatedPage>  
-                
+            <AnimatedPage>
                 <Header title="My Resume"/>
                 <DocumentDisplay className="pdfReader"  url={pdfFile}/>
                 <Footer/>

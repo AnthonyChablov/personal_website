@@ -7,6 +7,7 @@ import ContentSectionEducation from '../components/ContentSectionEducation/Conte
 import ContentSectionSkills from '../components/ContentSectionSkills/ContentSectionSkills';
 import AnimatedPage from '../components/AnimatedPage/AnimatedPage';
 import ContentSectionAbout from '../components/ContentSectionAbout/ContentSectionAbout';
+import ContentSectionContact from '../components/ContentSectionContact/ContentSectionContact';
 const About = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const About = () => {
         {/* <ContentSectionText contentType={''} bgColorClass={'content-section--white'} insertClass={'content-section'}/> */}
         <ContentSectionEducation/>
         <ContentSectionSkills/>
+        <ContentSectionContact/>
         <Footer/>
       </AnimatedPage>  
     </>

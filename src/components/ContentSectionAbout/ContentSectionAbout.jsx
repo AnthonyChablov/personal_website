@@ -1,5 +1,6 @@
 import ParagraphText from "../ParagraphText/ParagraphText";
 import climbingPic from "../../assets/images/climbingPic.jpg";
+import heroBackground from "../../assets/images/climbingPic.jpg";
 const ContentSectionAbout = () => {
     return (
         <div className="content-section-about">

@@ -3,9 +3,7 @@ import IntroLayout from "../components/IntroLayout/IntroLayout"
 const Intro = () => {
     return (
         <AnimatedPage>
-            
             <IntroLayout/>
-            
         </AnimatedPage>
     )
 }

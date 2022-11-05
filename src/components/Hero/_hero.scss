@@ -1,4 +1,7 @@
 .hero{    
+    background:linear-gradient(80deg,$tan,$pink,$light-purple-2,$pink);
+    background-size: 200% 200%; 
+    background-repeat: no-repeat;
     .hero__wrapper{
         background: url(../assets/images/mountain-nature-bg.png);
         height: 1040px; //1040px;
@@ -33,7 +36,6 @@
             right: 8%;
             width: 125px;
             animation: rotating 7s linear infinite;
-            
         }
         .hero__contact:hover{
             animation-play-state: paused;
@@ -57,8 +59,7 @@
 .hero--secondary{
 
     .hero__wrapper--secondary{
-        
-        height: 400px; //1040px;
+        height: 100%; //1040px;
         color: $dark-grey;
         width: 100%;
         z-index: 1;
@@ -66,7 +67,7 @@
         display: flex;
         justify-content: center;
         .hero__content--secondary h1{
-            padding: 18vh 0 1.2px 0;
+            padding: 4.5em 0 1.2px 0;
             margin: 0 0 1.25em 0;
             font-family: $Fraunces;
             text-align: center;
@@ -82,6 +83,8 @@
             display: flex;
             justify-content: center;
             margin-top: 2.75em;
+            text-align: center;
+            padding: 0em 0 5em 0;
         } 
         .hero__button--secondary{
             display: block;
@@ -89,6 +92,58 @@
         }
     }
 }
+
+/* Small devices (portrait tablets and large phones, 228px and up) */
+@media screen and (min-width: 228px) {
+    .hero{
+        .hero__wrapper{
+
+            .hero__button{
+                
+                padding-bottom: 440px;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 256px) {
+    .hero{
+        .hero__wrapper{
+
+            .hero__button{
+                
+                padding-bottom: 500px;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 352px) {
+    .hero{
+        .hero__wrapper{
+
+            .hero__button{
+                
+                padding-bottom: 550px;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 356px) {
+    .hero{
+        .hero__wrapper{
+
+            .hero__button{
+                
+                padding-bottom: 550px;
+            }
+            
+        }
+    }
+}
+
+
 @media screen and (min-width: 399px) {
     .hero{
         .hero__wrapper{
@@ -116,20 +171,25 @@
             
         }
     }
-}
+    .hero--secondary{
+        .hero__wrapper--secondary{
+            height: 100%; //1040px;
 
-@media screen and (min-width: 376px) {
-    .hero{
-        .hero__wrapper{
-
-            .hero__button{
-                
-                padding-bottom: 525px;
+            .hero__content--secondary h1{
+                padding: 110px 0 1.2px 0;
+                font-size: 1.8rem;
+                width: 80%;
+                margin: 0 auto;
             }
             
+            .hero__subtitle--secondary{
+                font-size: 1.1rem;
+            }
         }
     }
 }
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 570px) {
     .hero{
@@ -140,6 +200,7 @@
             }
             .hero__subtitle{
                 font-size: 2.55rem;
+                
             }
             .hero__button{
                 display: block;
@@ -159,10 +220,10 @@
 
     .hero--secondary{
         .hero__wrapper--secondary{
-            height: 470px; //1040px;
+            height: 100%; //1040px;
 
             .hero__content--secondary h1{
-                padding: 110px 0 1.2px 0;
+                padding: 5em 0 1.2px 0;
                 font-size: 2rem;
                 width: 80%;
                 margin: 0 auto;
@@ -170,6 +231,7 @@
             
             .hero__subtitle--secondary{
                 font-size: 1.125rem;
+                padding-bottom: 6em;
             }
         }
     }
@@ -180,7 +242,7 @@
     .hero{
         .hero__wrapper{
             .hero__content h1{
-                padding: 118px 0 1.2px 0;
+                padding: 110px 0 1.2px 0;
                 font-size: 5rem;
             }
             .hero__subtitle{
@@ -202,17 +264,19 @@
     }
     .hero--secondary{
         .hero__wrapper--secondary{
-            height: 670px; //1040px;
+            height: 100%; //1040px;
             .hero__content--secondary h1{
-                padding: 4.5em 0 1.2px 0;
+                padding: 3.8em 0 1.2px 0;
                 font-size: 2.78rem;
                 width: 86.5%;
                 margin: 0 auto;
                 max-width: 700px;
             }
             .hero__subtitle--secondary{
+                padding: 0.3em 0 5.7em 0;
                 margin-top: 1.8em;
                 font-size: 1.35rem;
+                
             }
         }
     }

@@ -3,15 +3,39 @@
     .content-section-about__wrapper{
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 3.2em;
         .wrapper__text{
             font-family: $Inter;
+            font-size: 1rem;
         }
         .wrapper__container{
-            width: 80%;
+            width: 95%;
             margin: 0 auto;
-            padding: 5rem 0 4rem 0;
-            
+            padding: 3.6em 0 4.1em 0;
             
         }
+
     }
 }
+
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Medium devices (landscape tablets, 850px and up) */
+@media only screen and (min-width: 850px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
