@@ -1,3 +1,17 @@
 .content-section-about{
-    
+    background-color: $white;
+    .content-section-about__wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        .wrapper__text{
+            font-family: $Inter;
+        }
+        .wrapper__container{
+            width: 80%;
+            margin: 0 auto;
+            padding: 5rem 0 4rem 0;
+            
+            
+        }
+    }
 }

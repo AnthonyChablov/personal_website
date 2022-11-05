@@ -6,13 +6,15 @@ import ContentSectionText from '../components/ContentSectionText/ContentSectionT
 import ContentSectionEducation from '../components/ContentSectionEducation/ContentSectionEducation';
 import ContentSectionSkills from '../components/ContentSectionSkills/ContentSectionSkills';
 import AnimatedPage from '../components/AnimatedPage/AnimatedPage';
+import ContentSectionAbout from '../components/ContentSectionAbout/ContentSectionAbout';
 const About = () => {
   return (
     <>
       <AnimatedPage>
         <ScrollToTop/>
         <Hero heroType={'About'}/>
-        <ContentSectionText contentType={''} bgColorClass={'content-section--white'} insertClass={'content-section'}/>
+        <ContentSectionAbout/>
+        {/* <ContentSectionText contentType={''} bgColorClass={'content-section--white'} insertClass={'content-section'}/> */}
         <ContentSectionEducation/>
         <ContentSectionSkills/>
         <Footer/>

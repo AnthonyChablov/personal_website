@@ -1285,6 +1285,22 @@
   scroll-behavior: smooth;
 }
 
+.content-section-about {
+  background-color: #ffffff;
+}
+.content-section-about .content-section-about__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.content-section-about .content-section-about__wrapper .wrapper__text {
+  font-family: "Inter", sans-serif;
+}
+.content-section-about .content-section-about__wrapper .wrapper__container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0 4rem 0;
+}
+
 html {
   height: 100%;
 }
