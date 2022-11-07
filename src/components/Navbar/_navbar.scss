@@ -12,6 +12,7 @@
     display: flex;
 }
 .navbar__wrapper {
+    
     display: flex;
     justify-content: center;
 }
@@ -57,7 +58,7 @@
 }
 
 .nav-item {
-    line-height: 40px;
+    line-height: 60px;
 
 }
 
@@ -75,10 +76,6 @@
     background: $dark-grey;
 }
 
-.nav-item .active {
-    
-    
-}
 
 .navbar__icon-wrapper {
     display: none;
@@ -88,41 +85,57 @@
     /* exit */
     .nav-menu {
         display: flex;
-        padding-top: 0;
+        padding-top:1em;
         flex-direction: column;
-        width: 100%;
-        //border-top: 1px solid #fff;
+        font-family: $Fraunces;
+        /* border: 1px solid $dark-grey; */
         position: absolute;
-        top: 5em;
-        left: -110%;
+        background-color: $tan;
+        top: 3.53em;
+        left: -145%;
+        height: 25em;
         opacity: 1;
         transition: all 0.5s ease;
+        width: 100%;
+        padding-left: 0;
         
     }
     /* enter */
     .nav-menu.active {
-        background: $tan;
+        height: 25em;
+        
+        padding-top: 0.85em;
+        padding-bottom: 1.25em;
+        background: $light-grey;
         filter: opacity(120%);
-        top: 5em;
-
+        top: 3.6em;
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
-        height: fit-content;
+        box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px 1px;
     }
-    .nav-item .active {
-        color: $dark-grey;
-        border: none;
+    /* when not at route */
+    .nav-links {
+        font-size: 1.25rem;
+        
+        text-decoration: none;
+        
+    }
+    /* when at route */
+    .nav-links.active{
+        border-bottom: 0.4px solid $light-purple-2;
+    }
+    .nav-item{
+        width: 43%;
         
     }
     .nav-links {
-        padding: 1rem;
+        padding: 0.3rem;
         width: 100%;
         display: table;
         color:  $dark-grey;
         margin: 0;
-        
     }
 
     .navbar__icon-wrapper{

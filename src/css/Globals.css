@@ -79,7 +79,7 @@
 }
 
 .nav-item {
-  line-height: 40px;
+  line-height: 60px;
 }
 
 .nav-item:after {
@@ -104,32 +104,48 @@
   /* exit */
   .nav-menu {
     display: flex;
-    padding-top: 0;
+    padding-top: 1em;
     flex-direction: column;
-    width: 100%;
+    font-family: "Fraunces", sans-serif;
+    /* border: 1px solid $dark-grey; */
     position: absolute;
-    top: 5em;
-    left: -110%;
+    background-color: #eadbcd;
+    top: 3.53em;
+    left: -145%;
+    height: 25em;
     opacity: 1;
     transition: all 0.5s ease;
+    width: 100%;
+    padding-left: 0;
   }
   /* enter */
   .nav-menu.active {
-    background: #eadbcd;
+    height: 25em;
+    padding-top: 0.85em;
+    padding-bottom: 1.25em;
+    background: #f8f8f8;
     filter: opacity(120%);
-    top: 5em;
+    top: 3.6em;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
-    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px 1px;
   }
-  .nav-item .active {
-    color: #2e3047;
-    border: none;
+  /* when not at route */
+  .nav-links {
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  /* when at route */
+  .nav-links.active {
+    border-bottom: 0.4px solid #b6abde;
+  }
+  .nav-item {
+    width: 43%;
   }
   .nav-links {
-    padding: 1rem;
+    padding: 0.3rem;
     width: 100%;
     display: table;
     color: #2e3047;
@@ -1113,12 +1129,10 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .content-section-education {
-  background: url(../assets/images/mountain-nature-bg.png);
-  background-repeat: no-repeat;
-  background-position: 20% 100%;
+  background-color: #f8f8f8;
   height: 100%;
   padding: 5em 0 5em 0;
-  color: #b6abde;
+  color: black;
 }
 .content-section-education .content-section-skills__wrapper .content-section-skills__header {
   font-family: "Fraunces", sans-serif;
