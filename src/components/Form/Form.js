@@ -1,6 +1,6 @@
 import InfoSidebar from "../InfoSidebar/InfoSidebar";
 import {motion} from 'framer-motion';
-const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = { duration: 0.2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Form = () => {
     return (
         <div className="form ">
@@ -33,7 +33,8 @@ const Form = () => {
                             </div>
                             
                             <div className="contact-form__field">
-                                <input id="message" className="input-text js-input" type="text" required/>
+                                <textarea id="message" className="input-text js-input" type="text"  
+                                required/>
                                 <label className="label" htmlFor="message">Message*</label>
                             </div>
                             <motion.div className="contact-form__field"

@@ -17,14 +17,15 @@
 @import "../components/contentsectionskills/contentsectionskills";
 @import "../components/Box/box";
 @import "../components/contentsectioncontact/contentsectioncontact";
-@import "../components/contentsectioneducation/contentsectioneducation";
+@import "../components/contentsectioninfo/contentsectioninfo";
 @import "../components/Cursor/cursor";
 @import "../components/DocumentDisplay/documentdisplay";
 @import "../components/Project/project";
 @import "../components/ProjectDisplay/projectdisplay";
 @import "../components/divider/divider";
 @import "../components/ContentSectionAbout/ContentSectionAbout";
-
+@import "../components/ContentSectionSocial/ContentSectionSocial";
+@import "../components/AnimatedRoutes/AnimatedRoutes";
 html { 
     height: 100%;
     
@@ -34,12 +35,13 @@ html {
     
 }
 body {
+    max-width: 100%;
     padding: 0;
     margin: 0 auto;
-    overscroll-behavior-x:none;
-    overflow-x: none;
+    overflow-x: none ;
     
-    min-height: 100% ;
+    overscroll-behavior-y:none;
+    
     background:linear-gradient(80deg,$tan,$pink,$light-purple-2,$pink);
     background-size: 200% 200%; 
     /* background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey); */
@@ -53,6 +55,7 @@ img {
     width: 98%;
     margin: 0 auto;
     max-width: 80.75em;
+    
 }
 .row{
     display:flex;
@@ -60,3 +63,4 @@ img {
     justify-content: space-between;
     width: 100%;
 }
+

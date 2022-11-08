@@ -26,7 +26,7 @@ const ContentSectionContact = () => {
                     viewport={{ once: true }}
                 >
                     <ParagraphText text={'I am always open to discussing new projects and employment opportunities. We should queue up a time to chat.'}/>
-                    <ParagraphText text={"I'll bring the coffee 😀"}/>
+                    <ParagraphText text={"I'll bring the coffee! 😀"}/>
                 </motion.div>
                 <motion.div className="wrapper__button"
                     initial={{

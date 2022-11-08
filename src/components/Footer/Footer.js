@@ -23,7 +23,7 @@ const Footer = () => {
                                     className="column__link"
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >Home</motion.p>
                                 </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
                                     className="column__link"
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >About</motion.p>
                                 </Link>
@@ -50,9 +50,9 @@ const Footer = () => {
                                 className="column__link"
                             >
                                 <motion.p
-                                        whileHover={{ color: 'blue' }}
-                                        transition={{delay : 0.013}}
-                                    >Contact Me</motion.p>
+                                    whileHover={{ color: '#747baf' }}
+                                    transition={{delay : 0.013}}
+                                >Contact Me</motion.p>
                             </Link>
                             </li>
                         </ul>
@@ -64,7 +64,7 @@ const Footer = () => {
                                     className="column__link"
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >Resume</motion.p>
                                 </Link>
@@ -76,7 +76,7 @@ const Footer = () => {
                                     className="column__link"
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >404</motion.p>
                                 </Link>
@@ -86,40 +86,38 @@ const Footer = () => {
                     <div className="footer__socials">
                         <ul className="footer__column">
                             <li>
-                                <Link
-                                    exact
-                                    to="/resume"
+                                <a href="https://github.com/AnthonyChablov"
                                     className="column__link"
+                                    target={'_blank'}
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >Github</motion.p>
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    exact
-                                    to="/resume"
+                                <a href="https://www.linkedin.com/in/anthony-chablov-7a7a2921a/"
                                     className="column__link"
+                                    target={'_blank'}
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >LinkedIn</motion.p>
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    exact
-                                    to="/resume"
+                                <a href="https://discord.com/users/557409807968239616/"
                                     className="column__link"
+                                    target={'_blank'}
                                 >
                                     <motion.p
-                                        whileHover={{ color: 'blue' }}
+                                        whileHover={{ color: '#747baf' }}
                                         transition={{delay : 0.013}}
                                     >Discord</motion.p>
-                                </Link>
+                                </a>
+                                
                             </li>
                         </ul>
                     </div>

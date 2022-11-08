@@ -5,6 +5,7 @@ import ContentLayout from "../components/ContentLayout/ContentLayout";
 import Footer from '../components/Footer/Footer';
 import ScrollToTop from '../utils/ScrollToTop';
 import AnimatedPage from "../components/AnimatedPage/AnimatedPage";
+import ContentSectionSocial from "../components/ContentSectionSocial/ContentSectionSocial";
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
     <AnimatedPage>
         <Hero heroType={'Homepage'}/>
         <ContentLayout/>
+        
         <Footer/>
     </AnimatedPage>
     </>

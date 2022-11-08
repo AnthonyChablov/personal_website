@@ -59,7 +59,7 @@
   list-style: none;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   margin: 0;
 }
@@ -74,12 +74,17 @@
   align-self: center;
 }
 
+/* when at route */
+.nav-links.active {
+  border-bottom: 1px solid #a39ac4;
+}
+
 .fa-code {
   margin-left: 1rem;
 }
 
 .nav-item {
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .nav-item:after {
@@ -110,9 +115,9 @@
     /* border: 1px solid $dark-grey; */
     position: absolute;
     background-color: #eadbcd;
-    top: 3.53em;
+    top: 3.9em;
     left: -145%;
-    height: 25em;
+    height: 28em;
     opacity: 1;
     transition: all 0.5s ease;
     width: 100%;
@@ -120,12 +125,12 @@
   }
   /* enter */
   .nav-menu.active {
-    height: 25em;
-    padding-top: 0.85em;
-    padding-bottom: 1.25em;
+    height: 28em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background: #f8f8f8;
     filter: opacity(120%);
-    top: 3.6em;
+    top: 4.075em;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -320,6 +325,7 @@
 }
 .hero .hero__wrapper {
   background: url(../assets/images/mountain-nature-bg.png);
+  background-repeat: no-repeat;
   height: 1040px;
   color: #2e3047;
   width: 100%;
@@ -374,6 +380,7 @@
 .hero--secondary .hero__wrapper--secondary {
   height: 100%;
   color: #2e3047;
+  background-color: #eadbcd;
   width: 100%;
   z-index: 1;
   background-position: 0px 0px;
@@ -602,6 +609,7 @@
 .column__link p {
   color: black;
   font-size: 14px;
+  display: inline-block;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -830,7 +838,7 @@
 .form .form__wrapper .form__params .form__content .form__text {
   font-size: 1.15rem;
   font-weight: 100;
-  color: black;
+  color: #2e3047;
   letter-spacing: 0.25px;
   font-family: "Inter", sans-serif;
   padding-bottom: 0.6em;
@@ -879,8 +887,8 @@
   appearance: none;
   margin-top: 0.9em;
   display: inline-block;
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: #f8f8f8;
   font-family: Raleway, sans-serif;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -890,6 +898,12 @@
   border: none;
   cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+textarea {
+  width: 100%;
+  height: 2rem;
+  resize: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -987,22 +1001,27 @@
   background-size: 400% 400%;
   animation: gradient 8s ease-in infinite;
 }
-.content-section-skills .content-section-skills__wrapper {
+
+.content-section-skills--about {
+  background: #f8f8f8;
+}
+
+.content-section-skills__wrapper {
   padding: 5em 0 5em 0;
 }
-.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text {
-  padding: 0 0 2em 0;
+.content-section-skills__wrapper .content-section-skill__content .content-section-skill__text {
+  padding: 0 0 4.45em 0;
 }
-.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text .content-section-skills__title {
-  padding-bottom: 0.13em;
+.content-section-skills__wrapper .content-section-skill__content .content-section-skill__text .content-section-skills__title {
+  padding-bottom: 0.12em;
   font-family: "Fraunces", sans-serif;
   font-size: 2.4em;
   font-weight: 500;
 }
-.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text .content-section-skills__paragraph {
+.content-section-skills__wrapper .content-section-skill__content .content-section-skill__text .content-section-skills__paragraph {
   padding-top: 1em;
 }
-.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
+.content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
   max-width: 590px;
   margin: 0 auto;
   background-color: none;
@@ -1013,11 +1032,11 @@
   align-items: center;
   font-family: "Inter", sans-serif;
 }
-.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .content__row {
+.content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .content__row {
   display: flex;
   flex-direction: column;
 }
-.content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .card__skill {
+.content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .card__skill {
   width: 9em;
   padding-top: 1.94em;
   text-align: center;
@@ -1052,6 +1071,20 @@
     justify-content: space-between;
     max-width: 900px;
   }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text {
+    width: 46%;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
+    margin: 0 0;
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+  }
 }
 /* Large devices (laptops/desktops, 910px and up) */
 @media only screen and (min-width: 1174px) {
@@ -1072,6 +1105,26 @@
     justify-content: space-around;
   }
   .content-section-skills .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .content__row {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text {
+    width: 46%;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content .content-section-skill__text .content-section-skills__title {
+    font-size: 2.4em;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card {
+    width: 46%;
+    padding: 0em 0 1.62em 0;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .content-section-skills--about .content-section-skills__wrapper .content-section-skill__content .content-section-skills__card .content__row {
     display: flex;
     flex-direction: row;
   }
@@ -1128,20 +1181,71 @@
 /* Medium devices (landscape tablets, 850px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-.content-section-education {
-  background-color: #f8f8f8;
+.content-section-info {
+  background-color: #ffffff;
   height: 100%;
-  padding: 5em 0 5em 0;
   color: black;
+  padding: 2em 0 5em 0;
 }
-.content-section-education .content-section-skills__wrapper .content-section-skills__header {
+.content-section-info .content-section-info__wrapper {
+  width: 60%;
+  /* .wrapper__socials{
+      padding-top: 3em;
+      .socials__header{
+          font-family: $Fraunces;
+          font-size: 1.65rem;
+          font-weight: 600;
+      }
+      .socials__text{
+          padding-top: 0.2em;
+          p{
+              font-size: 1.02rem;
+          }
+      }
+  } */
+}
+.content-section-info .content-section-info__wrapper .wrapper__education {
+  padding-top: 3em;
+}
+.content-section-info .content-section-info__wrapper .wrapper__education .education__header {
   font-family: "Fraunces", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.content-section-info .content-section-info__wrapper .wrapper__education .education__text p {
   text-align: left;
-  padding-bottom: 35px;
-  font-size: 2.4em;
-  font-weight: 500;
+  font-size: 1.16rem;
+}
+.content-section-info .content-section-info__wrapper .wrapper__experience {
+  padding-top: 3em;
+}
+.content-section-info .content-section-info__wrapper .wrapper__experience .experience__header {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.content-section-info .content-section-info__wrapper .wrapper__experience .experience__text p {
+  text-align: left;
+  font-size: 1.16rem;
 }
 
+/* Medium devices (landscape tablets, 450px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .content-section-info .content-section-info__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .content-section-info .content-section-info__wrapper .wrapper__education {
+    width: 45%;
+  }
+  .content-section-info .content-section-info__wrapper .wrapper__experience {
+    width: 45%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .ring {
   position: fixed;
   top: 0;
@@ -1344,6 +1448,12 @@
   scroll-behavior: smooth;
 }
 
+.divider {
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
 .content-section-about {
   background-color: #ffffff;
 }
@@ -1352,20 +1462,88 @@
   flex-direction: column-reverse;
   padding-bottom: 3.2em;
 }
-.content-section-about .content-section-about__wrapper .wrapper__text {
+.content-section-about .content-section-about__wrapper .wrapper__text p {
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 .content-section-about .content-section-about__wrapper .wrapper__container {
   width: 95%;
   margin: 0 auto;
   padding: 3.6em 0 4.1em 0;
+  height: 100%;
+}
+.content-section-about .content-section-about__wrapper .wrapper__container .container__img {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+/* Medium devices (landscape tablets, 766px and up) */
+@media only screen and (min-width: 766px) {
+  .content-section-about .content-section-about__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content-section-about .content-section-about__wrapper .wrapper__text {
+    padding-top: 5em;
+    width: 46%;
+  }
+  .content-section-about .content-section-about__wrapper .wrapper__text p {
+    font-size: 1.18rem;
+  }
+  .content-section-about .content-section-about__wrapper .wrapper__container {
+    padding-top: 5em;
+    width: 45.94%;
+    margin: 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.content-section-social {
+  /* background: url(../assets/images/mountain-nature-bg.png);
+  background-repeat: no-repeat; */
+  /* background:linear-gradient(320deg, $light-grey, $light-grey,$white);  */
+  background-color: #f8f8f8;
+  padding: 5em 0 2.4em 0;
+  text-align: center;
+}
+.content-section-social .content-section-social__wrapper {
+  padding-bottom: 2.8em;
+}
+.content-section-social .content-section-social__wrapper .content-section-social__header {
+  font-size: 2.4em;
+  font-family: "Fraunces", sans-serif;
+  padding-bottom: 0.31em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+.content-section-social .content-section-social__wrapper .content-section-social__icon {
+  padding-top: 1.1em;
+  text-align: center;
+}
+.content-section-social .content-section-social__wrapper .content-section-social__icon .icon__formatting {
+  margin-right: 2.2em;
 }
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
 /* Medium devices (landscape tablets, 850px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll {
+  height: fit-content;
+}
+
 html {
   height: 100%;
 }
@@ -1375,11 +1553,11 @@ html {
 }
 
 body {
+  max-width: 100%;
   padding: 0;
   margin: 0 auto;
-  overscroll-behavior-x: none;
   overflow-x: none;
-  min-height: 100%;
+  overscroll-behavior-y: none;
   background: linear-gradient(80deg, #eadbcd, #fccfce, #b6abde, #fccfce);
   background-size: 200% 200%;
   /* background:linear-gradient(90deg,$light-grey,$tan,$pink,$light-purple-2,$pink,$light-grey); */

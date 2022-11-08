@@ -1,0 +1,48 @@
+.content-section-social{
+    /* background: url(../assets/images/mountain-nature-bg.png);
+    background-repeat: no-repeat; */
+    /* background:linear-gradient(320deg, $light-grey, $light-grey,$white);  */
+    background-color: $light-grey;
+    padding: 5em 0 2.4em 0;
+    text-align: center;
+    .content-section-social__wrapper{
+        padding-bottom: 2.8em;
+        .content-section-social__header{
+            font-size: 2.4em;
+            font-family: $Fraunces;
+            padding-bottom: 0.31em;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+        }
+        .content-section-social__icon{
+            padding-top: 1.1em;
+            text-align: center;
+            
+           
+            .icon__formatting{
+                margin-right:2.2em;
+            }
+        }
+    }
+}
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Medium devices (landscape tablets, 850px and up) */
+@media only screen and (min-width: 850px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

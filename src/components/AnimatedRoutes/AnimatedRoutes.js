@@ -7,57 +7,56 @@ import Intro from '../../pages/Intro';
 import {
     Routes,
     Route, 
-    useLocation
+    useLocation,
 } from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
 
 const AnimatedRoutes = () => {
     const location = useLocation();
     return (
-        <AnimatePresence exitBeforeEnter>
-            
-            <Routes key={location.pathname} location={location}>
-                <Route 
-                    path='/' 
-                    element={
-                        <Intro/>
-                    }
-                />
-                <Route 
-                    path='/home' 
-                    element={
-                        
-                        <Home/>
-                    }
-                />
-                <Route 
-                    path='/about' 
-                    element={
-                        <About/>
-                    }
-                />
-                <Route 
-                    path='/contact' 
-                    element={
-                        <Contact/>
-                    }
-                />
-                <Route 
-                    path='/projects' 
-                    element={
-                        <Projects/>
-                    }
-                />
-                <Route 
-                    path='/resume' 
-                    element={
-                        <Resume/>
-                    }
-                />
-            </Routes>
-            
-        </AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
+                <Routes key={location.pathname} location={location}>
+                    <Route 
+                        path='/' 
+                        element={
+                            <Intro/>
+                        }
+                    />
+                    <Route 
+                        path='/home' 
+                        element={
+                            
+                            <Home/>
+                        }
+                    />
+                    <Route 
+                        path='/about' 
+                        element={
+                            <About/>
+                        }
+                    />
+                    <Route 
+                        path='/contact' 
+                        element={
+                            <Contact/>
+                        }
+                    />
+                    <Route 
+                        path='/projects' 
+                        element={
+                            <Projects/>
+                        }
+                    />
+                    <Route 
+                        path='/resume' 
+                        element={
+                            <Resume/>
+                        }
+                    />
+                </Routes>
+                
+            </AnimatePresence>
     )
 }
+export default AnimatedRoutes;
 
-export default AnimatedRoutes

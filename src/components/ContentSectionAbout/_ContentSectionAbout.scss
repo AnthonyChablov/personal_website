@@ -4,15 +4,19 @@
         display: flex;
         flex-direction: column-reverse;
         padding-bottom: 3.2em;
-        .wrapper__text{
+        .wrapper__text p{
             font-family: $Inter;
-            font-size: 1rem;
+            font-size: 1.125rem;
         }
         .wrapper__container{
             width: 95%;
             margin: 0 auto;
             padding: 3.6em 0 4.1em 0;
-            
+            height: 100%;
+            .container__img{
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+            }
         }
 
     }
@@ -24,9 +28,31 @@
     
 }
 
-/* Medium devices (landscape tablets, 850px and up) */
-@media only screen and (min-width: 850px) {
-    
+/* Medium devices (landscape tablets, 766px and up) */
+@media only screen and (min-width: 766px) {
+    .content-section-about{
+       
+        .content-section-about__wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           
+            .wrapper__text{
+                padding-top: 5em;
+                width: 46%;
+                p{
+                    font-size: 1.18rem;
+                }
+            }
+            .wrapper__container{
+                padding-top: 5em;
+                width: 45.94%;
+                margin: 0;
+            }
+        }
+
+        
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

@@ -2,49 +2,50 @@
     background:linear-gradient(45deg,$light-grey, $pink,$light-purple-2,$pink,$light-grey);
     background-size: 400% 400%; 
     animation: gradient 8s ease-in infinite;
-    .content-section-skills__wrapper{
-        padding: 5em 0 5em 0;
-        .content-section-skill__content{
-            .content-section-skill__text{
-                padding: 0 0 2em 0;
-                .content-section-skills__title{
-                    padding-bottom: 0.13em;
-                    font-family: $Fraunces;
-                    font-size: 2.4em;
-                    font-weight: 500;
-                }
-                .content-section-skills__paragraph{
-                    padding-top: 1em;
-                }
+}
+.content-section-skills--about{
+    background:$light-grey;
+}
+.content-section-skills__wrapper{
+    padding: 5em 0 5em 0;
+    .content-section-skill__content{
+        .content-section-skill__text{
+            padding: 0 0 4.45em 0;
+            .content-section-skills__title{
+                padding-bottom: 0.12em;
+                font-family: $Fraunces;
+                font-size: 2.4em;
+                font-weight: 500;
             }
-            .content-section-skills__card{
-                max-width: 590px;
-                margin: 0 auto;
-                background-color: none;
-                border-radius: 8px;
+            .content-section-skills__paragraph{
+                padding-top: 1em;
+            }
+        }
+        .content-section-skills__card{
+            max-width: 590px;
+            margin: 0 auto;
+            background-color: none;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            font-family: $Inter;
+        
+            .content__row{
                 display: flex;
-                justify-content: space-between;
-                flex-direction: row;
-                align-items: center;
-                font-family: $Inter;
-            
-                .content__row{
-                    display: flex;
-                    flex-direction: column;
-                    
-                }
+                flex-direction: column;
                 
-                .card__skill{
-                    width: 9em;
-                    padding-top: 1.94em;
-                    text-align: center;
-                }
+            }
+            
+            .card__skill{
+                width: 9em;
+                padding-top: 1.94em;
+                text-align: center;
             }
         }
     }
 }
-
-
 /* Animations */
 @keyframes gradient{
     0%{
@@ -88,11 +89,61 @@
             }
         }
     }
+    .content-section-skills--about{
+        .content-section-skills__wrapper{
+            .content-section-skill__content{
+                display: flex;
+                justify-content: space-between;
+                .content-section-skill__text{
+                    width: 46%;
+                }
+                .content-section-skills__card{
+                    margin: 0 0;
+                    
+                    width: 52%;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    max-width: 900px;
+                }
+            }
+        }
+    }
 }
 
 /* Large devices (laptops/desktops, 910px and up) */
 @media only screen and (min-width: 1174px) {
     .content-section-skills{
+        .content-section-skills__wrapper{
+            .content-section-skill__content{
+                display: flex;
+                flex-direction: row;
+                .content-section-skill__text{
+                    width: 46%;
+                    .content-section-skills__title{
+                        font-size: 2.4em;
+                        
+                    }
+                    
+                }
+                .content-section-skills__card{
+                    
+                    width: 46%;
+                    padding: 0em 0 1.62em 0;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    
+                    .content__row{
+                        display: flex;
+                        flex-direction: row;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+    .content-section-skills--about{
         .content-section-skills__wrapper{
             .content-section-skill__content{
                 display: flex;

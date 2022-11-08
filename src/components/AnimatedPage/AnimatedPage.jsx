@@ -17,6 +17,9 @@ const AnimatedPage = ({children}) => {
   return (
     <motion.div variants={animations} initial="initial" animate="animate" exit="exit"
       transition={{duration:0.3}}
+      
+      dragDirectionLock 
+      
     >
       {children}
     </motion.div>
