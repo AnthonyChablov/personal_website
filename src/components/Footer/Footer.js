@@ -3,8 +3,28 @@ import {motion} from 'framer-motion';
 const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Footer = () => {
     return (
-        <div className="footer">
-            <div className="footer__wrapper container">
+        <motion.div className="footer"
+            initial={{
+                opacity:0,  
+            }}
+            exit={{
+                opacity:0
+            }}
+            whileInView={{opacity:1}}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+        >
+            <motion.div className="footer__wrapper container"
+                initial={{
+                    opacity:0,  
+                }}
+                exit={{
+                    opacity:0
+                }}
+                whileInView={{opacity:1}}
+                transition={{ delay: 0.05 }}
+                viewport={{ once: true }}
+            >
                 <div className="footer__header">
                     <h6 className="footer__title">
                         Anthony Chablov
@@ -80,7 +100,7 @@ const Footer = () => {
                             <li>
                                 <Link
                                     exact
-                                    to="/resume"
+                                    to="/*"
                                     className="column__link"
                                 >
                                     <motion.p
@@ -130,10 +150,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             
             
-        </div>
+        </motion.div>
     )
 }
 

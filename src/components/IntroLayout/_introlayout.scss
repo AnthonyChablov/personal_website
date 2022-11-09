@@ -1,10 +1,11 @@
 .layout{
     background-color: $tan;
-    min-height: 100vh;
+    min-height: 100.0vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
+    
     .layout__content{
         position: relative; 
         

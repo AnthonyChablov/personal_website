@@ -4,12 +4,14 @@ import Contact from "../../pages/Contact";
 import Projects from "../../pages/Projects";
 import Resume from '../../pages/Resume';
 import Intro from '../../pages/Intro';
+import NotFound from "../NotFound/NotFound";
 import {
     Routes,
     Route, 
     useLocation,
 } from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
+import Error404 from "../../pages/Error404";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -51,6 +53,12 @@ const AnimatedRoutes = () => {
                         path='/resume' 
                         element={
                             <Resume/>
+                        }
+                    />
+                    <Route 
+                        path='*' 
+                        element={
+                            <Error404/>
                         }
                     />
                 </Routes>
