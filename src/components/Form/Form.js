@@ -28,9 +28,9 @@ const Form = () => {
                 <div className="form__params">
                     <div className="form__content ">
                         <p className="form__text">
-                                      I'm currently available to take on new projects, 
+                                      I'm currently available to take on new projects and employment opportunites, 
                             so feel free to send me a message about anything that 
-                            you want to run past me.
+                            you want to discuss.
                         </p>
                         <form className="contact-form"
                             ref={form} 
