@@ -20,7 +20,7 @@
                 font-size: 1.25rem;
                 
                 .form__text{
-                    font-size: 1.15rem;
+                    font-size: 1.05rem;
                     font-weight: 100;
                     color: $dark-grey;
                     letter-spacing: 0.25px;
@@ -52,7 +52,7 @@
         font-size: 18px;
         line-height: 26px;
         font-weight: 400;
-        
+       
         &:focus {
             outline: none;
         }
@@ -74,6 +74,7 @@
         cursor: text;
         transition: transform .2s ease-in-out;
         padding-bottom: 0.4em;
+        
     }
     
     .submit-btn {

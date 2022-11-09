@@ -233,7 +233,7 @@
   align-content: center;
   justify-content: center;
   margin: 0 0 0 0.5em;
-  font-size: 1.1rem;
+  font-size: 1.01rem;
   font-weight: 500;
   transition-duration: 0.8s;
 }
@@ -838,7 +838,7 @@
   font-size: 1.25rem;
 }
 .form .form__wrapper .form__params .form__content .form__text {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 100;
   color: #2e3047;
   letter-spacing: 0.25px;
