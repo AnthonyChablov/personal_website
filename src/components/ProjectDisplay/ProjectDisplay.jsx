@@ -23,8 +23,8 @@ const ProjectDisplay = () => {
                 codeLink='https://github.com/AnthonyChablov/react-weather-app'/>
                 
                 <Project id='project-4' img='clockApp' title='Clock App' description='A Clock Application that displays the time of the entered location. Created using React and SCSS' btn1='Visit Site' btn2='View Code'
-                siteLink='https://anthonychablov.github.io/react-weather-app/' 
-                codeLink='https://github.com/AnthonyChablov/react-weather-app'/>
+                siteLink='https://github.com/AnthonyChablov/clock-app' 
+                codeLink='https://github.com/AnthonyChablov/clock-app'/>
             </motion.div>
         </div>
     )
