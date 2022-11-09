@@ -8,7 +8,7 @@ const Info = () => {
     return (
         <div className="info ">
             <InfoContent header={'Prefer Email?'} subContent={'achablov@gmail.com'} linkTo={'mailto:achablov@gmail.com'}  />
-            <InfoContent header={'Or Telegram?'} subContent={'+123 4444 1212'}   linkTo={'https://www.google.com/search?q=Toronto+canada'}/>
+            <InfoContent header={'Or Telegram?'} subContent={'t.me/AnthonyChablov'}   linkTo={'https://t.me/AnthonyChablov'}/>
             <InfoContent header={'Location'} subContent={'Toronto, Canada'} linkTo={'https://www.google.com/search?q=Toronto+canada'}  />
             
             <div className="info__socials">
