@@ -21,7 +21,6 @@
 /* fonts */
 /* colors */
 .navbar {
-  margin-top: 0.745pt;
   text-align: center;
   font-family: "Neaue-Singular-regular", sans-serif;
   font-size: 1.2rem;
@@ -29,8 +28,10 @@
   top: 0;
   width: 100%;
   height: 0;
-  z-index: 1;
+  z-index: 9999;
   display: flex;
+  transition: all 300ms ease-in-out;
+  transition-timing-function: ease-in;
 }
 
 .navbar__wrapper {
@@ -115,6 +116,7 @@
     /* border: 1px solid $dark-grey; */
     position: absolute;
     background-color: #eadbcd;
+    border-radius: 16px;
     top: 3.9em;
     left: -145%;
     height: 28em;
@@ -525,14 +527,14 @@
     height: 100%;
   }
   .hero--secondary .hero__wrapper--secondary .hero__content--secondary h1 {
-    padding: 3.8em 0 1.2px 0;
+    padding: 5em 0 1.2px 0;
     font-size: 2.78rem;
     width: 86.5%;
     margin: 0 auto;
     max-width: 700px;
   }
   .hero--secondary .hero__wrapper--secondary .hero__subtitle--secondary {
-    padding: 0.3em 0 5.7em 0;
+    padding: 0.3em 0 9.2em 0;
     margin-top: 1.8em;
     font-size: 1.35rem;
   }
@@ -867,14 +869,14 @@
   outline: none;
 }
 .contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
-  transform: translateY(-24px);
+  transform: translateY(-14px);
 }
 .contact-form .label {
   position: absolute;
   bottom: 11px;
   font-family: "Inter", sans-serif;
   font-size: 0.95rem;
-  line-height: 18px;
+  line-height: 56px;
   font-weight: 400;
   color: #888;
   cursor: text;
@@ -887,7 +889,8 @@
   appearance: none;
   margin-top: 0.9em;
   display: inline-block;
-  background-color: black;
+  background-color: #2e3047;
+  border-radius: 0;
   color: #f8f8f8;
   font-family: Raleway, sans-serif;
   text-transform: capitalize;
@@ -1460,16 +1463,16 @@ textarea {
 .content-section-about .content-section-about__wrapper {
   display: flex;
   flex-direction: column-reverse;
-  padding-bottom: 3.2em;
+  padding-bottom: 4.5em;
 }
 .content-section-about .content-section-about__wrapper .wrapper__text p {
   font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .content-section-about .content-section-about__wrapper .wrapper__container {
   width: 95%;
   margin: 0 auto;
-  padding: 3.6em 0 4.1em 0;
+  padding: 3.6em 0 4.5em 0;
   height: 100%;
 }
 .content-section-about .content-section-about__wrapper .wrapper__container .container__img {
@@ -1486,19 +1489,24 @@ textarea {
     justify-content: space-between;
   }
   .content-section-about .content-section-about__wrapper .wrapper__text {
-    padding-top: 5em;
+    padding-top: 6.9em;
     width: 46%;
   }
   .content-section-about .content-section-about__wrapper .wrapper__text p {
-    font-size: 1.18rem;
+    font-size: 1rem;
   }
   .content-section-about .content-section-about__wrapper .wrapper__container {
-    padding-top: 5em;
+    padding-top: 6.9em;
     width: 45.94%;
     margin: 0;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content-section-about .content-section-about__wrapper .wrapper__text p {
+    font-size: 1.25rem;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .content-section-social {
   /* background: url(../assets/images/mountain-nature-bg.png);

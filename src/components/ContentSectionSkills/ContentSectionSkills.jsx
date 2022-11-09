@@ -5,7 +5,6 @@ const ContentSectionSkills = ({type}) => {
   if (type === 'about'){
     return(
     <motion.div className='content-section-skills--about'
-        
         viewport={{ once: true }}
       >
           <div className="content-section-skills__wrapper">

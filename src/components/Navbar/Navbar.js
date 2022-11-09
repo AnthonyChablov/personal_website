@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaTimes , FaBars} from "react-icons/fa";
 
 function NavBar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const [show,setShow] = useState(true);
+ /*  const controlNavbar = ()=>{
+    window.scrollY > 100 ? setShow(false): setShow(true);
+  }
+  useEffect(()=>{
+    window.addEventListener("scroll", controlNavbar)
+    return ()=>{
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  },[]) */
   return (
     <>
-      <nav className="navbar ">
+      <nav className={` ${show && 'navbar'}`}>
         <div className="navbar__wrapper container">
           <div className="navbar__content ">
             <span>
