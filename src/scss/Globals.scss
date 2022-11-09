@@ -64,3 +64,26 @@ img {
     width: 100%;
 }
 
+
+
+/* Toast notification styling */
+.toast-progress{
+    background: $green;
+}
+.toast-style{
+    font-family:$font-jb-variable;
+    color:$silver;
+    background: $dark-grey;
+    
+}
+.toast-icon{
+    filter:
+            brightness(0) 
+            saturate(100%) 
+            invert(87%) 
+            sepia(12%) 
+            saturate(1259%)
+            hue-rotate(69deg)
+            brightness(105%) 
+            contrast(101%);
+}  

@@ -10,8 +10,16 @@ const Footer = () => {
                         Anthony Chablov
                     </h6>
                     <p className="footer__subtitle">
-                        © Built by Anthony Chablov. Powered by React.
+                        © Built by Anthony Chablov. Powered by React and Firebase.
                     </p>
+                    <motion.a className="footer__subtitle" 
+                        href="https://github.com/AnthonyChablov/personal_website"
+                        whileHover={{ color: '#747baf' }}
+                        transition={{delay : 0.013}}
+                        target="_blank"
+                    >
+                        ⁂ View source code for this site.
+                    </motion.a>
                 </div>
                 <div className="footer__navigation">
                     <div className="footer__links">

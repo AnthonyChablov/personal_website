@@ -2,13 +2,21 @@ import InfoSidebar from "../InfoSidebar/InfoSidebar";
 import {motion} from 'framer-motion';
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const transition = { duration: 0.2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Form = () => {
     const form = useRef();
+    const notify = () => toast.success('Thankyou for reaching out, I will get back to you shortly.', {
+        closeOnClick: true,
+        autoClose: 1800
+        
+    });
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_9sizgve', 'template_mnyg5by', form.current, 'nYid0rnWa4oP24TBH')
           .then((result) => {
+              notify();
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
@@ -16,7 +24,9 @@ const Form = () => {
           e.target.reset()
       };
     return (
+        
         <div className="form ">
+            
             <motion.div className="form__wrapper container"
                 initial={{
                     opacity:0,  
@@ -36,6 +46,7 @@ const Form = () => {
                             ref={form} 
                             onSubmit={sendEmail}
                         >
+                            
                             <div className="contact-form__wrapper">
                                 <div className="contact-form__field contact-form__name">
                                     <input id="name" className="input-text js-input" type="text" required
