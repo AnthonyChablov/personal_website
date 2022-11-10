@@ -1,4 +1,4 @@
-import project1 from '../../assets/images/project1.jpg';
+
 import ParagraphText from '../ParagraphText/ParagraphText';
 import reactWeatherApp from '../../assets/images/reactWeatherApp.png';
 import passwordGen from "../../assets/images/passwordGen.png" ;
@@ -18,7 +18,7 @@ const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) 
                                 ipAddress:ipAddress,
                                 clockApp:clockApp,
                             }[img]
-                        } alt="project-image" />
+                        } alt="project" />
                     </div>
                     
                 </div>
@@ -36,6 +36,7 @@ const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) 
                                 whileFocus={{ scale: 1 }}
                                 whileHover={{}}
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <div className='link__btn1'>
                                     <p className='btn1__text'>{btn1}</p>
@@ -45,6 +46,7 @@ const Project = ({img, title, description, btn1, btn2, id, siteLink, codeLink}) 
                                 whileTap={{ scale: 0.95 }}
                                 whileFocus={{ scale: 1 }}
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <div className="link__btn2">
                                     <p className='btn2__text'>{btn2}</p>

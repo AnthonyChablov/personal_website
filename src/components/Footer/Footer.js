@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion';
-const transition = { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] };
+
 const Footer = () => {
     return (
         <motion.div className="footer"
             initial={{
-                opacity:0,  
+                opacity:1,  
             }}
             exit={{
-                opacity:0
+                opacity:1,
+                
             }}
             whileInView={{opacity:1}}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.10 }}
             viewport={{ once: true }}
         >
             <motion.div className="footer__wrapper container"
@@ -117,6 +118,7 @@ const Footer = () => {
                                 <a href="https://github.com/AnthonyChablov"
                                     className="column__link"
                                     target={'_blank'}
+                                    rel="noreferrer"
                                 >
                                     <motion.p
                                         whileHover={{ color: '#747baf' }}
@@ -128,6 +130,7 @@ const Footer = () => {
                                 <a href="https://www.linkedin.com/in/anthony-chablov-7a7a2921a/"
                                     className="column__link"
                                     target={'_blank'}
+                                    rel="noreferrer"
                                 >
                                     <motion.p
                                         whileHover={{ color: '#747baf' }}
@@ -139,6 +142,7 @@ const Footer = () => {
                                 <a href="https://discord.com/users/557409807968239616/"
                                     className="column__link"
                                     target={'_blank'}
+                                    rel="noreferrer"
                                 >
                                     <motion.p
                                         whileHover={{ color: '#747baf' }}

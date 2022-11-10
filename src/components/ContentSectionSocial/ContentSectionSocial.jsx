@@ -1,8 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { Button } from '../Button/Button';
 import ParagraphText from '../ParagraphText/ParagraphText';
-import Divider from "../Divider/Divider";
 import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import {FaDiscord} from "react-icons/fa";
 
@@ -46,6 +44,7 @@ const ContentSectionSocial = () => {
                         whileTap={{scale:0.95 , color: '#747baf'}}
                         whileFocus={{scale:1.1}}
                         target={'_blank'} 
+                        rel="noreferrer"
                         href="https://github.com/AnthonyChablov">
                             <AiFillGithub size={48} />
                     </motion.a>
@@ -56,6 +55,7 @@ const ContentSectionSocial = () => {
                         whileFocus={{scale:1.1}}
                         transition={{delay : 0.05, ...transition}}
                         target={'_blank'} 
+                        rel="noreferrer"
                         href="https://www.linkedin.com/in/anthony-chablov-7a7a2921a/">
                             <AiFillLinkedin size={48} />
                     </motion.a>
@@ -65,6 +65,7 @@ const ContentSectionSocial = () => {
                         whileFocus={{scale:1.1}}
                         transition={{delay : 0.05, ...transition}}
                         target={'_blank'} 
+                        rel="noreferrer"
                         href="https://discord.com/users/557409807968239616/">
                             <FaDiscord size={48} />
                     </motion.a>

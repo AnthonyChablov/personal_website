@@ -4,9 +4,9 @@ const Header = ({title}) => {
     <motion.div className="header">
       <motion.div className="header__wrapper "
       initial={{
-        opacity:'80%',  
+        opacity:0,  
       }}
-      whileInView={{opacity:'100%'}}
+      whileInView={{opacity:1}}
       transition={{ delay: 0.4 }}
       viewport={{ once: true }}
       >

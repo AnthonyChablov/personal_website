@@ -17,7 +17,7 @@ const ContentSectionAbout = () => {
             >
                 <div className="content-section-about__wrapper ">
                     <div className="wrapper__text">
-                        <p>✧ Welcome to my portfolio site! 👋</p>  
+                        <p>Welcome to my portfolio site! 👋</p>  
                         <p>I am an enthusiastic, and fast-learning second-year computer-programming student at Seneca College. </p>
                         <p>I specialize in Front-End and Full-Stack Web development with a passion for UI/UX design. </p>
                         <p>I strive to create highly responsive and interactive web and mobile applications.  I am fluent in JavaScript, HTML and CSS. 👨‍💻</p>

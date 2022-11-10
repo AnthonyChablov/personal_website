@@ -4,7 +4,6 @@ import Contact from "../../pages/Contact";
 import Projects from "../../pages/Projects";
 import Resume from '../../pages/Resume';
 import Intro from '../../pages/Intro';
-import NotFound from "../NotFound/NotFound";
 import {
     Routes,
     Route, 

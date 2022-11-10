@@ -8,8 +8,9 @@ const Error404 = () => {
       <ScrollToTop/>
       <AnimatedPage>
           <NotFound/>
+          <Footer/>
       </AnimatedPage>
-      <Footer/>
+      
     </>
   )
 }
