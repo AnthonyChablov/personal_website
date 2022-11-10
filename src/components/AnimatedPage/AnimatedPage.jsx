@@ -11,7 +11,7 @@ const animations ={
     exit:{
       opacity:0, 
       x:'-100vw',
-      filter:'blur(5px)',
+      
     }
 }
 const AnimatedPage = ({children}) => {
