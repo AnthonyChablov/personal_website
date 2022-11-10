@@ -2,7 +2,7 @@ import InfoSidebar from "../InfoSidebar/InfoSidebar";
 import {motion} from 'framer-motion';
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const transition = { duration: 0.2, ease: [0.43, 0.13, 0.23, 0.96] };
 const Form = () => {

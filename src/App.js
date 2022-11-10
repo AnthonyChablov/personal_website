@@ -12,7 +12,7 @@ function App() {
             <NavBar/>
             <ToastContainer 
                 className="toaster-container"
-                position="bottom-center"
+                position="top-center"
                 autoClose={4200}
                 hideProgressBar={false}
                 newestOnTop={false}
