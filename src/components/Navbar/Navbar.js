@@ -22,7 +22,8 @@ function NavBar() {
           <div className="navbar__content ">
             <span>
               <NavLink 
-                exact to="/home" 
+                exact
+                to="/home" 
                 className="nav__logo"
               >Anthony Chablov
               </NavLink>

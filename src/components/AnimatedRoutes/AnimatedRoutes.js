@@ -15,7 +15,7 @@ import Error404 from "../../pages/Error404";
 const AnimatedRoutes = () => {
     const location = useLocation();
     return (
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence mode='wait'>
                 <Routes key={location.pathname} location={location}>
                     <Route 
                         path='/' 
@@ -55,7 +55,7 @@ const AnimatedRoutes = () => {
                         }
                     />
                     <Route 
-                        path='*' 
+                        path='/*' 
                         element={
                             <Error404/>
                         }
