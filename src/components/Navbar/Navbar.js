@@ -5,19 +5,19 @@ import { FaTimes , FaBars} from "react-icons/fa";
 function NavBar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const [show,setShow] = useState(true);
- /*  const controlNavbar = ()=>{
-    window.scrollY > 100 ? setShow(false): setShow(true);
+  /* const [show,setShow] = useState(true);
+ const controlNavbar = ()=>{
+    window.scrollY > 10 ? setShow(false): setShow(true);
   }
   useEffect(()=>{
     window.addEventListener("scroll", controlNavbar)
     return ()=>{
       window.removeEventListener('scroll', controlNavbar)
     }
-  },[]) */
+  },[])  */
   return (
     <>
-      <nav className={` ${show && 'navbar'}`}>
+      <nav className={`navbar`}>
         <div className="navbar__wrapper container">
           <div className="navbar__content ">
             <span>
@@ -25,7 +25,7 @@ function NavBar() {
                 exact
                 to="/home" 
                 className="nav__logo"
-              >Anthony Chablov
+              >Anthony Chablov.
               </NavLink>
             </span>
             
@@ -39,7 +39,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Projects
+                  Projects.
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -50,7 +50,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  About
+                  About.
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -61,7 +61,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Resume
+                  Resume.
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -71,7 +71,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Contact
+                  Contact.
                 </NavLink>
               </li>
             </ul>
