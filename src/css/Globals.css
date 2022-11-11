@@ -870,8 +870,8 @@
 }
 .contact-form .contact-form__field {
   position: relative;
-  margin: 0px 0 30px 0;
-  padding-top: 20px;
+  margin: 0px 0 1.38em 0;
+  padding-top: 1em;
 }
 .contact-form .contact-form__field .field__label {
   margin-bottom: 1.5em;
@@ -886,7 +886,7 @@
   padding: 0.5em 0.6em;
   height: 8em;
   border-width: 1.7px;
-  border: 1px solid #b2b2b2;
+  border: 1.7px solid #b2b2b2;
 }
 .contact-form .contact-form__field .field__message:focus {
   outline: 1px solid #f8f8f8;
@@ -943,6 +943,7 @@ textarea {
   width: 100%;
   height: 2rem;
   resize: none;
+  color: #2e3047;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
