@@ -1,4 +1,5 @@
-import { motion } from "framer-motion"
+import { motion, useWillChange } from "framer-motion"
+
 const animations ={
     initial:{
       opacity:0,
@@ -12,13 +13,15 @@ const animations ={
       opacity:0, 
       x:'-100vw',
       
-    }
+    },
+    
 }
 const AnimatedPage = ({children}) => {
+  const willChange = useWillChange()
   return (
     <motion.div variants={animations} initial="initial" animate="animate" exit="exit"
       transition={{duration:0.3}}
-      
+      style={{ willChange }}
       dragDirectionLock 
       
     >
