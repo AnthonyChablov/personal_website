@@ -63,9 +63,12 @@ const Form = () => {
                             </div>
                             
                             <div className="contact-form__field">
-                                <textarea id="message" className="input-text js-input" type="text"  
-                                required name="message"/>
-                                <label className="label" htmlFor="message" >Message*</label>
+                                <label className="field__label" htmlFor="message" >Message*</label>
+                                <textarea id="message" className=" js-input field__message" type="text"  
+                                required name="message"
+                                placeholder="...."
+                                />
+                                
                             </div>
                             <motion.div className="contact-form__field"
                             >
