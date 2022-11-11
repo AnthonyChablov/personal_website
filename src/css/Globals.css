@@ -35,7 +35,7 @@
   align-items: center;
   transition: all 300ms ease-in-out;
   transition-timing-function: ease-in;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.824);
   backdrop-filter: blur(8.8px);
   box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px 1px;
 }
@@ -71,7 +71,7 @@
   justify-content: space-between;
   align-content: center;
   margin: 0;
-  padding-top: 8px;
+  padding-top: 6.5px;
 }
 
 .nav-links {
@@ -147,7 +147,7 @@
     transition: all 0.5s ease;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px 1px;
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.84);
     backdrop-filter: blur(25px);
   }
   /* when not at route */
@@ -401,7 +401,7 @@
   justify-content: center;
 }
 .hero--secondary .hero__wrapper--secondary .hero__content--secondary h1 {
-  padding: 4.5em 0 1.2px 0;
+  padding: 2.75em 0 1.2px 0;
   margin: 0 0 1.25em 0;
   font-family: "Fraunces", sans-serif;
   text-align: center;
@@ -471,7 +471,7 @@
     height: 100%;
   }
   .hero--secondary .hero__wrapper--secondary .hero__content--secondary h1 {
-    padding: 110px 0 1.2px 0;
+    padding: 70px 0 1.2px 0;
     font-size: 1.8rem;
     width: 80%;
     margin: 0 auto;
@@ -504,7 +504,7 @@
     height: 100%;
   }
   .hero--secondary .hero__wrapper--secondary .hero__content--secondary h1 {
-    padding: 5em 0 1.2px 0;
+    padding: 2.75em 0 1.2px 0;
     font-size: 2rem;
     width: 80%;
     margin: 0 auto;
@@ -538,7 +538,7 @@
     height: 100%;
   }
   .hero--secondary .hero__wrapper--secondary .hero__content--secondary h1 {
-    padding: 5em 0 1.2px 0;
+    padding: 3.74em 0 1.2px 0;
     font-size: 2.78rem;
     width: 86.5%;
     margin: 0 auto;

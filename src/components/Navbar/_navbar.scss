@@ -1,6 +1,4 @@
 .navbar {
-    
-    
     text-align: center;
     font-family: $font-neaue-regular;
     font-size: 1.2rem;
@@ -16,7 +14,7 @@
     transition: all 300ms ease-in-out;
     transition-timing-function: ease-in;
     
-    background: rgba(255,255,255,0.88);
+    background: rgba(255,255,255,0.824);
     backdrop-filter: blur(8.8px);
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px 1px;
     
@@ -56,7 +54,7 @@
     justify-content: space-between;
     align-content: center;
     margin: 0;
-    padding-top: 8px;
+    padding-top: 6.5px;
 }
 
 .nav-links {
@@ -118,8 +116,8 @@
         transition: all 0.5s ease;
         width: 100%;
         padding-left: 0;
-        
     }
+    
     /* enter */
     .nav-menu.active {
         height: 28em;
@@ -133,7 +131,7 @@
         transition: all 0.5s ease;
         z-index: 1;
         box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 3px 1px;
-        background: rgba(255,255,255,0.88);
+        background: rgba(255,255,255,0.84);
         backdrop-filter: blur(25px);
         
     }

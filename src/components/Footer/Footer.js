@@ -109,6 +109,20 @@ const Footer = () => {
                                         transition={{delay : 0.013}}
                                     >404</motion.p>
                                 </Link>
+                                
+                            </li>
+                            <li>
+                                <Link
+                                    exact
+                                    to="/"
+                                    className="column__link"
+                                >
+                                    <motion.p
+                                        whileHover={{ color: '#747baf' }}
+                                        transition={{delay : 0.013}}
+                                    >Intro</motion.p>
+                                </Link>
+                                
                             </li>
                         </ul>
                     </div>
