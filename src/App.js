@@ -5,11 +5,12 @@ import {
 import AnimatedRoutes from './components/AnimatedRoutes/AnimatedRoutes'; 
 import NavBar from './components/Navbar/Navbar';
 import { ToastContainer, Flip } from 'react-toastify';
+
 function App() {
-    
     return (
         <Router>            
             <NavBar/>
+            
             <ToastContainer 
                 className="toaster-container"
                 position="top-center"

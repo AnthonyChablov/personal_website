@@ -48,7 +48,7 @@ const Footer = () => {
                             <li className="">
                                 <Link
                                     exact
-                                    to="/home"
+                                    to="/"
                                     className="column__link"
                                 >
                                     <motion.p
@@ -111,19 +111,7 @@ const Footer = () => {
                                 </Link>
                                 
                             </li>
-                            <li>
-                                <Link
-                                    exact
-                                    to="/"
-                                    className="column__link"
-                                >
-                                    <motion.p
-                                        whileHover={{ color: '#747baf' }}
-                                        transition={{delay : 0.013}}
-                                    >Intro</motion.p>
-                                </Link>
-                                
-                            </li>
+                            
                         </ul>
                     </div>
                     <div className="footer__socials">
